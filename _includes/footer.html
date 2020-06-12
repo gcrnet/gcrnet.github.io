@@ -1,0 +1,16 @@
+<footer class="site-footer">
+    <p class="text">
+        {{ site.footer_text }}</p>
+    
+		<a href="{{ '/' | relative_url }}">
+			<img alt="logo img" class="avatar1" src="{{ site.avatar1 | relative_url }}" />
+		</a>
+            <div class="footer-icons">
+                <ul>
+                <!-- Social icons from Font Awesome, if enabled -->
+                {% include icons.html %}
+                </ul>
+            </div>
+</footer>
+
+
