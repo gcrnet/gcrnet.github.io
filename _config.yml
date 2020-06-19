@@ -1,5 +1,6 @@
 # SITE CONFIGURATION
-baseurl: "test_blog"
+baseurl:
+#"test_blog"
 url: ""
 
 # THEME-SPECIFIC CONFIGURATION
