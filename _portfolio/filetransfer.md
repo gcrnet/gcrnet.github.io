@@ -1,7 +1,9 @@
 ---
 layout: post
-title: File Transfer using Globus
-img: "assets/img/portfolio/globus.png"
+title: File transfer using Globus
+img: "https://i.imgur.com/r4YlFcv.png"
+feature-img: "https://i.imgur.com/4KpVtQF.png"
+date: 08 June 2020
 ---
 
 Globus is a fast, reliable file transfer service that makes it easy for users to move data between two GridFTP servers or between a GridFTP server and a user’s machine (Windows, Mac or Linux). <br>
@@ -60,4 +62,3 @@ You can similarly, send an entire directory from one endpoint to another. In the
 The directory selected was successfully sent.
 
 ![img_13](https://i.imgur.com/dh2QVa7.png)
-
