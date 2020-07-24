@@ -1,7 +1,6 @@
 ---
 layout: post
 title: File transfer using Globus
-img: "https://i.imgur.com/r4YlFcv.png"
 feature-img: "https://i.imgur.com/4KpVtQF.png"
 date: 08 June 2020
 ---
