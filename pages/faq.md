@@ -6,4 +6,4 @@ subtitle: "Frequently asked questions"
 feature-img: "assets/img/pexels/computer.jpeg"
 ---
 
-## FAQ
+{% include faq.html %}
