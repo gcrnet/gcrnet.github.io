@@ -39,6 +39,11 @@ collections:
     output: true
     permalink: /:collection/:name
 
+collections:
+  howto:
+    output: true
+    permalink: /:collection/:name
+
 # BUILD SETTINGS
 markdown: kramdown
 highlighter: rouge
