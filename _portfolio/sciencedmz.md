@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Science DMZ
-img: "https://i.imgur.com/dhAxgpX.png"
 feature-img: "https://i.imgur.com/4KpVtQF.png"
 date: June, 19 2020
 ---
