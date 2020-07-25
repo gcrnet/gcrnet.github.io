@@ -1,0 +1,32 @@
+This is a respository of the Gate City Research Network (gcrNet)
+Information about projects on the gcrNet are published on the
+respository web site. Configuration scripts and other setup
+recipes are stored in this resposity.
+
+Below is a description of files and directories in the repository:
+404.html           		                      
+Gemfile            		                      
+Gemfile.lock       		                      
+LICENSE            		                      
+_config.yml        		             
+_posts/             
+_faq/                  
+_howto/                
+_includes/             
+_layouts/              
+_portfolio/         
+_data/             
+_projects/         
+_sass/             
+_site/             
+assets/            
+git_history/
+index.html
+pages/
+screenshot.png
+type-on-strap.gemspec
+
+
+
+
+
