@@ -41,7 +41,7 @@ collections:
     output: true
   projects:
     output: true
-  portfolio:
+  tutorials:
     output: true
   howto:
     output: true

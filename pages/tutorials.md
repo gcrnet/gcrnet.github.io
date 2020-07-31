@@ -6,4 +6,4 @@ subtitle: "Spreading Knowledge"
 feature-img: "assets/img/pexels/computer.jpeg"
 ---
 
-{% include portfolio.html %}
+{% include tutorials.html %}
