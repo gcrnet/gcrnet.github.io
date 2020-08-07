@@ -21,40 +21,40 @@ If you need to create any new FAQ you need to create new .md file for a new FAQ 
 All the How to questions are written in the .md format and saved in this folder.
 If you need to create any new HOW TO you need to create new .md file for a new how to and edit it. 
 
-_includes/ <br>
+* _includes/ <br>
 Includes allow you to take certain components of your website like a header or a fotter or a navigation list and abstract them into their own HTML files.
 So simply, we can have a html file that defines our header, navigation list etc...
 
-_layouts/ <br>
+* _layouts/ <br>
 Layouts are basically just skeletons of HTML code that you can use to define the look and the feel of the different type of pages in your site or just your entire site in general.
 
-_tutorials/ <br>
+* _tutorials/ <br>
 All the tutorials are written in the .md format and saved in this folder.
 If you need to create any new tutorial you need to create new .md file for a new tutorial and edit it. 
 
-_data/  <br>
+* _data/  <br>
 Details about authors.
 In this case:
 Dr. Jacob Fosso Tande
 Koundinya Challa
 
-_projects/ <br>
+* _projects/ <br>
 All the projects info is written in the .md format and saved in this folder.
 If you need to create any new project info you need to create new .md file for a new project info and edit it. 
                    
-_site/ <br>
+* _site/ <br>
 All the site information is stored in this folder.
 
-assets/ <br>
+* assets/ <br>
 Images, CSS files that are required for the site are stored in this folder.
 
-index.html<br>
+* index.html<br>
 this is the home page of our site.
 
-pages/<br>
+* pages/<br>
 This contains all the different pages our site has.
 
-type-on-strap.gemspec <br>
+* type-on-strap.gemspec <br>
 This is the theme we used for our site.
 
 
