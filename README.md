@@ -1,15 +1,13 @@
 # gcrNet developers site
 
-404.html -
+* 404.html - <br>
 The HTTP error 404, or more commonly called "404 error", means that the page you are trying to open could not be found on the server. This is a client-side incident which means either the page has been deleted or moved, and the URL has not been modified accordingly, or that you have misspelled the URL    
 
-Gemfile -
+* Gemfile - <br>
 A Gemfile describes the gem dependencies required to execute associated Ruby code. Place the Gemfile in the root of the directory containing the associated code.
 
-Gemfile.lock -
+* Gemfile.lock - <br>
 The Gemfile. lock file is where Bundler records the exact versions that were installed. This way, when the same library/project is loaded on another machine, running bundle install will look at the Gemfile. ... Running different versions on different machines could lead to broken tests, etc.
-
-LICENSE 
 
 * _config.yml - <br>
 The main configuration file for the IQ Server installation is a YAML formatted file called config. yml found in the installation directory. The config. yml file typically contains only those configuration options which are rarely changed.            
