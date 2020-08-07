@@ -1,5 +1,15 @@
 # gcrNet developers site
 
+Welcome to the home of the Gate City Research Network (gcrNet), a multi-institutional
+Science-DMZ created by UNC Greensboro and North Carolina A&T State University for the
+purpose of supporting data intensive research. The gcrNet is supported by the National
+Science Foundation Office of Advanced CyberInfrastructure and is available to faculty
+at UNC Greensboro, NC A&T, and their research collaborators.
+
+The gcrNet is designed to build upon the Science DMZ architecture developed by the Energy Sciences Network (ESnet) to meet the needs of high performance science applications in a network that is shared by multiple institutions.
+
+The gcrNet operates under the governance of the Piedmont Regional Data Collaborative and the implementation project is funded by the National Science Foundation, award #1925623.
+
 * 404.html - <br>
 The HTTP error 404, or more commonly called "404 error", means that the page you are trying to open could not be found on the server. This is a client-side incident which means either the page has been deleted or moved, and the URL has not been modified accordingly, or that you have misspelled the URL    
 
