@@ -15,6 +15,6 @@ In order for Globus to know who you are when you move data between any pair of s
 
  ![img_2](https://i.imgur.com/yxSGNlw.png)
 
-Click on certificate information and similar line below will be your DA. <br>
+Click on certificate information and similar line below will be your DN. <br>
 
  Certificate Subject:	/DC=org/DC=cilogon/C=US/O=University of North Carolina at Greensboro/CN=John Doe  A10000000
