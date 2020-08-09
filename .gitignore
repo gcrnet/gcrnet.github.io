@@ -1,5 +1,6 @@
 # Idea files
 .idea/*
+OFiles/
 
 # Mac files
 .DS_Store
