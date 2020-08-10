@@ -1,34 +1,10 @@
 <div class="posts">
-    {% for post in paginator.posts %}
-    <div class="post-teaser">
-        {% if post.thumbnail %}
-        <div class="post-img">
-            <a aria-label="{{ post.title }}" href="{{ post.url | relative_url }}">
-                <img alt="{{ post.title }}" src="{{ post.thumbnail | relative_url }}">
-            </a>
-        </div>
-        {% endif %}
-        <span>
-          <header>
-            <h1>
-              <a aria-label="{{ post.title }}" class="post-link" href="{{ post.url | relative_url }}">
-                {{ post.title }}
-              </a>
-            </h1>
-            {% include post_info.html author=post.author date=post.date %}
-          </header>
-          {% if site.excerpt or site.theme_settings.excerpt %}
-              <div class="excerpt">
-                  {% if site.excerpt == "truncate" %}
-                     {{ post.content | strip_html | truncate: '250' | escape }}
-                  {% else %}
-                     {{ post.excerpt | strip_html | escape }}
-                  {% endif %}
-              </div>
-          {% endif %}
-      </span>
-    </div>
-    {% endfor %}
+
+Welcome to the home of the Gate City Research Network (gcrNet), a multi-institutional Science-DMZ created by UNC Greensboro and North Carolina A&T State University for the purpose of supporting data intensive research. The gcrNet is supported by the National Science Foundation Office of Advanced CyberInfrastructure and is available to faculty at UNC Greensboro, NC A&T, and their research collaborators.
+
+The gcrNet is designed to build upon the Science DMZ architecture developed by the Energy Sciences Network (ESnet) to meet the needs of high performance science applications in a network that is shared by multiple institutions.
+
+The gcrNet operates under the governance of the Piedmont Regional Data Collaborative and the implementation project is funded by the National Science Foundation, award #1925623.
 </div>
 
-{% include blog_nav.html %}
+
