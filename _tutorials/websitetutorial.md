@@ -16,6 +16,7 @@ We will know everything to get started with your first jekyll website from creat
 1. [Installation](#install)
 2. [Creating a site](#create)
 3. [Front matter](#front)
+4. [Installing themes](#themes)
 
 <a name="install"></a>
 ## Installation
@@ -65,4 +66,18 @@ For the default post in our test_blog website has content and front matter.
 ![front_matter](https://i.imgur.com/kopLTwb.png)
 
 We can see some special information at the top of our post which is different from the content, That is called front matter.
+Front matter can be written in two languages, YAML or JSON. (Key value pairs.)
 
+<a name="themes"></a>
+## Installing themes
+By default we will be having a minima theme for our jekyll website.
+If we want a different theme for our website, there are a lot of themes(free) available on the internet.
+You can select a theme that you like and copy the name of the theme in the gemfile and intall it with the ocmmand "bundle install".
+Then change the theme value in 'config.yaml' file.
+Now restart the server and you will see the changes in your website.
+
+Website for free themes:
+ * [Jekyll themes](http://jekyllthemes.org/)
+ * [Free jekyll themes](https://jekyll-themes.com/free/)
+
+You can find many other good websites on the internet.
