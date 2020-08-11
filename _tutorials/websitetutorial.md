@@ -17,6 +17,7 @@ We will know everything to get started with your first jekyll website from creat
 2. [Creating a site](#create)
 3. [Front matter](#front)
 4. [Installing themes](#themes)
+5. [Layouts](#layouts)
 
 <a name="install"></a>
 ## Installation
@@ -81,3 +82,16 @@ Website for free themes:
  * [Free jekyll themes](https://jekyll-themes.com/free/)
 
 You can find many other good websites on the internet.
+
+<a name="layouts"></a>
+## Layouts
+Layouts are skeletons of HTML code used to define look and feel of different type of pages or your entire site.
+
+We can see our default test_blog website is looking good and wedid not modify anything yet.
+By default jekyll will provide us layouts for our pages.
+We can see the front matter and it specifies a attribute in each post or page we write.
+If you want to create your own layout.
+1. come to the root directory and create "layouts folder".
+2. create a html file of your own and you can start making your own layout.
+![layouts](https://i.imgur.com/qyDBIPp.png)
+After you create you own layout, you can change the layout to the one you just created and it will show up the changes.
