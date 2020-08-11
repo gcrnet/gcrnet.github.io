@@ -15,6 +15,7 @@ We will know everything to get started with your first jekyll website from creat
 
 1. [Installation](#install)
 2. [Creating a site](#create)
+3. [Front matter](#front)
 
 <a name="install"></a>
 ## Installation
@@ -42,3 +43,26 @@ Jekyll will take all the peices of our website and serve them in our browser.
 As it serves in our local host server we can see that in our browser.
 
 ![localhost](https://i.imgur.com/onXxPaB.png)
+
+Coming back to the files on our folder.
+We have the root folder "test_blog"
+In that we have "posts" floder.
+This is the folder where we store all our blog posts.
+Then we have "site" folder.
+This is basically the final output of our website.
+Next important file is "config.yaml". It is essentially the settings of your site. It contains the basic attributes of your site.
+"Gemfile" is used to store all the dependecies for the website. 
+Rest of the files are just default basic parts of our website.
+
+<a name="front"></a>
+## Front matter
+In this section we will see about the front matter in jekyll.
+Front matter is the information that we store about the pages of our site. All the pages in our site wil have front matter.
+Front matter may contain information like Title, Name of the author etc... 
+
+For the default post in our test_blog website has content and front matter.
+
+![front_matter](https://i.imgur.com/kopLTwb.png)
+
+We can see some special information at the top of our post which is different from the content, That is called front matter.
+
