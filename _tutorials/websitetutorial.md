@@ -22,4 +22,12 @@ The Jekyll website provides [installation](https://jekyllrb.com/docs/installatio
 
 <a name="create"></a>
 ## Creating a site
-coming soon !!!
+For this tutorial purpose we will name our website as "test_blog".
+
+open command promt and type - 'jekyll new test_blog' and it will create our new site for us.
+
+![create](https://i.imgur.com/8Yaniqp.png)
+
+Check the files and jekyll will create some default content for us.
+
+![default_content](https://i.imgur.com/i0sydRw.png)
