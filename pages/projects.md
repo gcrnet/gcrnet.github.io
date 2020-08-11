@@ -2,7 +2,7 @@
 layout: page
 title : Projects
 permalink: /Projects/
-subtitle: "Recipe for doing this" 
+subtitle: "We do this" 
 feature-img: "assets/img/pexels/computer.jpeg"
 ---
 {% include projects.html %}
