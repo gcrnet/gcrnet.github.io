@@ -31,3 +31,14 @@ open command promt and type - 'jekyll new test_blog' and it will create our new 
 Check the files and jekyll will create some default content for us.
 
 ![default_content](https://i.imgur.com/i0sydRw.png)
+
+Once the site is created with the basic content we can host it.
+We will see how to serve out site on local host.
+we need to move to the directory of our site and open command promt and type - 'bundle exec jekyll serve'.
+Jekyll will take all the peices of our website and serve them in our browser.
+
+![jekyll-serve](https://i.imgur.com/us5KXsi.png)
+
+As it serves in our local host server we can see that in our browser.
+
+![localhost](https://i.imgur.com/onXxPaB.png)
