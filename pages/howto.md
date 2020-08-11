@@ -1,8 +1,8 @@
 --- 
 layout: page
-title : How-to
-permalink: /How-to/
-subtitle: "How-to" 
+title : HowTo
+permalink: /HowTo/
+subtitle: "HowTo" 
 feature-img: "assets/img/pexels/computer.jpeg"
 ---
 {% include howto.html %}
