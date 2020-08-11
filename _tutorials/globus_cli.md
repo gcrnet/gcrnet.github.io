@@ -11,7 +11,9 @@ The Globus CLI is a Python-based application that must be installed on the compu
 2. [Logging in into Globus](#login)
 
 <a name="install"></a>
+## Installation
 The Globus website provides [CLI installation](https://docs.globus.org/cli/installation/) instructions that cover all types of operating systems. It also includes instructions for updating and removing the CLI. This page follows the recommendations from the Globus site, while only giving instructions for installing on XSEDE resources and assuming that you are running the Bash shell. When installed, the CLI will be added to your shell path and will automatically be available when you log in again. <br>
 
 <a name="login"></a>
+## Logging in to Globus
 Before you can use the Globus CLI on a given computer, you must log in to Globus.

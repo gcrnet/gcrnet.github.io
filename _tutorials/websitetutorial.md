@@ -17,7 +17,9 @@ We will know everything to get started with your first jekyll website from creat
 2. [Creating a site](#create)
 
 <a name="install"></a>
+## Installation
 The Jekyll website provides [installation](https://jekyllrb.com/docs/installation/) instructions that cover all types of operating systems.
 
 <a name="create"></a>
+## Creating a site
 coming soon !!!
