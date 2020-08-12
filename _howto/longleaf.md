@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to get a Longleaf cluster account.
+title: How to get a Longleaf cluster account
 feature-img: "https://i.imgur.com/4KpVtQF.png"
 date: 12 August 2020
 ---
