@@ -134,7 +134,7 @@ We need to store our files on gh-pages branche on our repository. The above comm
 This will add all our files to staging.
 4. git commit -m "initial commit"<br>
 This isan initial commit.
-5. git remote add orogin "add your repository address here"<br>
+5. git remote add origin "add your repository address here"<br>
 6. git push origin gh-pages <br>
 This will upload all the files to gh-pages.
 
