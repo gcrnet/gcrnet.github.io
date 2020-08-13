@@ -16,4 +16,5 @@ The Globus website provides [CLI installation](https://docs.globus.org/cli/insta
 
 <a name="login"></a>
 ## Logging in into Globus
-Before you can use the Globus CLI on a given computer, you must log in to Globus.
+Before you can use the Globus CLI on a given computer, you must log in to Globus using the `globus login` command on the computer.
+
