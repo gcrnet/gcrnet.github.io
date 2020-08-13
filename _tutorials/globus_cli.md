@@ -145,4 +145,31 @@ globus transfer --batch [options] <from-endpoint> <to-endpoint>
 
 <a name="task"></a>
 ## Task Commands
-[Transfer commands]() are one example of Globus CLI tasks that run in the background. These tasks may result in an email being sent to the initiator upon the task completion, but in order to learn about the task status or interact with it in the shell where it was issued, a user must use one of the globus task commands.
+[Transfer commands](https://gcrnet.github.io/tutorials/globus_cli.html#transfer) are one example of Globus CLI tasks that run in the background. These tasks may result in an email being sent to the initiator upon the task completion, but in order to learn about the task status or interact with it in the shell where it was issued, a user must use one of the globus task commands.
+
+#### globus task list
+
+The `globus task list` command prints a list of the most recent Globus CLI tasks initiated by the current user, including their status. It has the form:
+```yml
+globus task list [options]
+```
+
+#### globus task show
+
+The `globus task show` command displays information about a specific Globus CLI task such as a previously initiated transfer. It has the form:
+```yml
+globus task status [options] <taskid>
+```
+
+![task](https://i.imgur.com/6ayJyrA.png)
+
+#### globus task cancel
+
+The `globus task cancel` command cancels an active Globus task such as a previously initiated transfer. This can be useful when the failure of one transfer command implies that a sequence of operations cannot proceed and other active transfers should be aborted. Note that when transfers are not succeeding as expected they are repeatedly retried until successful. For this reason, when there is no longer an expectation that a transfer will succeed, it should be canceled. The command can have one of the following forms:
+```yml
+globus task cancel [options] <taskid>
+```
+```yml
+globus task cancel --all [options]
+```
+The command must either include a single taskid argument or the --all option, which will cause all active tasks to be canceled. Both tasks that are pending and currently executing will be canceled.
