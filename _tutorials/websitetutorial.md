@@ -126,16 +126,16 @@ If you are planning on using a custom  domain name you need to put that in the b
 3. We will set up a github repository inside our jekyll project and upload it into github.
 
 Git commands for creating repository and uploading all files to github :
-1. git init <br>
+1. `git init` <br>
 This will initialize an empy repository.
-2. git chechout -b gh-pages <br>
+2. `git chechout -b gh-pages` <br>
 We need to store our files on gh-pages branche on our repository. The above command will checkout gh-pages branch.
-3. git add . <br>
+3. `git add .` <br>
 This will add all our files to staging.
-4. git commit -m "initial commit"<br>
-This isan initial commit.
-5. git remote add origin "add your repository address here"<br>
-6. git push origin gh-pages <br>
+4. `git commit -m "initial commit"`<br>
+This is an initial commit.
+5. `git remote add origin "add your repository address here"`<br>
+6. `git push origin gh-pages` <br>
 This will upload all the files to gh-pages.
 
 ![upload](https://i.imgur.com/iouj7zZ.png)
