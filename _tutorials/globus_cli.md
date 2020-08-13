@@ -11,6 +11,9 @@ The Globus CLI is a Python-based application that must be installed on the compu
 2. [Logging in into Globus](#login)
 3. [Using the interface](#interface)
 4. [Endpoint Commands](#endpoint)
+5. [File and Folder Commands](#files)
+6. [Transfer Commands](#transfer)
+7. [Task Commands](#task)
 
 <a name="install"></a>
 ## Installation
@@ -71,3 +74,75 @@ Results can also be filtered by a scope using the `--filter-scope` option. Sever
 ![scope](https://i.imgur.com/jI1m28Y.png)
 
 The [globus endpoint search](https://docs.globus.org/cli/reference/endpoint_search/) reference page contains more information about this command.
+
+<a name="files"></a>
+## Files and Folder Commands
+For this we assign variable names to two of the endpoints we have.
+We can use the below command for assigning variable names to endpoints.
+```yml
+$[variable name]=<endpoint_id>
+```
+
+![assign](https://i.imgur.com/blWC8fF.png)
+
+#### globus ls
+
+CLI commands that work with endpoints specify file and folder locations as combinations of the endpoint ID and an optional colon, followed by a path:
+```yml
+globus ls [options] <endpoint>:<path>
+```
+![ls](https://i.imgur.com/K0r37TO.png)
+
+The `globus ls` command lists the contents of a specified endpoint and optional path. The command's options include `-a, --all` to include hidden files, `-l, --long` to produce long form output and `-r, --recursive` for recursively printing contents of folders.
+
+#### globus mkdir
+
+The `globus mkdir` command creates a new directory at the given endpoint/path combination:
+```yml
+globus mkdir <endpoint><:path>
+```
+The command returns 0 on success (as in the example below), 1 if there was an error (including if the path already exists), and 2 if the command was used improperly.
+
+![mkdir](https://i.imgur.com/Cs2QEoJ.png)
+
+#### globus rename
+
+The `globus rename` command renames a file or directory at the first endpoint:path combination to have the name given by the second endpoint/path combination:
+```yml
+rename <endpoint><:old-path> <endpoint><:new-path>
+```
+The endpoint must be the same in the "from" and "to" locations, and the new path must not already exist. The command returns 0 on success, 1 if there was an error, and 2 if the command was used improperly.
+
+![rename](https://i.imgur.com/1fHpbT4.png)
+
+#### globus rm
+
+The `globus rm` command removes a file or directory at the given endpoint/path combination:
+```yml
+globus rm [options] <endpoint><:path>
+```
+When the path refers to a directory, you must use the "-r" recursive option. The remove operation is performed asynchronously and its progress can be tracked using the task ID that is returned by the command. The command has numerous options, some of which relate to managing the task. The command returns 0 on success, 1 if there was an error, and 2 if the command was used improperly.
+
+<a name="transfer"></a>
+## Transfer Commands
+The `globus transfer` command can take two forms: single target and batch.
+
+#### Single Transfers
+
+To transfer a single file or folder, use the form that takes two endpoint / path parameters and copies the contents of the location specified by the first parameter to the location specified by the second. The "to" file name need not match the name of the "from" file.
+```yml
+globus transfer [options] <from-endpoint>:<from-path> <to-endpoint>:<to-path>
+```
+
+![transfer](https://i.imgur.com/8hvmx6W.png)
+
+#### Batch Transfers
+
+To perform a "batch" transfer of multiple targets, use the --batch option and specify only the source and target endpoints in the command.
+```yml
+globus transfer --batch [options] <from-endpoint> <to-endpoint>
+```
+
+<a name="task"></a>
+## Task Commands
+[Transfer commands]() are one example of Globus CLI tasks that run in the background. These tasks may result in an email being sent to the initiator upon the task completion, but in order to learn about the task status or interact with it in the shell where it was issued, a user must use one of the globus task commands.
