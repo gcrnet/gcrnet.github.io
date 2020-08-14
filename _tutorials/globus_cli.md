@@ -22,6 +22,9 @@ The Globus website provides [CLI installation](https://docs.globus.org/cli/insta
 <a name="login"></a>
 ## Logging in into Globus
 Before you can use the Globus CLI on a given computer, you must log in to Globus using the `globus login` command on the computer.
+```
+globus login
+```
 
 ![login](https://i.imgur.com/Q4WVRH8.png)
 
@@ -34,6 +37,9 @@ After successful login you will see a success message in the terminal.
 ![login success](https://i.imgur.com/3PzyoP4.png)
 
 You will now be able to issue Globus CLI commands on this computer. You can check your Globus login status at any time with the command `globus whoami`.
+```yml
+globus whoami
+```
 
 <a name="interface"></a>
 ## Globus CLI Commands
