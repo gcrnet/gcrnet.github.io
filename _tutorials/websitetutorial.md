@@ -4,13 +4,9 @@ title: Jekyll static site generator
 feature-img: "https://i.imgur.com/4KpVtQF.png"
 date: 11 August 2020
 ---
-Jekyll is really useful for building static websites.
-You can use a Jekyll theme and write posts using markdown with less amount of HTML, CSS and have a awesome responsive good looking website.
-If you are a developer who loves to crerate websites and wants to control every single aspect of the HTML and CSS on your site you can do all of that with jekyll. 
-Jekyll allows you to create your own themes and layouts etc... You can control and configure the enire site.
+Jekyll is really useful for building static websites. You can use a Jekyll theme to write posts using markdown with less amount of HTML, CSS and have a responsive good looking website. If you are a developer who loves to crerate websites while having control of every single aspect of the HTML and CSS, Jekyll allows for all of that. You can create your own themes, layouts, control and configure the entire site.
 
-In this tutorial we will go thgrough the basics of Jekyll.
-We will present enough information to get you started with your first jekyll website, from creating content to serving them on github pages.
+We will present enough information to get you started with your first jekyll website, fromcreating content to serving them on github pages.
 
 
 1. [Installation](#install)
@@ -23,28 +19,31 @@ We will present enough information to get you started with your first jekyll web
 
 <a name="install"></a>
 ## Installation
-The Jekyll website provides [installation](https://jekyllrb.com/docs/installation/) instructions that cover all types of operating systems.
+The Jekyll website provides [installation](https://jekyllrb.com/docs/installation/) instructions that covers Windows, Mac and linux operating systems.
 
 <a name="create"></a>
 ## Creating a site
-For this tutorial purpose we will name our website as "test_blog".
-
-Open your command promt and type - 'jekyll new test_blog' and it will create our new site for us.
+For this tutorial we will name our website "test_blog". Issue the command below at the terminal to create your new site.
+```yml
+jekyll new test_blog
+```
 
 ![create](https://i.imgur.com/8Yaniqp.png)
 
-Check the files and jekyll will create some default content for us.
+Jekyll creates some default content for the new site.
 
 ![default_content](https://i.imgur.com/i0sydRw.png)
-
-Once the site is created with the basic content we can host it.
-We will see how to serve out site on local host.
-we need to move to the directory of our site and open command promt and type - 'bundle exec jekyll serve'.
-Jekyll will take all the peices of our website and serve them in our browser.
-
+Change directory into the "test_blog" directory
+```yml
+cd test_blog
+```
+Run the command below at the terminal and Jekyll will take all the peices of our website and serve them in our browser. Browse the displayed server address 'http://127.0.0.1:400/' to see the content of the website. You can also stop the display with the command 'ctrl-c'
+```yml
+bundle exec jekyll serve
+```	 
 ![jekyll-serve](https://i.imgur.com/us5KXsi.png)
 
-As it serves in our local host server we can see that in our browser.
+The local host server now display the new website from the browser.
 
 ![localhost](https://i.imgur.com/onXxPaB.png)
 
