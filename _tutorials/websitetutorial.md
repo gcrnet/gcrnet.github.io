@@ -5,12 +5,12 @@ feature-img: "https://i.imgur.com/4KpVtQF.png"
 date: 11 August 2020
 ---
 Jekyll is really useful for building static websites.
-We can use a Jekyll theme and write our posts using markdown using less amount of HTML and CSS and have a awesome responsive good looking website.
-If you are a developer and you love crerating websites and want to control every single aspect of the HTML and CSS on your site we can do all that with jekyll. 
-Jekyll allows us to create our own themes and layouts etc... we can controll and configure the enire site.
+You can use a Jekyll theme and write posts using markdown with less amount of HTML, CSS and have a awesome responsive good looking website.
+If you are a developer who loves to crerate websites and wants to control every single aspect of the HTML and CSS on your site you can do all of that with jekyll. 
+Jekyll allows you to create your own themes and layouts etc... You can control and configure the enire site.
 
-In this tutorial we will go thgrough the basics.
-We will know everything to get started with your first jekyll website from creating content to serving them on github pages.
+In this tutorial we will go thgrough the basics of Jekyll.
+We will present enough information to get you started with your first jekyll website, from creating content to serving them on github pages.
 
 
 1. [Installation](#install)
@@ -29,7 +29,7 @@ The Jekyll website provides [installation](https://jekyllrb.com/docs/installatio
 ## Creating a site
 For this tutorial purpose we will name our website as "test_blog".
 
-open command promt and type - 'jekyll new test_blog' and it will create our new site for us.
+Open your command promt and type - 'jekyll new test_blog' and it will create our new site for us.
 
 ![create](https://i.imgur.com/8Yaniqp.png)
 
@@ -50,33 +50,30 @@ As it serves in our local host server we can see that in our browser.
 
 Coming back to the files on our folder.
 We have the root folder "test_blog"
-In that we have "posts" floder.
-This is the folder where we store all our blog posts.
-Then we have "site" folder.
-This is basically the final output of our website.
-Next important file is "config.yaml". It is essentially the settings of your site. It contains the basic attributes of your site.
+In that we have "posts" folder, where we store all our blog posts.
+Then we have "site" folder, the final output of our website.
+Next important file is "config.yaml",the settings of your site and contains the basic attributes of the site.
 "Gemfile" is used to store all the dependecies for the website. 
 Rest of the files are just default basic parts of our website.
 
 <a name="front"></a>
 ## Front matter
-In this section we will see about the front matter in jekyll.
-Front matter is the information that we store about the pages of our site. All the pages in our site wil have front matter.
-Front matter may contain information like Title, Name of the author etc... 
+Front matter is the information that we store about the pages of our site. All the pages on our site have front matter.
+Front matter may contain information like Title, Name of the author and many more. Front matter can be written in two languages, YAML or JSON. (in a Key value pairs format.) 
 
-For the default post in our test_blog website has content and front matter.
+The default post in our test_blog website has content and front matter.
 
 ![front_matter](https://i.imgur.com/kopLTwb.png)
 
-We can see some special information at the top of our post which is different from the content, That is called front matter.
-Front matter can be written in two languages, YAML or JSON. (Key value pairs.)
+We see some special information at the top of our post which is different from the content, That is called front matter.
+
 
 <a name="themes"></a>
 ## Installing themes
 By default we will be having a minima theme for our jekyll website.
-If we want a different theme for our website, there are a lot of themes(free) available on the internet.
-You can select a theme that you like and copy the name of the theme in the gemfile and intall it with the ocmmand "bundle install".
-Then change the theme value in 'config.yaml' file.
+If we want a different theme for our website, there are a lot of freely available themes on the internet.
+Select a theme that you like and write its name in the gemfile and install it with the command "bundle install".
+Change the theme value in 'config.yaml' file.
 Now restart the server and you will see the changes in your website.
 
 Website for free themes:

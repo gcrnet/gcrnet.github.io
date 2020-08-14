@@ -5,7 +5,7 @@ feature-img: "https://i.imgur.com/4KpVtQF.png"
 date: 08 June 2020
 ---
 
-The Globus CLI is a Python-based application that must be installed on the computer systems at both ends of your file transfer. It requires a Python version of at least 2.7 or 3.3, as well as the Python "pip" command.
+The Globus Command Line Interface (CLI) is a Python-based application that need to be installed on the computer systems at both ends of your file transfer. Python version 2.7 or higher, and  the Python "pip" packages are required for the Globus CLI to be installed.
 
 1. [Installation](#install)
 2. [Logging in into Globus](#login)
@@ -17,7 +17,7 @@ The Globus CLI is a Python-based application that must be installed on the compu
 
 <a name="install"></a>
 ## Installation
-The Globus website provides [CLI installation](https://docs.globus.org/cli/installation/) instructions that cover all types of operating systems. It also includes instructions for updating and removing the CLI. This page follows the recommendations from the Globus site, while only giving instructions for installing on XSEDE resources and assuming that you are running the Bash shell. When installed, the CLI will be added to your shell path and will automatically be available when you log in again. <br>
+The Globus website provides [CLI installation](https://docs.globus.org/cli/installation/) instructions. You will find instructions for installation on Windows, Mac, Linux and for updating or removing the CLI. The CLI will be added to your shell path and will automatically be available when you log in again. <br>
 
 <a name="login"></a>
 ## Logging in into Globus
@@ -37,7 +37,7 @@ You will now be able to issue Globus CLI commands on this computer. You can chec
 
 <a name="interface"></a>
 ## Globus CLI Commands
-Once you have logged in to Globus in a shell, you will be able to issue Globus CLI commands. Each CLI command begins with `globus` and the command name, possibly followed by a sub-command name and/or flags and arguments. To see more information about a specific CLI command, pass the `--help` flag to the command.
+Each CLI command begins with `globus` and the command name, possibly followed by a sub-command name and/or flags and arguments. To see more information about a specific CLI command, pass the `--help` flag to the command.
 
 You can see a list of all Globus CLI commands by issuing the command:
 
@@ -51,7 +51,7 @@ If you need more information on any CLI command, Globus provides in-depth [here]
 ## Endpoint Commands
 
 #### Endpoint IDs and Display Names
-Most Globus Command Line Interface (CLI) commands require you to specify one or more endpoints, so it is important to understand how Globus endpoints are identified. Each endpoint has a globally unique 32 character ID as well as a user-friendly and non-unique "display name". It is the ID that must be used in CLI commands.
+Most Globus CLI commands require you to specify one or more endpoints, so it is important to understand how Globus endpoints are identified. Each endpoint has a globally unique 32 character ID as well as a user-friendly and non-unique "display name". It is the ID that must be used in CLI commands.
 
 #### Searching for Endpoints
 To acquire the necessary endpoint IDs, users can search using the CLI's `endpoint search` command.
