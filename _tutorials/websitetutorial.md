@@ -83,9 +83,7 @@ You can find many other good websites on the internet.
 
 <a name="layouts"></a>
 ## Layouts
-Layouts are skeletons of HTML code used to define the looks and feels of different pages or your entire site.
-
-By default jekyll will provide layouts for our pages. If you want to create your own layout.
+Layouts are skeletons of HTML code used to define the looks and feels of different pages or your entire site. By default Jekyll will provide layouts for our pages. If you want to create your own layout.
 1. Go to the root directory and create `layouts` folder.
 2. Create a html file of your own and start making your own layout.
 ![layouts](https://i.imgur.com/qyDBIPp.png)
@@ -93,7 +91,7 @@ After you create your own layout, you can switch your site layout to it, which w
 
 <a name="includes"></a>
 ## Includes
-Includes allows us to take certain components of our site such as the header, the footer or a navigation list and abstract them into their own html files. That means we can have a html file that describes the header or footer for the entire site. We can have a navigation list designed and include that in any page WE want on the site. Follow the steps below to create your own layout.
+Includes allows us to take certain components of our site such as the header, the footer or a navigation list and abstract them into their own html files. That means we can have a html file that describes the header or footer for the entire site. We can have a navigation list designed and include that in any page we want on the site. Follow the steps below to create your own layout.
 1. Go to the root directory and create `includes` folder.
 2. Create a html file of your own and start to make components of your website.
 ![layouts](https://i.imgur.com/1FkVA5D.png)
@@ -109,9 +107,9 @@ Setting up and hosting a static site in gh-pages:
 3. Create a new repository and name that, `test_blog`. Do not initiliaze a readme file.
 ![new_repo](https://i.imgur.com/jfAcGzh.png)
 4. After creating the repository, we need to edit a variable in config.yaml file.
-   *Edit `baseurl` attribute.
-   *Add the website name into the base url, in this case it is `test_blog`.
-   *If you are planning on using a custom  domain name you need to put that in the base url.
+   * Edit `baseurl` attribute.
+   * Add the website name into the base url, in this case it is `test_blog`.
+   * If you are planning on using a custom  domain name you need to put that in the base url.
 ![baseurl](https://i.imgur.com/6I8L9WA.png)
 5. Set up a Github repository inside of Jekyll project and upload it into github.
 
