@@ -33,11 +33,11 @@ jekyll new test_blog
 Jekyll creates some default content for the new site.
 
 ![default_content](https://i.imgur.com/i0sydRw.png)
-Change directory into the "test_blog" directory
+Change directory into the `test_blog` directory
 ```yml
 cd test_blog
 ```
-Run the command below at the terminal and Jekyll will take all the peices of our website and serve them in our browser. Browse the displayed server address 'http://127.0.0.1:400/' to see the content of the website. You can also stop the display with the command 'ctrl-c'
+Run the command below at the terminal and Jekyll will take all the peices of our website and serve them in our browser. Browse the displayed server address `http://127.0.0.1:400/` to see the content of the website. You can also stop the display with the command `ctrl-c`
 ```yml
 bundle exec jekyll serve
 ```	 
@@ -47,13 +47,13 @@ The local host server now display the new website from the browser.
 
 ![localhost](https://i.imgur.com/onXxPaB.png)
 
-Coming back to the files on our folder.
-We have the root folder "test_blog"
-In that we have "posts" folder, where we store all our blog posts.
-Then we have "site" folder, the final output of our website.
-Next important file is "config.yaml",the settings of your site and contains the basic attributes of the site.
-"Gemfile" is used to store all the dependecies for the website. 
-Rest of the files are just default basic parts of our website.
+Define the files in the root directory. 
+`test_blog`: the root directory  
+`_posts`: folder with all the blog posts.   
+`_site`:  folder with the final output of the website.   
+`_config.yaml`: file with the settings and basic attributes of the site.    
+`Gemfile`: holds all the dependecies for the website.    
+The rest of the files are just default basic parts of our website.
 
 <a name="front"></a>
 ## Front matter
