@@ -2,13 +2,13 @@
 layout: post
 title: Globus CLI
 feature-img: "https://i.imgur.com/4KpVtQF.png"
-date: 08 June 2020
+date: 14 August 2020
 ---
 
 The Globus Command Line Interface (CLI) is a Python-based application that need to be installed on the computer systems at both ends of your file transfer. Python version 2.7 or higher, and  the Python "pip" packages are required for the Globus CLI to be installed.
 
 1. [Installation](#install)
-2. [Logging in into Globus](#login)
+2. [Login to Globus](#login)
 3. [Using the interface](#interface)
 4. [Endpoint Commands](#endpoint)
 5. [File and Folder Commands](#files)
@@ -20,7 +20,7 @@ The Globus Command Line Interface (CLI) is a Python-based application that need 
 The Globus website provides [CLI installation](https://docs.globus.org/cli/installation/) instructions. You will find instructions for installation on Windows, Mac, Linux and for updating or removing the CLI. The CLI will be added to your shell path and will automatically be available when you log in again. <br>
 
 <a name="login"></a>
-## Logging in into Globus
+## Login to Globus
 Before you can use the Globus CLI on a given computer, you must log in to Globus using the `globus login` command on the computer.
 ```
 globus login
