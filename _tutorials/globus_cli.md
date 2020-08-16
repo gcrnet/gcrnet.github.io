@@ -129,6 +129,8 @@ globus rm [options] <endpoint><:path>
 ```
 When the path refers to a directory, you must use the "-r" recursive option. The remove operation is performed asynchronously and its progress can be tracked using the task ID that is returned by the command. The command has numerous options, some of which relate to managing the task. The command returns 0 on success, 1 if there was an error, and 2 if the command was used improperly.
 
+<mark>Note: One should know what he/she is going to delete, Once deleted files cannot be recoverd.</mark>
+
 <a name="transfer"></a>
 ## Transfer Commands
 The `globus transfer` command can take two forms: single target and batch.
