@@ -144,10 +144,21 @@ globus transfer [options] <from-endpoint>:<from-path> <to-endpoint>:<to-path>
 
 #### Batch Transfers
 
-To perform a "batch" transfer of multiple targets, use the --batch option and specify only the source and target endpoints in the command.
+To perform a "batch" transfer of multiple targets, use the `--batch` option and specify only the source and target endpoints in the command.
 ```yml
 globus transfer --batch [options] <from-endpoint> <to-endpoint>
 ```
+Then, individual source files/folders are identified on separate lines of the `stdin` stream until an end-of-file (EOF) is entered. Each line is of the form:
+```yml
+[--recursive] <from-path> <to-path>
+```
+The `--recursive` option must be provided when the source path is a folder. Blank lines and lines beginning with a '#' (comments) are ignored.
+
+![batch](https://i.imgur.com/MAt17In.png)
+
+Batch transfer has been completed.
+
+![batch_success](https://i.imgur.com/hLSQZnS.png)
 
 <a name="task"></a>
 ## Task Commands
@@ -179,3 +190,5 @@ globus task cancel [options] <taskid>
 globus task cancel --all [options]
 ```
 The command must either include a single taskid argument or the --all option, which will cause all active tasks to be canceled. Both tasks that are pending and currently executing will be canceled.
+
+![cancel](https://i.imgur.com/m0iP7WX.png)
