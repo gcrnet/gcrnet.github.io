@@ -20,7 +20,7 @@ date: 14 August 2020
 ![cisco](https://i.imgur.com/xlblHLc.png)
 * Enter Username, Password, Second Password (Choose one option as shown on the second image) and complete the next step  to establish VPN access.
 * Duo is required for 2-step authentication (i.e., the “Second Password”). This is the same product UNC Greensboro uses for 2-factor authentication.
-  * [Login to the UNC ITS](https://help.unc.edu/sp) and search Duo then follow the `2-Step Verification for Duo: Add a device` 
+  * [Login to the UNC ITS](https://help.unc.edu/sp) and search "DUO" then follow the `2-Step Verification for Duo: Add a device` 
 * After successfully establishing the vpn connection, use the information provided to you to login.
 
 
