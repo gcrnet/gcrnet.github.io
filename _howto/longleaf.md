@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to Access Longleaf HPC cluster through VPN 
+title: Access Longleaf HPC cluster through VPN 
 feature-img: "https://i.imgur.com/4KpVtQF.png"
 date: 14 August 2020
 ---
