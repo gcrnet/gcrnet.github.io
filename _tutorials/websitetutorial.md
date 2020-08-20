@@ -108,9 +108,6 @@ layout: default
          style="background-image: url('{{ site.header_feature_image | relative_url }}')">
         <h1> {{ site.header_text | default: "Change <code>header_text</code> in <code>_config.yml</code>"}} </h1>
     </div>
-
-    {% include blog.html %}
-
 </div>
 
 ```
