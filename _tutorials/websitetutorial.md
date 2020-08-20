@@ -95,8 +95,8 @@ Layouts are skeletons of HTML code used to define the looks and feels of differe
 1. Go to the root directory and create `_layouts` folder.
 2. Create a html file of your own and start making your own layout.
 
-In layouts folder creating your own layout looks like this.
-Code snippet below is an example of a layout called "`Home`" which uses default layout.
+In `_layouts` folder creating your own layout looks like this.
+Code snippet below is an example of a layout called "`Home.html`" which uses default layout.
 ```
 ---
 layout: default
@@ -119,7 +119,21 @@ After you create your own layout, you can switch your site layout to it, which w
 Includes allows us to take certain components of our site such as the header, the footer or a navigation list and abstract them into their own html files. That means we can have a html file that describes the header or footer for the entire site. We can have a navigation list designed and include that in any page we want on the site. Follow the steps below to create your own layout.
 1. Go to the root directory and create `includes` folder.
 2. Create a html file of your own and start to make components of your website.
-![layouts](https://i.imgur.com/1FkVA5D.png)
+
+In `_includes` folder creating your own layout looks like this.
+Code snippet below is an example of a include html file which creates a navigation list and can be further used anywhere in the site.
+
+```
+<div class="navigation-list">
+    
+<li>
+<p><a href="{{ item.url | relative_url }}">{{ item.title }}</a></p> 
+</li>
+    
+</div>
+
+```
+
 The include file, can be included in any part of your website.
 
 <a name="hosting"></a>
