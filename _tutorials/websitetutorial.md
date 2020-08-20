@@ -92,9 +92,29 @@ You can find many other good websites on the internet.
 <a name="layouts"></a>
 ## Layouts
 Layouts are skeletons of HTML code used to define the looks and feels of different pages or your entire site. By default Jekyll will provide layouts for our pages. If you want to create your own layout.
-1. Go to the root directory and create `layouts` folder.
+1. Go to the root directory and create `_layouts` folder.
 2. Create a html file of your own and start making your own layout.
-![layouts](https://i.imgur.com/qyDBIPp.png)
+
+In layouts folder creating your own layout looks like this.
+Code snippet below is an example of a layout called "`Home`" which uses default layout.
+```
+---
+layout: default
+---
+
+<div class="home">
+
+    <div id="main" class="call-out"
+         style="background-image: url('{{ site.header_feature_image | relative_url }}')">
+        <h1> {{ site.header_text | default: "Change <code>header_text</code> in <code>_config.yml</code>"}} </h1>
+    </div>
+
+    {% include blog.html %}
+
+</div>
+
+```
+
 After you create your own layout, you can switch your site layout to it, which will then show up.
 
 <a name="includes"></a>
