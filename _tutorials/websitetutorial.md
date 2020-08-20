@@ -45,7 +45,7 @@ bundle exec jekyll serve
 
 The local host server now display the new website from the browser.
 
-![localhost](https://i.imgur.com/onXxPaB.png)
+![localhost](https://i.imgur.com/eGrrVpe.png)
                                         
 `test_blog`: the root directory                      
 `_posts`: folder with all the blog posts.   
