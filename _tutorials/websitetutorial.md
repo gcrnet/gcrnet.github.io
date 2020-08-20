@@ -28,7 +28,7 @@ For this tutorial we will name our website "test_blog". Issue the command below 
 jekyll new test_blog
 ```
 
-![create](https://i.imgur.com/8Yaniqp.png)
+![create](https://i.imgur.com/w5G2WG9.png)
 
 Jekyll creates some default content for the new site.
 
@@ -46,8 +46,7 @@ bundle exec jekyll serve
 The local host server now display the new website from the browser.
 
 ![localhost](https://i.imgur.com/onXxPaB.png)
-
-Define the files in the root directory.                                        
+                                        
 `test_blog`: the root directory                      
 `_posts`: folder with all the blog posts.   
 `_site`:  folder with the final output of the website.   
