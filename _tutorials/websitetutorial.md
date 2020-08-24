@@ -176,3 +176,5 @@ You can go to settings tab and scroll down you will see "your site is published.
 ![published](https://i.imgur.com/bGBg8UH.png)
 
 You can use that link to visit your static website.
+
+[Here](https://www.youtube.com/watch?v=T1itpPvFWHI&list=PLLAZ4kZ9dFpOPV5C5Ay0pHaa0RJFhcmcB) is a link to a vedio tutorial by Giraffe academy 
