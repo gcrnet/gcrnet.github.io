@@ -74,6 +74,7 @@ We see some special information at the top of our post which is different from t
 
 <a name="config"></a>
 ## Config.yaml
+config.yaml file has the settings and basic attributes of the site.
 
 ```yml
 title: Your awesome title
@@ -136,6 +137,8 @@ plugins:
  - jekyll-feed
  - jekyll-seo-tag
 ```
+Above is an example config.yaml file of `jekyll-minimal` theme. As said earlier this has all the basic configurations and settings of the website.
+
 
 <a name="themes"></a>
 ## Installing themes
