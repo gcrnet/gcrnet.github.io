@@ -6,4 +6,5 @@ subtitle: "What will this website do?"
 feature-img: "assets/img/pexels/computer.jpeg"
 ---
 
-## Test
+This website serves as a go to site for UNCG community and gcrNet developpers.
+We have Different tabs for Projects, Workshops, Tutorials, FAQ's in which we givve a lot of information about all the work we do in the ITS department which help students.
