@@ -12,10 +12,11 @@ We will present enough information to get you started with your first jekyll web
 1. [Installation](#install)
 2. [Creating a site](#create)
 3. [Front matter](#front)
-4. [Installing themes](#themes)
-5. [Layouts](#layouts)
-6. [Includes](#includes)
-7. [Hosting on Github pages](#hosting)
+4. [Config.yaml](#config)
+5. [Installing themes](#themes)
+6. [Layouts](#layouts)
+7. [Includes](#includes)
+8. [Hosting on Github pages](#hosting)
 
 <a name="install"></a>
 ## Installation
