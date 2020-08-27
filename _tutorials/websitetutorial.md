@@ -88,6 +88,20 @@ For the example we selected a "jekyll-hacker theme" from the internet. We will r
 
 ![hacker_theme](https://i.imgur.com/rB6apOf.png)
 
+We can see the theme change.
+
+So basic steps to follow once you select a theme are, 
+ In gem file add your selected theme, then install the theme by the command below.
+```yml
+bundle install
+```
+Change the theme attribute in `_config.yaml` file and restart the server with the command below.
+```yml
+bundle exec jekyll serve
+```
+ 
+ <mark> Do not forget to change the layout names in your posts according to the theme you selected. If you don't change thelayout you will not see the changes once you restarted the server. </mark>
+
 <a name="layouts"></a>
 ## Layouts
 Layouts are skeletons of HTML code used to define the looks and feels of different pages or your entire site. By default Jekyll will provide layouts for our pages. If you want to create your own layout.
