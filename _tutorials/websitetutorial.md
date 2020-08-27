@@ -74,20 +74,19 @@ We see some special information at the top of our post which is different from t
 
 <a name="themes"></a>
 ## Installing themes
-By default we will be having a minima theme for our jekyll website. If we want a different theme for our website, there are lots of freely available themes on the internet. Select a theme that you like and write its name in the gemfile then install it with the command below
-```yml
-bundle install
-```
-Change the theme value in `_config.yaml` file.
-Now restart the server, with the command below, and you will see the changes on your website.
-```yml
-bundle exec jekyll serve
-```
+By default we will be having a minima theme for our jekyll website. If we want a different theme for our website, there are lots of freely available themes on the internet.
+
 Website for free themes:
  * [Jekyll themes](http://jekyllthemes.org/)
  * [Free jekyll themes](https://jekyll-themes.com/free/)
 
 You can find many other good websites on the internet.
+
+We will be showing an example of the theme change. 
+Every theme has a link to the github repository which shows exactly how to use the theme in the `readme.md` section.
+For the example we selected a "jekyll-hacker theme" from the internet. We will read the instructions on how to use it and install it. We will show the difference between the jekyll minia theme and the new theme.
+
+![hacker_theme](https://i.imgur.com/rB6apOf.png)
 
 <a name="layouts"></a>
 ## Layouts
