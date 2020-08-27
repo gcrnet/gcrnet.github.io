@@ -86,7 +86,7 @@ We will be showing an example of the theme change.
 Every theme has a link to the github repository which shows exactly how to use the theme in the `readme.md` section.
 For the example we selected a "jekyll-hacker theme" from the internet. We will read the instructions on how to use it and install it. We will show the difference between the jekyll minia theme and the new theme.
 
-![hacker_theme](https://i.imgur.com/rB6apOf.png)
+![hacker_theme](https://i.imgur.com/uNrwrnD.png)
 
 We can see the theme change.
 
@@ -100,7 +100,7 @@ Change the theme attribute in `_config.yaml` file and restart the server with th
 bundle exec jekyll serve
 ```
  
- <mark> Do not forget to change the layout names in your posts according to the theme you selected. If you don't change thelayout you will not see the changes once you restarted the server. </mark>
+ <mark> Do not forget to change the layout names in your posts according to the theme you selected. If you don't change the layout you will not see the changes once you restart the server. </mark>
 
 <a name="layouts"></a>
 ## Layouts
