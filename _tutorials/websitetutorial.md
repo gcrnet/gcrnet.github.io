@@ -8,7 +8,7 @@ Jekyll is really useful for building static websites. You can use a Jekyll theme
 
 We will present enough information to get you started with your first jekyll website, fromcreating content to serving them on github pages.
 
-1. [Reseacrh](#research)
+1. [Research](#research)
 2. [Installation](#install)
 3. [Creating a site](#create)
 4. [Front matter](#front)
@@ -21,7 +21,7 @@ We will present enough information to get you started with your first jekyll web
 
 
 <a name="research"></a>
-## Reseacrch
+## Research
 
 
 <a name="install"></a>
