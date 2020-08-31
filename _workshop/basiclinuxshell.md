@@ -18,7 +18,7 @@ and downloading a Unix Shell program, a Linux/UNIX
 emulator, or a program to access a Unix Shell on a
 server.
 
-## Setup {.tabset}
+## Setup
 You need to download some files to follow this lesson.
 Download [data-shell.zip](http://swcarpentry.github.io/
 shell-novice/data/data-shell.zip) and move the file to
@@ -90,7 +90,7 @@ by running the [Gnome Terminal](https://help.gnome.org/users/gnome-terminal/stab
 search bar. If your machine is set up to use something
 other than Bash, you can run it by opening a terminal
 and typing bash.
-
+---
 1. [Introducing the Shell](#TheShell)
 2. [Navigating Files and Directories](#FilesDirectories)
 3. [Pipes and Filters](#PipesFilters)
