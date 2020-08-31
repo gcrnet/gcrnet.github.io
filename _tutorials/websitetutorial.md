@@ -57,16 +57,17 @@ The rest of the files are just default basic parts of our website.
 
 <a name="front"></a>
 ## Front matter
-Front matter is the information like `Title` and `Name of the author` that is kept on the pages of our site. All the pages on our site have front matter. The default post in our test_blog website has content and front matter.
-
-Attributes mention between the hyphen section is the front matter.
+[Front matter](https://jekyllrb.com/docs/front-matter/) is the site attribute
+such as `Title` and `author's name` and many other, depending on our prefrence.
+Jekyll reads the front matter first when a file is being executed to check the
+layout specifications. See example below.
 
 ```
 ---
 layout: post
 title: Jekyll static site generator
 date: 14 August 2020
-author: Jacob Fosso Tande
+author: Joe Doe
 ---
 ```
 
