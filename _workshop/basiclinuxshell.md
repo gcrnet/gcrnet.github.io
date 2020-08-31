@@ -56,8 +56,8 @@ installing and using a Unix/Linux emulator.
 	* [Git for Windows](https://gitforwindows.org/) - Recommended
 *For advanced users, you may choose one of the following alternatives:*   
 
-     * [Install the Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
-     * [Using a Unix/Linux emulator (Cygwin) or Secure Shell (SSH) client (Putty)](http://faculty.smu.edu/reynolds/unixtut/windows.html)
+  * [Install the Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
+  * [Using a Unix/Linux emulator (Cygwin) or Secure Shell (SSH) client (Putty)](http://faculty.smu.edu/reynolds/unixtut/windows.html)
 Please note that commands in the Windows Subsystem for Linux (WSL) or Cygwin may differ slightly from those shown in the lesson or presented in the workshop.       
 ### [macOS](#tab/macOS)
 For a Mac computer running macOS Mojave or earlier
@@ -69,8 +69,8 @@ folder.
            
 To open Terminal, try one or both of the following:
 
-   * In Finder, select the Go menu, then select Utilities. Locate Terminal in the Utilities folder and open it.
-   * Use the Mac `Spotlight` computer search function. Search for: `Terminal` and press 'Return'.
+  * In Finder, select the Go menu, then select Utilities. Locate Terminal in the Utilities folder and open it.
+  * Use the Mac `Spotlight` computer search function. Search for: `Terminal` and press 'Return'.
 
 To check if your machine is set up to use something other than Bash, type `echo $SHELL` in your terminal
 window.
@@ -78,7 +78,7 @@ window.
 If your machine is set up to use something other than Bash, you can run it by opening a terminal and typing
 `bash`.
 
-	* [How to Use Terminal on a Mac](http://www.macworld.co.uk/feature/mac-software/how-use-terminal-on-mac-3608274/)
+  * [How to Use Terminal on a Mac](http://www.macworld.co.uk/feature/mac-software/how-use-terminal-on-mac-3608274/)
 
 #### [Linux](#tab/Linux)
 The default Unix Shell for Linux operating systems is
@@ -87,7 +87,7 @@ by running the [Gnome Terminal](https://help.gnome.org/users/gnome-terminal/stab
 search bar. If your machine is set up to use something
 other than Bash, you can run it by opening a terminal
 and typing bash.        
----
+
 
 1. [Introducing the Shell](#TheShell)
 2. [Navigating Files and Directories](#FilesDirectories)
