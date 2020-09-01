@@ -113,10 +113,38 @@ reproducibility of workflows.
 
 When the shell is first opened, you are presented with a prompt,
 indicating that the shell is waiting for input.
-```js
+```
 Bash
 $  
 ```
+The shell typically uses `$` as the prompt, but may use a different symbol.
+So let’s try our first command, `ls` which is short for listing. This command
+will list the contents of the current directory:
+
+```
+Bash
+$ ls  
+```
+```
+Output
+
+$ Desktop   Downloads  Movies  Pictures
+  Document  Library    Music   Public   
+```
+
+*If the shell can't find a program whose name is the command typed, it will print an error message such as:
+```
+Bash
+$ ks  
+```
+```
+Output
+
+$ ks: command not found
+```
+This might happen if the command was mis-typed or if the program corresponding to that command is not installed.
+
+
 <a name="FilesDirectories"></a>
 ## Navigating Files and Directories
 <a name="PipesFilters"></a>
