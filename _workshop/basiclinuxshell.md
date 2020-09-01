@@ -164,6 +164,11 @@ As a bonus, once the processing pipeline has been put together, it can be used a
 
 <a name="FilesDirectories"></a>
 ## Navigating Files and Directories
+The part of the operating system responsible for managing files and directories is called the **file system**.
+It is organized in multiple layers. The top most layer is the root directory. When you remotely login to a
+computer for the first time, you get on the home directory. Every user account on a server~(High Performance Computer)
+has a home directory.
+![Examples of a file system](image/home-directories.svg)
 <a name="PipesFilters"></a>
 ## Pipes and Filters
 
