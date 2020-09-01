@@ -8,11 +8,10 @@ date: 31 August 2020
 Linux commands are issued to a computer program called
 `shell`. The shell enables us to send commands to the
 computer and receive output. It is also referred to as
-the terminal or command line.
-
-Some computers include a default Unix Shell program.
-If not natively present, a programs called Linux/Unix
-emulator can be installed to access a Unix Shell on a server.
+the terminal or command line. Some computers include a
+default Unix Shell program. If not natively present, a
+programs called Linux/Unix emulator can be installed to
+access a Unix Shell on a server.
 
 ## Setup
 Download [data-shell.zip](http://swcarpentry.github.io/
@@ -31,10 +30,9 @@ Computers with Windows operating systems~(OS) older than
 Windows 10 do not have the Bash shell installed by default.
 If you have a Windows OS older than Windows 10, we encourage
 you to use an emulator included in Git for Windows, which
-gives you access to both Bash shell commands and Git.
-
-Once installed, you can open a terminal by running
-the program Git Bash from the Windows start menu.
+gives you access to both Bash shell commands and Git. Once
+installed, you can open a terminal by running the program Git
+Bash from the Windows start menu.
 
 Additionally, you can run Bash commands from a remote
 computer or server that already has a Unix Shell. This
@@ -45,9 +43,8 @@ installing and using PuTTY, using the Windows 10 command-line
 tool, or installing and using a Unix/Linux emulator.
 
 **Reference**
-  * [Git for Windows](https://gitforwindows.org/) - Recommended
-**For advanced users, you may choose one of the following alternatives**:       
-
+  * [Git for Windows](https://gitforwindows.org/) - Recommended           
+**For advanced users, you may choose one of the following alternatives**:                 
   * [Install the Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
   * [Using a Unix/Linux emulator (Cygwin) or Secure Shell (SSH) client (Putty)](http://faculty.smu.edu/reynolds/unixtut/windows.html)      
 Please note that commands in the Windows Subsystem for Linux or Cygwin may differ slightly from those shown in the lesson or presented in the workshop.
@@ -58,17 +55,14 @@ releases, the default Unix Shell is Bash. For a Mac
 computer running macOS Catalina or later releases,
 the default Unix Shell is `Zsh`. Your default shell is
 available via the Terminal program within your Utilities
-folder.       
-           
-To open Terminal, try one or both of the following:
-
+folder. To open Terminal, try one or both of the following:
   * In Finder, select the Go menu, then select Utilities. Locate Terminal in the Utilities folder and open it.
-  * Use the Mac `Spotlight` computer search function. Search for: `Terminal` and press 'Return'.
+  * Use the Mac `Spotlight` computer search function. Search for: `Terminal` and press `Return`.
 
 To check if your machine is set up to use something other than Bash, type `echo $SHELL` in your terminal
 window.
            
-If your machine is set up to use something other than Bash, you can run it by opening a terminal and typing
+If your machine uses something other than Bash, you can run it by opening a terminal and typing
 `bash`.
 
   * [How to Use Terminal on a Mac](http://www.macworld.co.uk/feature/mac-software/how-use-terminal-on-mac-3608274/)
