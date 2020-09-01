@@ -8,10 +8,20 @@ date: 31 August 2020
 Linux commands are issued to a computer program called
 `shell`. The shell enables us to send commands to the
 computer and receive output. It is also referred to as
-the terminal or command line. Some computers include a
-default Unix Shell program. If not natively present, a
-programs called Linux/Unix emulator can be installed to
-access a Unix Shell on a server.
+the terminal or command line interface~(CLI). Some
+computers include a default Unix Shell program. If not
+natively present, a program called Linux/Unix emulator
+can be installed to access a Unix Shell on a server.
+
+In addition, the command line is often the easiest way to interact
+with remote machines and supercomputers. **Familiarity with the shell
+is near essential to run a variety of specialized tools and resources
+including high-performance computing systems**. As clusters and cloud
+computing systems become more popular for scientific data crunching,
+being able to interact with the shell is becoming a necessary skill.
+We can build on the command-line skills covered here to tackle a wide
+range of scientific questions and computational challenges.
+
 
 ## Setup
 Download [data-shell.zip](http://swcarpentry.github.io/
@@ -88,3 +98,29 @@ essential for scientific computing. The lesson is structured as follows:
 3. [Pipes and Filters](#PipesFilters)
 4. [Finding Things](#FindThings)
 
+<a name="TheShell"></a>
+## Introducing the Shell    
+Using the shell will take some effort and some time to learn.
+While a GUI presents you with choices to select, CLI choices
+are not automatically presented to you. Unlike a spoken language,
+a small number of “words” (i.e. commands) gets you a long way,
+and we’ll cover those essential few today.
+
+The grammar of a shell allows you to combine existing tools into
+powerful pipelines and handle large volumes of data automatically.
+Sequences of commands can be written into a script, improving the
+reproducibility of workflows.
+
+When the shell is first opened, you are presented with a prompt,
+indicating that the shell is waiting for input.
+```js
+Bash
+$  
+```
+<a name="FilesDirectories"></a>
+## Navigating Files and Directories
+<a name="PipesFilters"></a>
+## Pipes and Filters
+
+<a name="FindThings"></a>
+## Finding Things
