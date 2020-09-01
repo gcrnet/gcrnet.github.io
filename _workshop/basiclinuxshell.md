@@ -11,54 +11,47 @@ computer and receive output. It is also referred to as
 the terminal or command line.
 
 Some computers include a default Unix Shell program.
-The steps below describe some methods for identifying
-and opening a Unix Shell program, if you already have
-one installed. There are also options for identifying
-and downloading a Unix Shell program, a Linux/UNIX
-emulator, or a program to access a Unix Shell on a
-server.
+If not natively present, a programs called Linux/Unix
+emulator can be installed to access a Unix Shell on a server.
 
 ## Setup
-You need to download some files to follow this lesson.
 Download [data-shell.zip](http://swcarpentry.github.io/
 shell-novice/data/data-shell.zip) and move the file to
-your Desktop. Unzip/extract the file. You should end up
-with a new folder called data-shell on your Desktop.
+your Desktop. Unzip/extract the file. You should have a
+new folder called `data-shell` on your Desktop.
 Open a terminal. If you’re not sure how to open a
 terminal in your operating system, see the instructions
 below. In the terminal type `cd` then press the 'Return'
 key. This step will make sure you start with your home
-folder as your working directory. In the lesson, you will
+folder as your working directory. Later on, you will
 find out how to access the data files in this folder.
 
 ### [Windows](#tab/windows)
-Computers with Windows operating systems do not
-automatically have a Unix Shell program installed.
-In this lesson, we encourage you to use an emulator
-included in Git for Windows, which gives you access
-to both Bash shell commands and Git.
+Computers with Windows operating systems~(OS) older than
+Windows 10 do not have the Bash shell installed by default.
+If you have a Windows OS older than Windows 10, we encourage
+you to use an emulator included in Git for Windows, which
+gives you access to both Bash shell commands and Git.
 
 Once installed, you can open a terminal by running
 the program Git Bash from the Windows start menu.
 
-Other solutions are available for running Bash commands
-on Windows. There is now a Bash shell command-line tool
-available for Windows 10. Additionally, you can run Bash
-commands on a remote computer or server that already has
-a Unix Shell, from your Windows machine. This can usually
-be done through a Secure Shell (SSH) client. One such
-client available for free for Windows computers is PuTTY.
-See the reference below for information on installing and
-using PuTTY, using the Windows 10 command-line tool, or
-installing and using a Unix/Linux emulator.
+Additionally, you can run Bash commands from a remote
+computer or server that already has a Unix Shell. This
+can usually be done through a Secure Shell (SSH) client.
+One such client available for free for Windows computers
+is PuTTY. See the **reference** below for information on
+installing and using PuTTY, using the Windows 10 command-line
+tool, or installing and using a Unix/Linux emulator.
 
-*Reference*
-	* [Git for Windows](https://gitforwindows.org/) - Recommended
-*For advanced users, you may choose one of the following alternatives:*   
+**Reference**
+  * [Git for Windows](https://gitforwindows.org/) - Recommended
+**For advanced users, you may choose one of the following alternatives**:       
 
   * [Install the Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
-  * [Using a Unix/Linux emulator (Cygwin) or Secure Shell (SSH) client (Putty)](http://faculty.smu.edu/reynolds/unixtut/windows.html)
-Please note that commands in the Windows Subsystem for Linux (WSL) or Cygwin may differ slightly from those shown in the lesson or presented in the workshop.       
+  * [Using a Unix/Linux emulator (Cygwin) or Secure Shell (SSH) client (Putty)](http://faculty.smu.edu/reynolds/unixtut/windows.html)      
+Please note that commands in the Windows Subsystem for Linux or Cygwin may differ slightly from those shown in the lesson or presented in the workshop.
+
 ### [macOS](#tab/macOS)
 For a Mac computer running macOS Mojave or earlier
 releases, the default Unix Shell is Bash. For a Mac
@@ -83,11 +76,17 @@ If your machine is set up to use something other than Bash, you can run it by op
 #### [Linux](#tab/Linux)
 The default Unix Shell for Linux operating systems is
 usually Bash. On most versions of Linux, it is accessible
-by running the [Gnome Terminal](https://help.gnome.org/users/gnome-terminal/stable/) or [KDE Konsole](https://konsole.kde.org/) or [xterm](https://en.wikipedia.org/wiki/Xterm), which can be found via the applications menu or the
+by running the [Gnome Terminal](https://help.gnome.org/users/gnome-terminal/stable/)
+or [KDE Konsole](https://konsole.kde.org/) or [xterm](https://en.wikipedia.org/wiki/Xterm),
+which can be found via the applications menu or the
 search bar. If your machine is set up to use something
 other than Bash, you can run it by opening a terminal
 and typing bash.        
 
+This workshop will not make you an expert but will provide you with a good
+enough foundation for a personal exploration the Unix shell. The shell has
+a very rich echo system of commands but we will only touch on those deemed
+essential for scientific computing. The lesson is structured as follows:
 
 1. [Introducing the Shell](#TheShell)
 2. [Navigating Files and Directories](#FilesDirectories)
