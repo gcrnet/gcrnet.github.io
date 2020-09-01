@@ -144,6 +144,23 @@ $ ks: command not found
 ```
 This might happen if the command was mis-typed or if the program corresponding to that command is not installed.
 
+**ATypical Problem**
+A marine biologist, has just returned from a six-month survey of the [North Pacific Gyre](https://en.wikipedia.org/wiki/North_Pacific_Gyre), where she has been sampling gelatinous marine life in the [Great Pacific Garbage Patch](https://en.wikipedia.org/wiki/Great_Pacific_garbage_patch). She has *1520* samples that she’s run through an assay machine to
+measure the relative abundance of 300 proteins. She needs to run these 1520 files through an imaginary program called
+`goostats` she inherited. On top of this huge task, she has to write up results by the end of the month so her paper
+can appear in a special issue of `Aquatic Goo Letters`.
+
+The bad news is that if she has to run `goostats` by hand using a GUI, she’ll have to select and open a file 1520
+times. If `goostats` takes 30 seconds to run each file, the whole process will take more than 12 hours of the
+scientist’s attention. With the shell, she can instead assign her computer this mundane task while she focuses her
+attention on writing her paper.
+
+The next few lessons will explore the ways the task can be achieved. More specifically, they explain how command
+shell can be used to run the `goostats` program, using loops to automate the repetitive steps of entering file names,
+so that her computer can work while she writes her paper.
+
+As a bonus, once the processing pipeline has been put together, it can be used again whenever more data is collected.
+
 
 <a name="FilesDirectories"></a>
 ## Navigating Files and Directories
