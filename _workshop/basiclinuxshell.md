@@ -144,7 +144,7 @@ $ ks: command not found
 ```
 This might happen if the command was mis-typed or if the program corresponding to that command is not installed.
 
-**ATypical Problem**
+**A Typical Problem**        
 A marine biologist, has just returned from a six-month survey of the [North Pacific Gyre](https://en.wikipedia.org/wiki/North_Pacific_Gyre), where she has been sampling gelatinous marine life in the [Great Pacific Garbage Patch](https://en.wikipedia.org/wiki/Great_Pacific_garbage_patch). She has *1520* samples that she’s run through an assay machine to
 measure the relative abundance of 300 proteins. She needs to run these 1520 files through an imaginary program called
 `goostats` she inherited. On top of this huge task, she has to write up results by the end of the month so her paper
