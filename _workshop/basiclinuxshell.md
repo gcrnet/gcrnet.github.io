@@ -270,33 +270,32 @@ planets.txt      pdb/             amino-acids.txt  animal-counts/
 ```
 ### Getting Help
 There are two common ways to find out how to use a command and what options it accepts:
-1. We can pass a` --help` option to the command, such as
-```
-Bash
-$ ls --help
-```
-```
-Output
-ls: illegal option -- -
-usage: ls [-@ABCFGHLOPRSTUWabcdefghiklmnopqrstuwx1%] [file ...]
-```
-2. We can read its manual with `man`, such as
-```
-Bash
-$ man ls
-```   
-```
-Output
+  1. We can pass a` --help` option to the command, such as
+  ```
+  Bash
+  $ ls --help
+  ```
 
-LS(1)                     BSD General Commands Manual                    LS(1)
+  ```
+  Output
+  ls: illegal option -- -
+  usage: ls [-@ABCFGHLOPRSTUWabcdefghiklmnopqrstuwx1%] [file ...]
+  ```
+ 2. We can read its manual with `man`, such as
 
-NAME
+ ```
+ Bash
+ $ man ls
+ ```   
+ ```
+ Output
+ LS(1)                     BSD General Commands Manual                    LS(1)
+ NAME
      ls -- list directory contents
 
-SYNOPSIS
+ SYNOPSIS
      ls [-ABCFGHLOPRSTUW@abcdefghiklmnopqrstuwx1%] [file ...]
-
-DESCRIPTION
+ DESCRIPTION
      For each operand that names a file of a type other than directory, ls displays
      its name as well as any requested, associated information.  For each operand that
      names a file of type directory, ls displays the names of files contained within
@@ -310,8 +309,7 @@ DESCRIPTION
      The following options are available:
 
      -@      Display extended attribute keys and sizes in long (-l) output.
-:
-
+ :
 ```
 Continue to push on the space bar of your computer to scroll down the `ls` manual.
 Sometimes at the bottom of the manual, you see some examples of how to use the command.
