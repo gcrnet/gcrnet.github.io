@@ -174,9 +174,9 @@ The forward slash character `/` does two things:
 * When it appears at the front of a file or directory name, it refers to the root directory.
 * When it appears inside a path, it’s just a separator.
 
-The root directory `/` has `/bin`, `/data`, `/Users`, and `/tmp' directories. The `/Users` directory in turn
+The root directory `/` has `/bin`, `/data`, `/Users`, and `/tmp` directories. The `/Users` directory in turn
 has the `/Users/Sarah`, `/Users/Jacob` and `/Users/Nelle` directories. The path from the root directory
-to any targeted file or directory is called the **absolute path**. `/Users/Sarah`, '/Users/Jacob' and `/Users/Nelle`
+to any targeted file or directory is called the **absolute path**. `/Users/Sarah`, `/Users/Jacob` and `/Users/Nelle`
 are the abasolute paths to Sarah's, Jacob's, and Nelle's home directories.
 
 Download the `data-shell.zip` from the setup section on to your destop. Start the terminal on your computer.
@@ -206,9 +206,27 @@ $ ls
 ```
 ```
 Output
+$ creatures          molecules          notes.txt           solar.pdf
+  data               north-pacific-gyre pizza.cfg           writing
+```
+`ls` prints the names of the files and directories in the current directory. We can make its output more
+comprehensible by using the *-F* option (also known as a switch or a flag) , which tells `ls` to classify
+the output by adding a marker to file and directory names to indicate what they are:    
+* a trailing / indicates that this is a directory
+* @ indicates a link
+* \* indicates an executable
+Depending on your default options, the shell might also use colors to indicate whether each entry is a file
+or directory.     
+```
+Bash
+$ ls -F
+```
+```
+Output
 $ creatures/          molecules/          notes.txt           solar.pdf
   data/               north-pacific-gyre/ pizza.cfg           writing/
 ```
+
 
 <a name="PipesFilters"></a>
 ## Pipes and Filters
