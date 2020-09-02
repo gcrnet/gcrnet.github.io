@@ -275,7 +275,6 @@ There are two common ways to find out how to use a command and what options it a
   Bash
   $ ls --help
   ```
-
   ```
   Output
   ls: illegal option -- -
@@ -283,19 +282,19 @@ There are two common ways to find out how to use a command and what options it a
   ```
  2. We can read its manual with `man`, such as
 
- ```
- Bash
- $ man ls
- ```   
- ```
- Output
- LS(1)                     BSD General Commands Manual                    LS(1)
- NAME
+  ```
+  Bash
+  $ man ls
+  ```   
+  ```
+  Output
+  LS(1)                     BSD General Commands Manual                    LS(1)
+  NAME
      ls -- list directory contents
 
- SYNOPSIS
+  SYNOPSIS
      ls [-ABCFGHLOPRSTUW@abcdefghiklmnopqrstuwx1%] [file ...]
- DESCRIPTION
+  DESCRIPTION
      For each operand that names a file of a type other than directory, ls displays
      its name as well as any requested, associated information.  For each operand that
      names a file of type directory, ls displays the names of files contained within
@@ -309,8 +308,8 @@ There are two common ways to find out how to use a command and what options it a
      The following options are available:
 
      -@      Display extended attribute keys and sizes in long (-l) output.
- :
-```
+  :
+ ```
 Continue to push on the space bar of your computer to scroll down the `ls` manual.
 Sometimes at the bottom of the manual, you see some examples of how to use the command.
 Push the `q` key to exit the `man` page.
@@ -330,7 +329,34 @@ usage: ls [-@ABCFGHLOPRSTUWabcdefghiklmnopqrstuwx1%] [file ...]
 
 ### Exploring Directories
 
+We can look at the content of `data-shell` by passing the directory name to ls
+```
+Bash
+$ ls -F /Users/Jacob/data-shell
+```
+```
+Output
+creatures/          molecules/          notes.txt           solar.pdf
+data/               north-pacific-gyre/ pizza.cfg           writing/
+```
+We can use the *change directory* `cd` command to move from one directory to another.
+This is akin to double clicking on a directory in a GUI environment. The command below
+moves from `data-shell` directory to its subdirectory `data`.
+```
+Bash
+$ cd data
+```
+Use `pwd` command to confirm your location
+```
+Bash
+$ pwd
+```
 
+```
+Output
+/Users/Jacob/Desktop/data-shell/data
+
+```
 <a name="PipesFilters"></a>
 ## Pipes and Filters
 
