@@ -171,8 +171,8 @@ has a home directory.
 ![Examples of a file system](https://i.imgur.com/rumMGhTl.jpg)
 
 The forward slash character `/` does two things:
-* When it appears at the front of a file or directory name, it refers to the root directory.
-* When it appears inside a path, it’s just a separator.
+  * When it appears at the front of a file or directory name, it refers to the root directory.
+  * When it appears inside a path, it’s just a separator.
 
 The root directory `/` has `/bin`, `/data`, `/Users`, and `/tmp` directories. The `/Users` directory in turn
 has the `/Users/Sarah`, `/Users/Jacob` and `/Users/Nelle` directories. The path from the root directory
@@ -212,9 +212,9 @@ $ creatures          molecules          notes.txt           solar.pdf
 `ls` prints the names of the files and directories in the current directory. We can make its output more
 comprehensible by using the *-F* option (also known as a switch or a flag) , which tells `ls` to classify
 the output by adding a marker to file and directory names to indicate what they are:    
-* a trailing / indicates that this is a directory
-* @ indicates a link
-* \* indicates an executable
+  * a trailing / indicates that this is a directory
+  * @ indicates a link
+  * \* indicates an executable        
 Depending on your default options, the shell might also use colors to indicate whether each entry is a file
 or directory.     
 ```
@@ -226,7 +226,45 @@ Output
 $ creatures/          molecules/          notes.txt           solar.pdf
   data/               north-pacific-gyre/ pizza.cfg           writing/
 ```
+### Syntax of a shell command
+Consider a general example of a command, which we will dissect into its component parts: 
+```
+Bash
+$ ls -F
+```
+```
+Output
+Applications/ System/       bin/          etc@          private/      usr/
+Library/      Users/        cores/        home@         sbin/         var@
+Network@      Volumes/      dev/          opt/          tmp@
+```
+`ls` is the command, with an option `-F` and an argument `/`.  We’ve already encountered options
+(also called switches or flags) which either start with a single dash (-) or two dashes (--), and
+they change the behaviour of a command. Arguments tell the command what to operate on (e.g. files and directories).
+Sometimes options and arguments are referred to as parameters. A command can be called with more than one option
+and more than one argument: but a command doesn’t always require an argument or an option.
 
+Each part is separated by spaces: if you omit the space between `ls` and `-F` the shell will look for a command
+called `ls-F`, which doesn’t exist. Also, capitalization can be important. For example, `ls -s` will display the
+size of files and directories alongside the names, while `ls -S` will sort the files and directories by size, as
+shown below:
+```
+Bash
+$ ls -s /Users/Jacob/Desktop/data-shell/data/
+total 208
+  8 amino-acids.txt    0 elements/         24 planets.txt
+  0 animal-counts/     8 morse.txt          8 salmon.txt
+  8 animals.txt        0 pdb/             152 sunspot.txt
+```
+and
+```
+Bash
+$ ls -S /Users/Jacob/Desktop/data-shell/data/
+sunspot.txt      elements/        morse.txt        animals.txt      salmon.txt
+planets.txt      pdb/             amino-acids.txt  animal-counts/
+G-C02C7C89MD6T:data-shell j_fossot$ 
+
+```
 
 <a name="PipesFilters"></a>
 ## Pipes and Filters
