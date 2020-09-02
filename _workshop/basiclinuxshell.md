@@ -173,10 +173,42 @@ has a home directory.
 The forward slash character `/` does two things:
 * When it appears at the front of a file or directory name, it refers to the root directory.
 * When it appears inside a path, it’s just a separator.
-The root directory `/` has `/bin`, `/data`, `/Users`, and `/tmp' directories. The `/Users' directory in turn
-has the `/Users/Sarah`, '/Users/Jacob' and `/Users/Nelle` directories. The path from the root directory
-to any tarheted firle or directory is called the *absolute path**. `/Users/Sarah`, '/Users/Jacob' and `/Users/Nelle`
-are the abasolute path to Sarah's, Jacob's, and Nelle's home directories.
+
+The root directory `/` has `/bin`, `/data`, `/Users`, and `/tmp' directories. The `/Users` directory in turn
+has the `/Users/Sarah`, `/Users/Jacob` and `/Users/Nelle` directories. The path from the root directory
+to any targeted file or directory is called the **absolute path**. `/Users/Sarah`, '/Users/Jacob' and `/Users/Nelle`
+are the abasolute paths to Sarah's, Jacob's, and Nelle's home directories.
+
+Download the `data-shell.zip` from the setup section on to your destop. Start the terminal on your computer.
+
+Use the command below to determine your home directory
+```
+Bash
+$ echo $HOME  
+```
+```
+Output
+$ /Users/Jacob
+```
+Determine your current working directory (data-shell)
+```
+Bash
+$ pwd  
+```
+```
+Output
+$ /Users/Jacob/Desktop/data-shell
+```
+List the content of your current working directory with `ls`
+```
+Bash
+$ ls
+```
+```
+Output
+$ creatures/          molecules/          notes.txt           solar.pdf
+  data/               north-pacific-gyre/ pizza.cfg           writing/
+```
 
 <a name="PipesFilters"></a>
 ## Pipes and Filters
