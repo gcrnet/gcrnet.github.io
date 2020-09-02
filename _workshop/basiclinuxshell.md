@@ -164,6 +164,7 @@ As a bonus, once the processing pipeline has been put together, it can be used a
 
 <a name="FilesDirectories"></a>
 ## Navigating Files and Directories
+
 The part of the operating system responsible for managing files and directories is called the **file system**.
 It is organized in multiple layers. The top most layer is the root directory. When you remotely login to a
 computer for the first time, you get on the home directory. Every user account on a server (High Performance Computer)
@@ -215,11 +216,12 @@ the output by adding a marker to file and directory names to indicate what they 
   * a trailing / indicates that this is a directory
   * @ indicates a link
   * \* indicates an executable        
+
 Depending on your default options, the shell might also use colors to indicate whether each entry is a file
 or directory.     
 ```
 Bash
-$ ls -F
+$ ls -F 
 ```
 ```
 Output
@@ -230,7 +232,7 @@ $ creatures/          molecules/          notes.txt           solar.pdf
 Consider a general example of a command, which we will dissect into its component parts: 
 ```
 Bash
-$ ls -F
+$ ls -F /
 ```
 ```
 Output
@@ -238,6 +240,7 @@ Applications/ System/       bin/          etc@          private/      usr/
 Library/      Users/        cores/        home@         sbin/         var@
 Network@      Volumes/      dev/          opt/          tmp@
 ```
+
 `ls` is the command, with an option `-F` and an argument `/`.  We’ve already encountered options
 (also called switches or flags) which either start with a single dash (-) or two dashes (--), and
 they change the behaviour of a command. Arguments tell the command what to operate on (e.g. files and directories).
@@ -248,6 +251,7 @@ Each part is separated by spaces: if you omit the space between `ls` and `-F` th
 called `ls-F`, which doesn’t exist. Also, capitalization can be important. For example, `ls -s` will display the
 size of files and directories alongside the names, while `ls -S` will sort the files and directories by size, as
 shown below:
+
 ```
 Bash
 $ ls -s /Users/Jacob/Desktop/data-shell/data/
@@ -262,9 +266,9 @@ Bash
 $ ls -S /Users/Jacob/Desktop/data-shell/data/
 sunspot.txt      elements/        morse.txt        animals.txt      salmon.txt
 planets.txt      pdb/             amino-acids.txt  animal-counts/
-G-C02C7C89MD6T:data-shell j_fossot$ 
 
 ```
+### Getting Help
 
 <a name="PipesFilters"></a>
 ## Pipes and Filters
