@@ -280,11 +280,11 @@ Output
 ls: illegal option -- -
 usage: ls [-@ABCFGHLOPRSTUWabcdefghiklmnopqrstuwx1%] [file ...]
 ```
-2. We can read its manual with man, such as
+2. We can read its manual with `man`, such as
 ```
 Bash
 $ man ls
-```
+```   
 ```
 Output
 
@@ -313,8 +313,25 @@ DESCRIPTION
 :
 
 ```
-Continue to push on the space bar of your cmputer to scroll down the `ls` manual.
+Continue to push on the space bar of your computer to scroll down the `ls` manual.
 Sometimes at the bottom of the manual, you see some examples of how to use the command.
+Push the `q` key to exit the `man` page.
+
+If you try to use an option (flag) that is not supported, `ls` and other commands will usually print
+an error message similar to:
+
+```
+Bash
+$ ls -j
+```
+```
+Output
+ls: illegal option -- j
+usage: ls [-@ABCFGHLOPRSTUWabcdefghiklmnopqrstuwx1%] [file ...]
+```
+
+### Exploring Directories
+
 
 <a name="PipesFilters"></a>
 ## Pipes and Filters
