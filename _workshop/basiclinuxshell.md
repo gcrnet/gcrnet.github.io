@@ -281,7 +281,6 @@ There are two common ways to find out how to use a command and what options it a
   usage: ls [-@ABCFGHLOPRSTUWabcdefghiklmnopqrstuwx1%] [file ...]
   ```
  2. We can read its manual with `man`, such as
-
   ```
   Bash
   $ man ls
