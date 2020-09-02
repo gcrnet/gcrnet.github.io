@@ -146,12 +146,12 @@ This might happen if the command was mis-typed or if the program corresponding t
 
 **A Typical Problem**        
 A marine biologist, has just returned from a six-month survey of the [North Pacific Gyre](https://en.wikipedia.org/wiki/North_Pacific_Gyre), where she has been sampling gelatinous marine life in the [Great Pacific Garbage Patch](https://en.wikipedia.org/wiki/Great_Pacific_garbage_patch). She has *1520* samples that she’s run through an assay machine to
-measure the relative abundance of 300 proteins. She needs to run these 1520 files through an imaginary program called
+measure the relative abundance of *300* proteins. She needs to run these 1520 files through an imaginary program called
 `goostats` she inherited. On top of this huge task, she has to write up results by the end of the month so her paper
 can appear in a special issue of `Aquatic Goo Letters`.
 
-The bad news is that if she has to run `goostats` by hand using a GUI, she’ll have to select and open a file 1520
-times. If `goostats` takes 30 seconds to run each file, the whole process will take more than 12 hours of the
+The bad news is that if she has to run `goostats` by hand using a GUI, she’ll have to select and open a file *1520*
+times. If `goostats` takes *30* seconds to run each file, the whole process will take more than *12* hours of the
 scientist’s attention. With the shell, she can instead assign her computer this mundane task while she focuses her
 attention on writing her paper.
 
@@ -166,9 +166,18 @@ As a bonus, once the processing pipeline has been put together, it can be used a
 ## Navigating Files and Directories
 The part of the operating system responsible for managing files and directories is called the **file system**.
 It is organized in multiple layers. The top most layer is the root directory. When you remotely login to a
-computer for the first time, you get on the home directory. Every user account on a server~(High Performance Computer)
+computer for the first time, you get on the home directory. Every user account on a server (High Performance Computer)
 has a home directory.
 ![Examples of a file system](https://i.imgur.com/rumMGhTl.jpg)
+
+The forward slash character `/` does two things:
+* When it appears at the front of a file or directory name, it refers to the root directory.
+* When it appears inside a path, it’s just a separator.
+The root directory `/` has `/bin`, `/data`, `/Users`, and `/tmp' directories. The `/Users' directory in turn
+has the `/Users/Sarah`, '/Users/Jacob' and `/Users/Nelle` directories. The path from the root directory
+to any tarheted firle or directory is called the *absolute path**. `/Users/Sarah`, '/Users/Jacob' and `/Users/Nelle`
+are the abasolute path to Sarah's, Jacob's, and Nelle's home directories.
+
 <a name="PipesFilters"></a>
 ## Pipes and Filters
 
