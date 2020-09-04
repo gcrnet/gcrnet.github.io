@@ -308,6 +308,7 @@ There are two common ways to find out how to use a command and what options it a
       -@      Display extended attribute keys and sizes in long (-l) output.
    :
   ```
+  
 Continue to push on the space bar of your computer to scroll down the `ls` manual.
 Sometimes at the bottom of the manual, you see some examples of how to use the command.
 Push the `q` key to exit the `man` page.
@@ -349,12 +350,12 @@ Use `pwd` command to confirm your location
 Bash
 $ pwd
 ```
-
 ```
 Output
 /Users/Jacob/Desktop/data-shell/data
 
 ```
+
 <a name="PipesFilters"></a>
 ## Pipes and Filters
 
