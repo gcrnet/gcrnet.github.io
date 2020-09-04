@@ -404,8 +404,8 @@ home directory is /Users/Jacob, then `~/Deskstop/data-shell/data` is equivalent 
 having to remember, then type, the full path. This is a very efficient way of moving back and forth
 between directories.
 
-**Note that** `cd ..` brings takes you up, one level while `cd -` takes you back where you were previousely,
-you can think of it as the Last channel button on a TV remote.
+**Note that** `cd ..` takes you up, one level while `cd -` takes you back where you were previousely.
+You can think of it as the Last channel button on a TV remote.
 
 
 
