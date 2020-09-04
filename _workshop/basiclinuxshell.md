@@ -286,7 +286,7 @@ There are two common ways to find out how to use a command and what options it a
   $ man ls
   ```   
   ```  
-   Output
+   Output     
    LS(1)                     BSD General Commands Manual                    LS(1)
    NAME
       ls -- list directory contents
