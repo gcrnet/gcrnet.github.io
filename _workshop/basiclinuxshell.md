@@ -355,6 +355,60 @@ Output
 /Users/Jacob/Desktop/data-shell/data
 
 ```
+So far, 'cd' only sees sub-directories inside your current directory. There are different
+ways to see directories above your current location. This is done using a shortcut in the
+shell to move up one directory level that looks like this:
+
+```
+Bash
+$ cd ..
+```
+`pwd` can then be used to verify our location
+
+```
+Bash
+$ pwd
+```
+```
+Output
+/Users/Jacob/Desktop/data-shell
+
+```
+We can see that `cd ..` takes us back to `data-shell` directory.
+`..` is a special directory that is always present in all directories. To see
+this special directory and other hidden files in a directory, we add `-a` option to the
+`ls` command.
+```
+Bash
+$ ls -a -F
+```
+```
+Output
+./                  creatures/          north-pacific-gyre/ solar.pdf
+../                 data/               notes.txt           writing/
+.bash_profile       molecules/          pizza.cfg
+```
+`-a` stands for ‘show all’; it forces ls to show us file and directory names that begin with `.`,
+such as `..` (which, if we’re in /Users/Jacob, refers to the /Users directory) As you can see,
+it also displays another special directory that’s just called `.`, which means 'the current working directory'. It may s
+
+**Note that** in most command line tools, multiple options can be combined with a single `-` and no
+spaces between the options, `ls -F -a` is equivalent to `ls -Fa`.
+
+**Important Shortcuts**
+`~` (tilde) at the start of a path means “the current user’s home directory”. For example, if Jacob’s
+home directory is /Users/Jacob, then `~/Deskstop/data-shell/data` is equivalent to
+`/Users/Jacob/Desktop/data-shell/data`. *This only works if `~` is the first character in the path**
+
+`-` (dash) character istranslated by `cd` to mean *previous directory* I was in, which is faster than
+having to remember, then type, the full path. This is a very efficient way of moving back and forth
+between directories.
+
+**Note that** `cd ..` brings takes you up, one level while `cd -` takes you back where you were previousely,
+you can think of it as the Last channel button on a TV remote.
+
+
+
 
 <a name="PipesFilters"></a>
 ## Pipes and Filters
