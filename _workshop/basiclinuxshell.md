@@ -285,30 +285,30 @@ There are two common ways to find out how to use a command and what options it a
   Bash
   $ man ls
   ```   
+  ```  
+   Output
+   LS(1)                     BSD General Commands Manual                    LS(1)
+   NAME
+      ls -- list directory contents
+
+   SYNOPSIS
+      ls [-ABCFGHLOPRSTUW@abcdefghiklmnopqrstuwx1%] [file ...]
+   DESCRIPTION
+      For each operand that names a file of a type other than directory, ls displays
+      its name as well as any requested, associated information.  For each operand that
+      names a file of type directory, ls displays the names of files contained within
+      that directory, as well as any requested, associated information.
+    
+      If no operands are given, the contents of the current directory are displayed.
+      If more than one operand is given, non-directory operands are displayed first;
+      directory and non-directory operands are sorted separately and in lexicographical
+      order.
+
+      The following options are available:
+
+      -@      Display extended attribute keys and sizes in long (-l) output.
+   :
   ```
-  Output
-  LS(1)                     BSD General Commands Manual                    LS(1)
-  NAME
-     ls -- list directory contents
-
-  SYNOPSIS
-     ls [-ABCFGHLOPRSTUW@abcdefghiklmnopqrstuwx1%] [file ...]
-  DESCRIPTION
-     For each operand that names a file of a type other than directory, ls displays
-     its name as well as any requested, associated information.  For each operand that
-     names a file of type directory, ls displays the names of files contained within
-     that directory, as well as any requested, associated information.
-
-     If no operands are given, the contents of the current directory are displayed.
-     If more than one operand is given, non-directory operands are displayed first;
-     directory and non-directory operands are sorted separately and in lexicographical
-     order.
-
-     The following options are available:
-
-     -@      Display extended attribute keys and sizes in long (-l) output.
-  :
- ```
 Continue to push on the space bar of your computer to scroll down the `ls` manual.
 Sometimes at the bottom of the manual, you see some examples of how to use the command.
 Push the `q` key to exit the `man` page.
