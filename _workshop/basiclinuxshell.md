@@ -388,17 +388,17 @@ Output
 ../                 data/               notes.txt           writing/
 .bash_profile       molecules/          pizza.cfg
 ```
-`-a` stands for ‘show all’; it forces ls to show us file and directory names that begin with `.`,
+`-a` stands for ‘show all’. It forces `ls` to show us file and directory names that begin with `.`,
 such as `..` (which, if we’re in /Users/Jacob, refers to the /Users directory) As you can see,
-it also displays another special directory that’s just called `.`, which means 'the current working directory'. It may s
+it also displays another special directory that’s just called `.`, which means 'the current working directory'. 
 
 **Note that** in most command line tools, multiple options can be combined with a single `-` and no
 spaces between the options, `ls -F -a` is equivalent to `ls -Fa`.
 
-**Important Shortcuts**
+**Important Shortcuts**   
 `~` (tilde) at the start of a path means “the current user’s home directory”. For example, if Jacob’s
 home directory is /Users/Jacob, then `~/Deskstop/data-shell/data` is equivalent to
-`/Users/Jacob/Desktop/data-shell/data`. *This only works if `~` is the first character in the path**
+`/Users/Jacob/Desktop/data-shell/data`. *This only works if `~` is the first character in the path*
 
 `-` (dash) character istranslated by `cd` to mean *previous directory* I was in, which is faster than
 having to remember, then type, the full path. This is a very efficient way of moving back and forth
@@ -407,8 +407,64 @@ between directories.
 **Note that** `cd ..` takes you up, one level while `cd -` takes you back where you were previousely.
 You can think of it as the Last channel button on a TV remote.
 
-
-
+### Absolute and Relative Paths
+An *absolute path* is defined as specifying the location of a file or directory from the root directory(/).
+`/Users/Jacob/Desktop/data-shell/data` is the absolute path to the `data` directory. Use `cd` only or `cd ~`
+to go back to your home directory. From your home directory, go back to the `data` directory using its absolute
+path
+```
+Bash
+$ cd
+```
+```
+Bash
+$ pwd
+```
+```
+Output
+/Users/Jacob/
+```
+```
+Bash
+$ cd /Users/Jacob/Desktop/data-shell/data
+```
+```
+Bash
+$ pwd
+```
+```
+Output
+/Users/Jacob/Desktop/data-shell/data
+```
+*Relative path* is defined as the path related to the present working directly(pwd).
+Use the *relative path* to get to the `Desktop` directory and back to the data directory
+```
+Bash
+$ cd ../..
+```
+```
+Bash
+$ pwd
+```
+```
+Output
+/Users/Jacob/Desktop
+```
+Now go back to the `data` directory
+```
+Bash
+$ cd data-shell/data
+```
+```
+Bash
+$ pwd
+```
+```
+Output
+/Users/Jacob/Desktop/data-shell/data
+```
+The relative path from `data` to `Desktop` directory is `../..` and the relative path
+back to `data` from `Desktop` directory is `data-shell/data`.
 
 <a name="PipesFilters"></a>
 ## Pipes and Filters
