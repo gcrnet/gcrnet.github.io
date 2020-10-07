@@ -476,7 +476,8 @@ back to `data` from `Desktop` directory is `data-shell/data`.
 
 **Questions**    
  * How can I find files?   
- * How can I find things in files?           
+ * How can I find things in files?
+
 **Objectives**       
  * Use *grep* to select lines from text files that match simple patterns.    
  * Use find to find files and directories whose names match simple patterns.
