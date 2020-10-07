@@ -543,6 +543,99 @@ We can merge the three files and direct the output into a new file "lwc.txt":
 Bash
 $ cat lenghts.txt words.txt characters.txt > lwc.txt
 ```
+By default `sort` do an alphanumerical reordering and the `-n` option
+specifies that the sort is numerical instead:
+```
+Bash
+$ sort lwc.txt
+```
+The output of the previous command is long but we can choose to print only
+the the first 5 lines using `head` command or the last 5 lines using the
+`tail` command:
+```
+Bash
+$ sort lwc.txt | head -n 5
+```
+```
+Output
+ 9 methane.pdb
+12 ethane.pdb
+15 propane.pdb
+20 cubane.pdb
+21 pentane.pdb
+```
+```
+Bash
+$ sort lwc.txt | head -n 5
+```
+```
+Output
+ 825 propane.pdb
+1158 cubane.pdb
+1226 pentane.pdb
+1828 octane.pdb
+6081 total
+```
+We can show the efficiency of piping and the `cut` command.
+A file called animals.txt (in the data-shell/data folder) contains the
+following data:
+```
+Bash
+$ cat ~/Desktop/data-shell/data/animal.txt
+```
+The `cut` command, the delimiter `-d ,` and the field `-f 2` returns the
+animal's names
+```
+Bash
+$ cut -d , -f 2 animals.txt
+```
+```
+Output
+deer
+rabbit
+raccoon
+rabbit
+deer
+fox
+rabbit
+bear
+```
+The contain of the files is split at the comma into 2 fields and the second
+field is returned.
+**Check for errors **
+
+Nelle has run her samples through the assay machines and created 17 files in
+the north-pacific-gyre/2012-07-03 directory. As a quick check, starting from
+her home directory, Nelle types:
+```
+Bash
+$ cd north-pacific-gyre/2012-07-03/
+$ wc -l *.txt
+```
+```
+Output
+    300 NENE01729A.txt
+    300 NENE01729B.txt
+    300 NENE01736A.txt
+    300 NENE01751A.txt
+    300 NENE01751B.txt
+    300 NENE01812A.txt
+    300 NENE01843A.txt
+    ... ...     
+```
+We can sort the output to look for inconsistencies
+```
+Bash
+$ wc -l *.txt | sort -n | head -n 5
+```
+```
+Output
+     240 NENE02018B.txt
+     300 NENE01729A.txt
+     300 NENE01729B.txt
+     300 NENE01736A.txt
+     300 NENE01751A.txt
+```
 <a name="FindThings"></a>
 ## Finding Things
 
