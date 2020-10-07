@@ -471,6 +471,78 @@ back to `data` from `Desktop` directory is `data-shell/data`.
 <a name="PipesFilters"></a>
 ## Pipes and Filters
 
+**Questions**    
+* How can I combine existing commands to do new things?
+
+**Objectives**       
+* Redirect a command’s output to a file.
+* Process a file instead of keyboard input using redirection.
+* Construct command pipelines with two or more stages.
+
+We’ll start with the directory called `data-shell/molecules` that contains six
+files describing some simple organic molecules. The .pdb extension indicates
+that these files are in Protein Data Bank format, a simple text format that
+specifies the type and position of each atom in the molecule.
+
+```
+Bash
+$ cd ~/Desktop/data-shell/molecules
+```
+*wc* is the `word count` command: it counts the number of lines, words, and
+characters in files (from left to right, in that order).
+
+If we run the command `wc \*.pdb`, the \* in \*.pdb matches zero or more
+characters, so the shell turns \*.pdb into a list of all .pdb files in the
+current directory:
+```
+Bash
+$ wc *.pdb
+```
+```
+Output
+ 20     156    1158 cubane.pdb
+ 12      84     622 ethane.pdb
+  9      57     422 methane.pdb
+ 30     246    1828 octane.pdb
+ 21     165    1226 pentane.pdb
+ 15     111     825 propane.pdb
+107     819    6081 total
+```
+The `-m`, `-w` and `-l` options can also be used with the wc command, to show
+only the number of characters, words or the number of lines in the files.
+```
+Bash
+$ wc -l *.pdb
+```
+```
+Output
+ 20 cubane.pdb
+ 12 ethane.pdb
+  9 methane.pdb
+ 30 octane.pdb
+ 21 pentane.pdb
+ 15 propane.pdb
+107 total
+```
+We can redirect our output into a file say "lenghts.txt", "characters.txt" or
+"words.txt"
+```
+Bash
+$ wc -l *.pdb > lenghts.txt
+```
+```
+Bash
+$ wc -m *.pdb > characters.txt
+```
+```
+Bash
+$ wc -w *.pdb > words.txt
+```
+We can merge the three files and direct the output into a new file "lwc.txt":
+```
+Bash
+$ cat lenghts.txt words.txt characters.txt > lwc.txt
+```
 <a name="FindThings"></a>
 ## Finding Things
 
@@ -489,7 +561,7 @@ Unix text editors. It is also the name of a very useful command-line program.
 ```
 Bash
 $ cd
-$ cd Desktop/data-shell/writing
+$ cd ~/Desktop/data-shell/writing
 $ cat haiku.txt
 ```
 Let's find lines that contain word not :
