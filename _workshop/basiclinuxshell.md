@@ -475,13 +475,48 @@ back to `data` from `Desktop` directory is `data-shell/data`.
 ## Finding Things
 
 **Questions**    
- . How can I find files?   
- . How can I find things in files?           
-**Objectives**
- . Use *grep* to select lines from text files that match simple patterns.    
- . Use find to find files and directories whose names match simple patterns.
+ * How can I find files?   
+ * How can I find things in files?           
+**Objectives**       
+ * Use *grep* to select lines from text files that match simple patterns.    
+ * Use find to find files and directories whose names match simple patterns.
 
 Unix programmers often use the word `grep`. `grep` is a contraction of
 `global/regular expression/print`, a common sequence of operations in early
 Unix text editors. It is also the name of a very useful command-line program.  
-`grep` finds and prints lines in files that match a pattern. 
+`grep` finds and prints lines in files that match a pattern. For this set of examples, we’re going to be working in the writing subdirectory:
+```
+Bash
+$ cd
+$ cd Desktop/data-shell/writing
+$ cat haiku.txt
+```
+Let's find lines that contain word not :
+```
+Bash
+$ grep not haiku.txt
+```
+By default, grep searches for a pattern in a case-sensitive way. In addition,
+the search pattern we have selected does not have to form a complete word, as
+we will see in the next example. Let’s search for the pattern: ‘The’.
+
+```
+Bash
+grep The haiku.txt
+```
+This time, two lines that include the letters `The` are outputted, one of
+which contained our search pattern within a larger word, ‘Thesis’. To restrict
+matches to lines containing the word `The` on its own, we can give grep with
+the `-w` option. This will limit matches to word boundaries.
+
+```
+Bash
+grep -w The haiku.txt
+```
+Sometimes we don’t want to search for a single word, but a phrase. This is
+also easy to do with grep by putting the phrase in quotes.
+
+```
+Bash
+$ grep -w "is not" haiku.txt
+```
