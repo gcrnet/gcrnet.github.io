@@ -507,7 +507,7 @@ grep The haiku.txt
 This time, two lines that include the letters `The` are outputted, one of
 which contained our search pattern within a larger word, ‘Thesis’. To restrict
 matches to lines containing the word `The` on its own, we can give grep with
-the `-w` option. This will limit matches to word boundaries.
+the *-w* option. This will limit matches to word boundaries.
 
 ```
 Bash
@@ -519,4 +519,60 @@ also easy to do with grep by putting the phrase in quotes.
 ```
 Bash
 $ grep -w "is not" haiku.txt
+```
+Another useful option is *-n*, which numbers the lines that match:
+```
+Bash
+$ grep -n "it" haiku.txt
+```
+Now, we want to use the option *-v* to invert our search, i.e., we want to
+output the lines that do not contain the word ‘the’.
+```
+Bash
+$ grep -nwv "the" haiku.txt
+```
+While grep finds lines in files, the find command finds files themselves.
+Again, it has a lot of options; we will show how the simplest ones work.
+
+For our first command, let’s run `find .` (remember to run this command from
+the data-shell/writing folder).
+
+```
+Bash
+$ find .
+```
+The first option in our list is `-type d` that means things are directories.
+
+```
+Bash
+$ find . -type d
+```
+Notice that the objects `find` finds are not listed in any particular order.
+If we change `-type d` to `-type f`, we get a listing of all the files instead:
+```
+Bash
+$ find . -type f
+```
+Now let's try matching by name
+
+```
+Bash
+$ find . -name *.txt
+```
+```
+Output
+$ ./haiku.txt
+```
+We expected it to find all the text files, but it only prints out
+`./haiku.txt`. The problem is that the shell expands wildcard characters
+like \* before commands run. Since \*.txt in the current directory expands
+to haiku.txt.
+
+To get what we want, let’s do what we did with grep: put \*.txt in quotes to
+prevent the shell from expanding the \* wildcard. This way, `find` actually
+gets the pattern \*.txt, not the expanded filename haiku.txt:
+
+```
+Bash
+$ find . -name "*.txt"
 ```
