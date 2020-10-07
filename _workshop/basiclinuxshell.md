@@ -576,3 +576,22 @@ gets the pattern \*.txt, not the expanded filename haiku.txt:
 Bash
 $ find . -name "*.txt"
 ```
+The command line’s power lies in combining tools. We’ve seen how to do that
+with pipes; let’s look at another technique. As we just saw,
+`find . -name "*.txt"` gives us a list of all text files in or below the
+current directory. How can we combine that with `wc -l` to count the lines in
+all those files?
+
+The simplest way is to put the find command inside $():
+```
+Bash
+$ wc -l $(find . -name "*.txt")
+```
+```
+Output
+11 ./haiku.txt
+300 ./data/two.txt
+21022 ./data/LittleWomen.txt
+70 ./data/one.txt
+21403 total
+```
