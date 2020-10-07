@@ -468,6 +468,44 @@ back to `data` from `Desktop` directory is `data-shell/data`.
 
 ### Copying and Making Copies of Files and Directories
 
+**Questions**  
+* How can I create, copy, and delete files and directories?    
+* How can I edit files?
+
+**Objectives**      
+* Create a directory hierarchy that matches a given diagram.
+* Create files in that hierarchy using an editor or by copying and renaming existing files.
+* Delete, copy and move specified files and/or directories.
+
+We will now explore how to create files and directories. Let’s create a new
+directory called `thesis` using the command `mkdir thesis`:
+```
+Bash
+$ mkdir thesis
+```
+The `-p` option allows `mkdir` to create a directory with any number of nested
+subdirectories in a single operation:
+```
+Bash
+$ mkdir -p thesis/chapter_1/section_1/subsection_1
+```
+The `-R` option to the `ls` command will list all nested subdirectories
+wtihin a directory. Let’s use `ls -FR` to recursively list the new directory
+hierarchy we just created beneath the `thesis` directory:
+```
+Bash
+$ ls -FR thesis
+```
+```
+Output
+     chapter_1/
+
+     thesis/chapter_1:
+     section_1/
+
+     thesis/chapter_1/section_1:
+     subsection_1/
+```
 <a name="PipesFilters"></a>
 ## Pipes and Filters
 
@@ -602,7 +640,8 @@ bear
 ```
 The contain of the files is split at the comma into 2 fields and the second
 field is returned.
-**Check for errors **
+
+**Check for errors**
 
 Nelle has run her samples through the assay machines and created 17 files in
 the north-pacific-gyre/2012-07-03 directory. As a quick check, starting from
@@ -636,6 +675,8 @@ Output
      300 NENE01736A.txt
      300 NENE01751A.txt
 ```
+We can see that one of the files has 60 fewer lines.
+
 <a name="FindThings"></a>
 ## Finding Things
 
