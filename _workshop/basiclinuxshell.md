@@ -437,7 +437,7 @@ Output
 /Users/Jacob/Desktop/data-shell/data
 ```
 *Relative path* is defined as the path related to the present working directly(pwd).
-Use the *relative path* to get to the `Desktop` directory and back to the data directory
+Use the *relative path* to get to the `Desktop` directory and back to the `data` directory
 ```
 Bash
 $ cd ../..
@@ -466,8 +466,22 @@ Output
 The relative path from `data` to `Desktop` directory is `../..` and the relative path
 back to `data` from `Desktop` directory is `data-shell/data`.
 
+### Copying and Making Copies of Files and Directories
+
 <a name="PipesFilters"></a>
 ## Pipes and Filters
 
 <a name="FindThings"></a>
 ## Finding Things
+
+**Questions**    
+ . How can I find files?   
+ . How can I find things in files?           
+**Objectives**
+ . Use *grep* to select lines from text files that match simple patterns.    
+ . Use find to find files and directories whose names match simple patterns.
+
+Unix programmers often use the word `grep`. `grep` is a contraction of
+`global/regular expression/print`, a common sequence of operations in early
+Unix text editors. It is also the name of a very useful command-line program.  
+`grep` finds and prints lines in files that match a pattern. 
