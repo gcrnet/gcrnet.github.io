@@ -596,12 +596,12 @@ $ rm -r thesis
 
 **Using wildcards for accessing multiple files at once**
 
-`\*` is a **wildcard**, which matches zero or more characters. Let’s consider
-the `data-shell/molecules` directory: `\*.pdb` matches all the files ending
+`*` is a **wildcard**, which matches zero or more characters. Let’s consider
+the `data-shell/molecules` directory: `*.pdb` matches all the files ending
 in `.pdb`
 ```
 Bash
-$ ls ~/Desktop/data-shell/molecules/\*.pdb
+$ ls ~/Desktop/data-shell/molecules/*.pdb
 ```
 ```
 Output
@@ -613,7 +613,7 @@ Output
      ~/Desktop/data-shell/molecules/propane.pdb
 ```
  `?` is also a wildcard, but it matches exactly one character. So
- `?ethane.pdb` would match `methane.pdb` whereas `\*ethane.pdb` matches
+ `?ethane.pdb` would match `methane.pdb` whereas `*ethane.pdb` matches
  both `ethane.pdb`, and `methane.pdb`.
 
 Wildcards can be used in combination with each other e.g. `???ane.pdb` matches
