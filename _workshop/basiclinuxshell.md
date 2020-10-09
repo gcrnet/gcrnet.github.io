@@ -510,6 +510,81 @@ Output
      thesis/chapter_1/section_1:
      subsection_1/
 ```
+**Good Names for Files and Directories**
+
+Complicated names of files and directories can make your life painful when
+working on the command line. A few useful tips for the names of your files:
+
+1. *Don’t use spaces.* Spaces are used to separate arguments on the command
+line. You can use `-` or `_` instead (e.g. north-pacific-gyre/ rather than north pacific gyre/).         
+
+2. *Don’t begin the name with `-` (dash).* Commands treat names starting with - as options.       
+
+3. *Stick with letters, numbers, `.` (period or `full stop`), - (dash) and `_`
+(underscore).* Many other characters have special meanings on the command
+line. Some can cause your command to not work as expected and can even result
+in data loss.     
+
+If you need to refer to names of files or directories that have spaces or
+other special characters, you should surround the name in quotes ("").
+
+**Create a text file**
+ We can use the `touch` command to create an empty text file.
+ A text editor could also be used. There are many text editors of which
+ [`Emacs`](https://www.emacswiki.org/), [`vim`](https://www.vim.org/),
+ and [`nano`](https://www.nano-editor.org/) are three of the most used. `nano`
+ is the simplest and will be used for editing files.
+
+Create `draft.txt` file with the command ` nano draft.txt`. Once the file is
+Open, type a few words and press `Ctrl+O` (press the Ctrl or Control key and,
+while holding it down, press the O key) to write our data to disk (we’ll be
+asked what file we want to save this to: press `Return` to accept the
+suggested default of draft.txt).
+
+**Moving Files and Directories**
+```
+Bash
+$ cd ~/Desktop/data-shell/
+```
+In `thesis` directory is a file `draft.txt` which isn’t a particularly
+informative name, so let’s change the file’s name using `mv`, which is
+short for `move`:
+
+```
+Bash
+$ mv thesis/draft.txt thesis/quotes.txt
+```
+Use the `ls` command to verify if `quotes.txt` is in the directory. The file
+could be moved into the current directory represented by `.`:
+```
+Bash
+$ mv thesis/quotes.txt .
+```
+**Copying Files and Directories**
+The `cp` command works very much like `mv`, except it copies a file instead
+of moving it.         
+```
+Bash
+$ cp quotes.txt thesis/quotations.txt
+$ ls quotes.txt thesis/quotations.txt
+```
+We can also copy a directory and all its contents by using the recursive
+option `-r`, e.g. to back up a directory:
+
+```
+Bash
+$ cp -r thesis thesis_backup
+```
+
+**Removing Files and Directories**
+Returning to the `data-shell` directory, let’s tidy up this directory by
+removing the `quotes.txt` file we created. The Unix command we’ll use for
+this is `rm` (short for ‘remove’):
+
+
+
+
+
 <a name="PipesFilters"></a>
 ## Pipes and Filters
 
