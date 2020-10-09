@@ -22,6 +22,10 @@ being able to interact with the shell is becoming a necessary skill.
 We can build on the command-line skills covered here to tackle a wide
 range of scientific questions and computational challenges.
 
+This workshop is designed on the model developed by the [Software and Data
+Carpentry](https://carpentries.org/workshops/). The material on this page is
+part from the [Software Carpentry Lessons](https://software-carpentry.org/lessons/)
+
 
 ## Setup
 Download [data-shell.zip](http://swcarpentry.github.io/
