@@ -535,7 +535,7 @@ other special characters, you should surround the name in quotes ("").
  and [`nano`](https://www.nano-editor.org/) are three of the most used. `nano`
  is the simplest and will be used for editing files.
 
-Create `draft.txt` file with the command ` nano draft.txt`. Once the file is
+Create `draft.txt` file with the command  `nano draft.txt`. Once the file is
 Open, type a few words and press `Ctrl+O` (press the Ctrl or Control key and,
 while holding it down, press the O key) to write our data to disk (we’ll be
 asked what file we want to save this to: press `Return` to accept the
@@ -560,7 +560,7 @@ could be moved into the current directory represented by `.`:
 Bash
 $ mv thesis/quotes.txt .
 ```
-**Copying Files and Directories**
+**Copying Files and Directories**                    
 The `cp` command works very much like `mv`, except it copies a file instead
 of moving it.         
 ```
@@ -576,7 +576,7 @@ Bash
 $ cp -r thesis thesis_backup
 ```
 
-**Removing Files and Directories**
+**Removing Files and Directories**           
 Returning to the `data-shell` directory, let’s tidy up this directory by
 removing the `quotes.txt` file we created. The Unix command we’ll use for
 this is `rm` (short for ‘remove’):
