@@ -580,6 +580,45 @@ $ cp -r thesis thesis_backup
 Returning to the `data-shell` directory, let’s tidy up this directory by
 removing the `quotes.txt` file we created. The Unix command we’ll use for
 this is `rm` (short for ‘remove’):
+```
+Bash
+$ rm quotes.txt
+```
+**Question**: What happens when we execute `rm -i thesis_backup/quotations.txt`? Why would we want this protection when using `rm`?
+
+`rm` can remove a directory and all its contents if we use the recursive
+option `-r`, and it will do so without any confirmation prompts:
+```
+Bash
+$ rm -r thesis
+```
+<span style="color:red">Given that there is no way to retrieve files deleted using the shell, rm -r should be used with great caution (you might consider adding the interactive option rm -r -i)</span>.
+
+**Using wildcards for accessing multiple files at once**
+
+`\*` is a **wildcard**, which matches zero or more characters. Let’s consider
+the `data-shell/molecules` directory: `\*.pdb` matches all the files ending
+in `.pdb`
+```
+Bash
+$ ls ~/Desktop/data-shell/molecules/\*.pdb
+```
+```
+Output
+     ~/Desktop/data-shell/molecules/cubane.pdb
+     ~/Desktop/data-shell/molecules/ethane.pdb
+     ~/Desktop/data-shell/molecules/methane.pdb
+     ~/Desktop/data-shell/molecules/octane.pdb
+     ~/Desktop/data-shell/molecules/pentane.pdb
+     ~/Desktop/data-shell/molecules/propane.pdb
+```
+ `?` is also a wildcard, but it matches exactly one character. So
+ `?ethane.pdb` would match `methane.pdb` whereas `\*ethane.pdb` matches
+ both `ethane.pdb`, and `methane.pdb`.
+
+Wildcards can be used in combination with each other e.g. `???ane.pdb` matches
+three characters followed by `ane.pdb`, giving `cubane.pdb`, `ethane.pdb`, `octane.pdb`.
+
 
 
 
