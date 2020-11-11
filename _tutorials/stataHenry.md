@@ -62,7 +62,7 @@ $ bsub < stata_job.csh
 ```
 ### Installing Community Tools
 The community-contributed `ftools` and `gtools` suites can be added to Stata.
-'ftools` or `gtools` is available from the [Statistical Software Components (SSC) archive](https://econpapers.repec.org/software/bocbocode/s458213.htm).
+`ftools` or `gtools` is available from the [Statistical Software Components (SSC) archive](https://econpapers.repec.org/software/bocbocode/s458213.htm).
 
 Login on Henry2 and follow the commands below to install tools from the SSC
 archive. The pound sign (#) precedes comments.
