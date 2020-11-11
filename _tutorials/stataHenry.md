@@ -16,9 +16,6 @@ The Stata binaries are:
 * <span style="color:red">stata</span> - Stata for mid-sized datasets (default Stata/IC) 
 * <span style="color:red">stata-mp</span> - The fastest edition of Stata (for multiprocessor computers) that can analyze the most data (Stata/MP)
 * <span style="color:red">stata-se</span> - Stata for large datasets (Stata/SE)
-* <span style="color:red">xstata</span> - the gui version of Stata/IC
-* <span style="color:red">xstata-se</span> - the gui version of Stata/SE
-* <span style="color:red">xstata-mp</span> - the gui multi-processor version of Stata/MP 
 
 ### Running Stata      
 You can run Stata in three different ways:       
@@ -58,4 +55,20 @@ that will run a `Stata job` via [LSF](https://projects.ncsu.edu/hpc/Documents/LS
 #BSUB -x                               ## Request exclusive run on node
 module load stata                      ## Load stata binaries
 stata-mp -b do stata_sample            ## execute Stata/MP to run script
+```
+Then use the command below to submit the job to the compute node:
+```
+$ bsub < stata_job.csh
+```
+### Installing Community Tools
+The community-contributed `ftools` and `gtools` suites can be added to Stata.
+'ftools` or `gtools` is available from the [Statistical Software Components (SSC) archive](https://econpapers.repec.org/software/bocbocode/s458213.htm).
+
+Login on Henry2 and follow the commands below to install tools from the SSC
+archive. The pound sign (#) precedes comments.
+```
+1. module load stata          # load Stata from module
+2. stata-mp                   # type and hit return key to start Stata
+3. ssc install ftools         # install ftools
+4. exit                       # type and hit return to exit Stata
 ```
