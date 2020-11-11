@@ -19,8 +19,9 @@ The Stata binaries are:
 * <span style="color:red">xstata</span> - the gui version of Stata/IC
 * <span style="color:red">xstata-se</span> - the gui version of Stata/SE
 * <span style="color:red">xstata-mp</span> - the gui multi-processor version of Stata/MP 
+
 ### Running Stata      
-You can run Stata in three different ways:
+You can run Stata in three different ways:       
 1. Interactive on the HPC Compute Nodes
 2. Batch jobs on the HPC Compute Nodes
 3. Interactive on the HPC Compute Nodes using GUI
@@ -28,7 +29,7 @@ You can run Stata in three different ways:
 #### Interactive on the HPC Compute Nodes
 To request an interactive session on the compute nodes directly, you will [login to Henry 2](https://projects.ncsu.edu/hpc/Documents/Login.php).
 
-For interactive use of STATA, use the following command on an HPC login node:
+For interactive use of STATA, use the commands below on an HPC login node:
 Run an interactive (-Is) job with 12 tasks (-n 12) on 1 node (span[hosts=1])
 with 12 cores per node (select[hc]) for 20 minutes (-W 20).
 
