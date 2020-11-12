@@ -61,14 +61,31 @@ Then use the command below to submit the job to the compute node:
 $ bsub < stata_job.csh
 ```
 ### Installing Community Tools
-The community-contributed `ftools` and `gtools` suites can be added to Stata.
-`ftools` or `gtools` is available from the [Statistical Software Components (SSC) archive](https://econpapers.repec.org/software/bocbocode/s458213.htm).
+The community-contributed (e.g `ftools` and `ivreg2` suites) can be added to
+Stata. These packages are available from the [Statistical Software Components (SSC) archive](https://econpapers.repec.org/software/bocbocode/s458213.htm).
 
 Login on Henry2 and follow the commands below to install tools from the SSC
-archive. The pound sign (#) precedes comments.
+archive. The pound sign (#) precedes comments. These commands need to be
+exercised when you are at your home directory. Don't try to include these
+commands in your Stata .do file because a .do file runs on the HPC compute
+nodes that does not communicate with the SSC.
 ```
 1. module load stata          # load Stata from module
 2. stata-mp                   # type and hit return key to start Stata
 3. ssc install ftools         # install ftools
 4. exit                       # type and hit return to exit Stata
 ```
+### HPC Compute Resource Management
+Compute resource management is important for a smooth execution.
+
+### Memory Management
+[Memory management in Linux](https://www.stata.com/manuals13/u6.pdf) is
+different from Windows. It is [strongly recommended](https://www.stata.com/manuals13/dmemory.pdf#dmemoryRemarksandexamplesSeriousbuginLinuxOS) that the
+parameter <span style="color:red">max_memory</span> be defined when running in a Linux environment.
+
+The value of <span style="color:red">max_memory</span> should match the memory
+requested in the batch script <span style="color:red">#BSUB -R rusage[mem=24GB]</span>. The following should then be defined in the .do file. <span style="color:red">set max_memory 24gb, permanently</span>. The option `permanently` ensures maximum memory is set once for the job. 
+
+### Using Multiprocessors
+We recommend requesting resources such as the number of CPUs prudently. Using too many CPUs may generate temporary data files that exceed your shared storage, causing crashes. The number of processors should be set to ensure there is at
+least `2GB of memory/processors`. Processors and cores are used interchangeably. In the batch script above, we requested 12 processors (-n 12) and 24GB of memory.
