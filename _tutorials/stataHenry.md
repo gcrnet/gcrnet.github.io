@@ -88,4 +88,4 @@ requested in the batch script <span style="color:red">#BSUB -R rusage[mem=24GB]<
 
 ### Using Multiprocessors
 We recommend requesting resources such as the number of CPUs prudently. Using too many CPUs may generate temporary data files that exceed your shared storage, causing crashes. The number of processors should be set to ensure there is at
-least `2GB of memory/processors`. Processors and cores are used interchangeably. In the batch script above, we requested 12 processors (-n 12) and 24GB of memory.
+least `2GB of memory/processor`. Processors and cores are used interchangeably. In the batch script above, we requested 12 processors (-n 12) and 24GB of memory.
