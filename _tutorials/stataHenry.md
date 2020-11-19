@@ -40,13 +40,13 @@ Henry2 and in your home directory download the `make_script.sh` with the followi
 ```
 $ wget https://raw.githubusercontent.com/jtande/jhub-file-download/master/Stata/make_script.sh
 ```
-Once download is complete generate the `.do` by hitting the return key after each command. Note the `./` on the second command.
+Generate the `.do` file by hitting the return key after each command.  Note the `./` on the second command.
 
 ```
 $ chmod +x make_script.sh
 $ ./make_script.sh > stata_do_script.do
 ```
-Before the starting the interactive session follow instructions below to
+Before the interactive session follow instructions below to
 [install community tools](#CommunityTools) needed by Stata.
 ```
 $ bsub -Is -n 12 -W 20 -R "select[hc] span[hosts=1]" tcsh
