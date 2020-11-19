@@ -32,6 +32,22 @@ with 12 cores per node (select[hc]) for 20 minutes (-W 20).
 
 This is a good way for troubleshooting and testing script before a long run.
 However, you must stay logged in while your jobs are running. For long running jobs, we recommend using batch mode (see below).
+
+With the help of [Prof. Jay Li](https://bryan.uncg.edu/faculty-and-staff/li-yin/), we have a script that you can use to generate a sample Stata `.do` file.
+[Dowload](https://raw.githubusercontent.com/jtande/jhub-file-download/master/Stata/make_script.sh) the bash script and generate the `.do` file. Login to
+Henry2 and in your home directory download the `make_script.sh` with the following: 
+
+```
+$ wget https://raw.githubusercontent.com/jtande/jhub-file-download/master/Stata/make_script.sh
+```
+Once download is complete generate the `.do` by hitting the return key after each command. Note the `./` on the second command.
+
+```
+$ chmod +x make_script.sh
+$ ./make_script.sh > stata_do_script.do
+```
+Before the starting the interactive session follow instructions below to
+[install community tools](#CommunityTools) needed by Stata.
 ```
 $ bsub -Is -n 12 -W 20 -R "select[hc] span[hosts=1]" tcsh
 $ stata-mp -b do stata_do_script
@@ -60,6 +76,7 @@ Then use the command below to submit the job to the compute node:
 ```
 $ bsub < stata_job.csh
 ```
+<a name="CommunityTools"></a>
 ### Installing Community Tools
 The community-contributed (e.g `ftools` and `ivreg2` suites) can be added to
 Stata. These packages are available from the [Statistical Software Components (SSC) archive](https://econpapers.repec.org/software/bocbocode/s458213.htm).
@@ -73,7 +90,10 @@ nodes that does not communicate with the SSC.
 1. module load stata          # load Stata from module
 2. stata-mp                   # type and hit return key to start Stata
 3. ssc install ftools         # install ftools
-4. exit                       # type and hit return to exit Stata
+4. ssc install ivreg2         # install ivreg2
+5. ssc inst ranktest          # inst ranktest
+6. ssc inst outreg2           # inst outreg2
+7. exit                       # type and hit return to exit Stata
 ```
 ### HPC Compute Resource Management
 Compute resource management is important for a smooth execution.
