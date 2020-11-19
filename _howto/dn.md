@@ -13,7 +13,7 @@ In order for Globus to know who you are when you move data between any pair of s
 
  After login you will see the page below
 
- ![img_2](https://i.imgur.com/yxSGNlw.png)
+ ![img_2](https://i.imgur.com/Oa05lre.png)
 
 Click on certificate information and similar line below will be your DN. <br>
 
