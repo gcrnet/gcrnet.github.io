@@ -31,7 +31,7 @@ Definition: A ﬂow is deﬁned as a set of IP packets passing an observation po
 
 <h2>SECURITY-RELATED DIFFERENCES BETWEEN ENTERPRISE NETWORKS AND SCIENCE DMZs</h2>
 
-![img_1](https://i.imgur.com/C86M9kf.png)
+![img_1](https://i.imgur.com/HdDr5xS.png)
 
 <h2>Inventory of the Science DMZ features</h2>
 
@@ -59,7 +59,7 @@ The performance measurement and monitoring point provides an automated mechanism
 
 The primary method to protect a Science DMZ is via router’s Access Control Lists (ACLs). Since ACLs are implemented in the forwarding plane of a router, they do not compromise the end-to-end throughput. Additional ofﬂine appliances include payload-based and ﬂow-based intrusion detection systems (IDSs).  
 
-![imgages and features](https://i.imgur.com/hwjejRB.png)
+![imgages and features](https://i.imgur.com/CWx2xu2.png)
 
 <h2>Characteristics of Data Link Layer</h2>
 <ul>
@@ -120,7 +120,7 @@ Best practices used in regular enterprise networks are applicable to Science DMZ
 
 <h3>Switching</h3>
 
-![switching](https://i.imgur.com/YqJHn5g.png)
+![switching](https://i.imgur.com/PLN6mai.png)
 
 The above image is an image of a generic router architecture. Modern routers may have a network processor (NP) and a table derived from the routing table in each port, which is referred to as the forwarding table (FT) or forwarding information base (FIB). 
 
@@ -141,7 +141,7 @@ A well-designed Science DMZ is minimally sensitive to latency. One of the goals 
 Maximum Transmission Unit :
 The MTU has a prominent impact on TCP throughput. 
 
-![throughput](https://i.imgur.com/YxOgAgU.png)
+![throughput](https://i.imgur.com/I5q5jre.png)
 
 The throughput is directly proportional to the MSS. Congestion control algorithms perform multiple probes to see how much the network can handle. With high speed networks, using half a dozen or so small probes to see how the network responds wastes a huge amount of bandwidth. Similarly, when a packet loss is detected, the rate is decreased by a factor of two. TCP can only recover slowly from this rate reduction. The speed at which the recovery occurs is proportional to the MTU. Thus, for Science DMZs, it is recommended to use large frames. 
 
@@ -159,7 +159,7 @@ While allocating sufﬁcient memory for buffering is desirable, it is also impor
 
 Routers and switches in a hierarchical network: 
 
-![switch-contd](https://i.imgur.com/BzWgjMJ.png)
+![switch-contd](https://i.imgur.com/MisAIzv.png)
 
 Above is a hierarchical network, The access layer represents the network edge, where trafﬁc enters or exits the network. In Science DMZs, usually DTNs, supercomputer, and research labs have access to the network through access layer switches. The distribution layer interfaces between the access layer and the core layer, aggregating trafﬁc from the access layer. The core layer is the network backbone. Core routers forward trafﬁc at very high speeds. In this simpliﬁed topology, the core is also the border router, connecting the network to the WAN. 
 
@@ -171,7 +171,7 @@ Switches manufactured for datacenters may not be a good choice for Science DMZs.
 
 <h2>COMPARISON OF TRANSPORT-LAYER FEATURES IN ENTERPRISE NETWORKS AND SCIENCE DMZS</h2>
 
-![comparision](https://i.imgur.com/GTjoRdq.png)
+![comparision](https://i.imgur.com/D9Fc2tD.png)
 
 <h3>Network layer issues</h3>
 
@@ -197,7 +197,7 @@ Other ﬁle transfer applications for big data are Multicore Aware Data Transfer
 
 The idea behind a virtual machine is to abstract the hardware of a computer into several execution environments. As a physical resource, access to a NIC is also shared. 
 
-![VM](https://i.imgur.com/A4Ux1zr.png)
+![VM](https://i.imgur.com/Trsxi0p.png)
 
 While virtual technologies have been widely adopted in enterprise networks, their use in Science DMZs has been discouraged for several reasons.
 
