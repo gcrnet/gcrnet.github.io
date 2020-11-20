@@ -12,52 +12,52 @@ Steps for users wanting to transfer files between hosts configured for Globus a
 
 Sign in to Globus using your Globus username and password.
 
-![img_1](https://i.imgur.com/hN0TytC.png)
+![img_1](https://i.imgur.com/Q8xReKo.png)
 
 After successful login you will be directed to this page, Select File manager from the left side menu bar.
 
-![img_2](https://i.imgur.com/ih8T69H.png)
+![img_2](https://i.imgur.com/Wx5Hief.png)
 
 The panels button help us split the screen and we can view two collections side by side.
 
-![img_3](https://i.imgur.com/8ZPCTy6.png)
+![img_3](https://i.imgur.com/FC0jOIo.png)
 
 We can see the screen splits after a user toggles to the split view
 
-![img_4](https://i.imgur.com/tTcOvTJ.png)
+![img_4](https://i.imgur.com/wIGoYUY.png)
 
 We can search the desired end points from the “collection” search bar.
 
-![img_5](https://i.imgur.com/4znMJ5u.png)
+![img_5](https://i.imgur.com/hmRMAqn.png)
 
 After desired endpoints are selected, Path can be set in the path field. Here in the below screenshot the left side, endpoint (koundinya_challa) is a personal endpoint on a laptop and on the right side, endpoint (UNCG Computer Science) is an institutional endpoint.
 
-![img_6](https://i.imgur.com/7R5B21N.png)
+![img_6](https://i.imgur.com/90HN1sL.png)
 
 You will see a listing of the contents of your home directory . Double click on a directory to view its contents. Select a file you want to transfer and click on the start button.
 
-![img_7](https://i.imgur.com/Dao4yBY.png)
+![img_7](https://i.imgur.com/Xcx0PKc.png)
 
 A file has been selected to transfer and the directory where the file has to be sent is also selected.
 
-![img_8](https://i.imgur.com/UrHjGEZ.png)
+![img_8](https://i.imgur.com/NQbnGz8.png)
 
 You will get a pop up saying that the transfer has been request submitted successfully after you click on the start button. You can click on the view details options to see the details.
 
-![img_9](https://i.imgur.com/i7barMk.png)
+![img_9](https://i.imgur.com/tEgPY4M.png)
 
 You will get an overview of the transfer in this page.
 
-![img_10](https://i.imgur.com/c1LUvKP.png)
+![img_10](https://i.imgur.com/YWqCAGA.png)
 
 Event log will show all the events that happened after submitting the transfer request.
 
-![img_11](https://i.imgur.com/UydMjPT.png)
+![img_11]([https://i.imgur.com/ZcJAQIE.png)
 
 You can similarly, send an entire directory from one endpoint to another. In the example below, the directory Globus_playground is selected to be sent. The same steps can be repeated to send an entire directory.
 
-![img_12](https://i.imgur.com/jbTkuBl.png)
+![img_12](https://i.imgur.com/OUtLlEB.png)
 
 The directory selected was successfully sent.
 
-![img_13](https://i.imgur.com/dh2QVa7.png)
+![img_13](https://i.imgur.com/2WVhLw1.png)

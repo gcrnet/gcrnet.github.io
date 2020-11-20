@@ -26,15 +26,15 @@ Before you can use the Globus CLI on a given computer, you must log in to Globus
 globus login
 ```
 
-![login](https://i.imgur.com/Q4WVRH8.png)
+![login](https://i.imgur.com/BvhX61d.png)
 
 It will redirect you to the browser and you need to login with your Globus credentials.
 
-![browser_login](https://i.imgur.com/r3BdBfJ.png)
+![browser_login](https://i.imgur.com/BMMvkX2.png)
 
 After successful login you will see a success message in the terminal.
 
-![login success](https://i.imgur.com/3PzyoP4.png)
+![login success](https://i.imgur.com/gaS2RL0.png)
 
 You will now be able to issue Globus CLI commands on this computer. You can check your Globus login status at any time with the command `globus whoami`.
 ```yml
@@ -65,7 +65,7 @@ By default, the search will be performed on all endpoints (its scope is "all"). 
 
 In this example, we search for all endpoints whose fields contain the text "uncg".
 
-![endpoint search](https://i.imgur.com/q1WIaVS.png)
+![endpoint search](https://i.imgur.com/yGBbgsS.png)
 
 Such searches can return up to 100 results; in this example, the search returns over two dozen.
 
@@ -77,7 +77,7 @@ globus endpointsearch --filter-owner-id mail_id@test.com "uncg"
 
 Results can also be filtered by a scope using the `--filter-scope` option. Several scopes are available, such as endpoints that are owned by you (`my-endpoints`) and endpoints that have been shared with you (`shared-with-me`). Only one such filter can be specified. When filtering in this way you do not have to provide a search term.
 
-![scope](https://i.imgur.com/jI1m28Y.png)
+![scope](https://i.imgur.com/wSFWnWL.png)
 
 The [globus endpoint search](https://docs.globus.org/cli/reference/endpoint_search/) reference page contains more information about this command.
 
@@ -89,7 +89,7 @@ We can use the below command for assigning variable names to endpoints.
 $[variable name]=<endpoint_id>
 ```
 
-![assign](https://i.imgur.com/blWC8fF.png)
+![assign](https://i.imgur.com/kZL2gst.png)
 
 #### globus ls
 
@@ -97,7 +97,7 @@ CLI commands that work with endpoints specify file and folder locations as combi
 ```yml
 globus ls [options] <endpoint>:<path>
 ```
-![ls](https://i.imgur.com/K0r37TO.png)
+![ls](https://i.imgur.com/ihvwcxz.png)
 
 The `globus ls` command lists the contents of a specified endpoint and optional path. The command's options include `-a, --all` to include hidden files, `-l, --long` to produce long form output and `-r, --recursive` for recursively printing contents of folders.
 
@@ -109,7 +109,7 @@ globus mkdir <endpoint><:path>
 ```
 The command returns 0 on success (as in the example below), 1 if there was an error (including if the path already exists), and 2 if the command was used improperly.
 
-![mkdir](https://i.imgur.com/Cs2QEoJ.png)
+![mkdir](https://i.imgur.com/pcYjTnT.png)
 
 #### globus rename
 
@@ -119,7 +119,7 @@ rename <endpoint><:old-path> <endpoint><:new-path>
 ```
 The endpoint must be the same in the "from" and "to" locations, and the new path must not already exist. The command returns 0 on success, 1 if there was an error, and 2 if the command was used improperly.
 
-![rename](https://i.imgur.com/1fHpbT4.png)
+![rename](https://i.imgur.com/hbCizdv.png)
 
 #### globus rm
 
@@ -142,7 +142,7 @@ To transfer a single file or folder, use the form that takes two endpoint / path
 globus transfer [options] <from-endpoint>:<from-path> <to-endpoint>:<to-path>
 ```
 
-![transfer](https://i.imgur.com/8hvmx6W.png)
+![transfer](https://i.imgur.com/uU8TuwJ.png)
 
 #### Batch Transfers
 
@@ -156,11 +156,11 @@ Then, individual source files/folders are identified on separate lines of the `s
 ```
 The `--recursive` option must be provided when the source path is a folder. Blank lines and lines beginning with a '#' (comments) are ignored.
 
-![batch](https://i.imgur.com/MAt17In.png)
+![batch](https://i.imgur.com/m40aNCN.png)
 
 Batch transfer has been completed.
 
-![batch_success](https://i.imgur.com/hLSQZnS.png)
+![batch_success](https://i.imgur.com/SL6mejz.png)
 
 <a name="task"></a>
 ## Task Commands
@@ -180,7 +180,7 @@ The `globus task show` command displays information about a specific Globus CLI 
 globus task status [options] <taskid>
 ```
 
-![task](https://i.imgur.com/6ayJyrA.png)
+![task](https://i.imgur.com/sPNxQ7f.png)
 
 #### globus task cancel
 
@@ -193,4 +193,4 @@ globus task cancel --all [options]
 ```
 The command must either include a single taskid argument or the --all option, which will cause all active tasks to be canceled. Both tasks that are pending and currently executing will be canceled.
 
-![cancel](https://i.imgur.com/m0iP7WX.png)
+![cancel](https://i.imgur.com/wEBTqks.png)

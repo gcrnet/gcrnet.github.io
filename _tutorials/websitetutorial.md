@@ -35,11 +35,11 @@ For this tutorial we will name our website "test_blog". Issue the command below 
 jekyll new test_blog
 ```
 
-![create](https://i.imgur.com/w5G2WG9.png)
+![create](https://i.imgur.com/McxuVI2.png)
 
 Jekyll creates some default content for the new site.
 
-![default_content](https://i.imgur.com/i0sydRw.png)
+![default_content](https://i.imgur.com/A4IzBa0.png)
 Change directory into the `test_blog` directory
 ```yml
 cd test_blog
@@ -48,11 +48,11 @@ Run the command below at the terminal and Jekyll will take all the peices of our
 ```yml
 bundle exec jekyll serve
 ```	 
-![jekyll-serve](https://i.imgur.com/us5KXsi.png)
+![jekyll-serve](https://i.imgur.com/raExmIh.png)
 
 The local host server now display the new website from the browser.
 
-![localhost](https://i.imgur.com/eGrrVpe.png)
+![localhost](https://i.imgur.com/vF3qyrJ.png)
                                         
 `test_blog`: the root directory                      
 `_posts`: folder with all the blog posts.   
@@ -161,7 +161,7 @@ We will be showing an example of the theme change.
 Every theme has a link to the github repository which shows exactly how to use the theme in the `readme.md` section.
 For the example we selected a "jekyll-hacker theme" from the internet. We will read the instructions on how to use it and install it. We will show the difference between the jekyll minia theme and the new theme.
 
-![hacker_theme](https://i.imgur.com/uNrwrnD.png)
+![hacker_theme](https://i.imgur.com/FJGNBhT.png)
 
 We can see the theme change.
 
@@ -232,12 +232,12 @@ Setting up and hosting a static site in gh-pages:
 1. Create a Github account.
 2. Install git on your computer.
 3. Create a new repository and name that, `test_blog`. Do not initiliaze a readme file.
-![new_repo](https://i.imgur.com/jfAcGzh.png)
+![new_repo](https://i.imgur.com/T0Trs6B.png)
 4. After creating the repository, we need to edit a variable in config.yaml file.
    * Edit `baseurl` attribute.
    * Add the website name into the base url, in this case it is `test_blog`.
    * If you are planning on using a custom  domain name you need to put that in the base url.
-![baseurl](https://i.imgur.com/6I8L9WA.png)
+![baseurl](https://i.imgur.com/OTsv4GI.png)
 5. Set up a Github repository inside of Jekyll project and upload it into github.
 
 Git commands for creating repository and uploading all files to github :
@@ -253,15 +253,15 @@ This is an initial commit.
 6. `git push origin gh-pages` <br>
 This will upload all the files to gh-pages.
 
-![upload](https://i.imgur.com/iouj7zZ.png)
+![upload](https://i.imgur.com/7ud5MhT.png)
 
 After you upload you will see all the files in github
 
-![hosted](https://i.imgur.com/QYJaz66.png)
+![hosted](https://i.imgur.com/F4wTFUF.png)
 
 You can go to settings tab and scroll down you will see "your site is published."
 
-![published](https://i.imgur.com/bGBg8UH.png)
+![published](https://i.imgur.com/m4TPImv.png)
 
 You can use that link to visit your static website.
 
