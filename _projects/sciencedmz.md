@@ -219,7 +219,7 @@ Taking the limitations stated above into consideration, virtualization is not re
 	<li> On the other hand, the monitoring process in enterprise networks focuses on single-domain performance metrics.</li>
 </ul>
 
-![monitoring](https://i.imgur.com/EqtE2zs.png)
+![monitoring](https://i.imgur.com/f9e1qk2.png)
 
 <h3>perfSONAR application</h3>
 
@@ -231,9 +231,9 @@ One of the main features of perfSONAR is its cooperative nature by which an inst
 
 Based on the below figure, campus network 1 can measure metrics from itself to campus network 2. Campus network 1 can also measure metrics to the service providers.
 
-![perfsonar](https://i.imgur.com/GuT0L3l.png)
+![perfsonar](https://i.imgur.com/JKJCFTt.png)
 
 Comparisons can be drawn between SNMP and perfSONAR
 
-![comp-perfsonar](https://i.imgur.com/Y0rw4R8.png)
+![comp-perfsonar]([https://i.imgur.com/cqwIomL.png)
 
