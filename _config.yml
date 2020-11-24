@@ -43,6 +43,8 @@ collections:
     output: true
   tutorials:
     output: true
+  downloads:
+    output: true
   howto:
     output: true
     permalink: /:collection/:name
