@@ -235,5 +235,5 @@ Based on the below figure, campus network 1 can measure metrics from itself to c
 
 Comparisons can be drawn between SNMP and perfSONAR
 
-![compperfsonar]([https://i.imgur.com/cqwIomL.png)
+![comp-perfsonar](https://i.imgur.com/cqwIomL.png)
 
