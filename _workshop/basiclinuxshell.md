@@ -28,10 +28,10 @@ part from the [Software Carpentry Lessons](https://software-carpentry.org/lesson
 
 To continue with the learning process, we encourage participants to follow the
 steps below for setup.
-## [Setup](#TheSetup)
-### [Windows](#Windows)
-### [macOS](#macOS)
-### [Linux](#Linux)
+[Setup](#TheSetup)
+[Windows](#Windows)
+[macOS](#macOS)
+[Linux](#Linux)
 
 <a name="TheSetup"></a>
 ## Setup
