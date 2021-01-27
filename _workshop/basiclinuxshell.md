@@ -26,7 +26,14 @@ This workshop is designed on the model developed by the [Software and Data
 Carpentry](https://carpentries.org/workshops/). The material on this page is
 part from the [Software Carpentry Lessons](https://software-carpentry.org/lessons/)
 
+To continue with the learning process, we encourage participants to follow the
+steps below for setup.
+## [Setup](#TheSetup)
+### [Windows](#Windows)
+### [macOS](#macOS)
+### [Linux](#Linux)
 
+<a name="TheSetup"></a>
 ## Setup
 Download [data-shell.zip](http://swcarpentry.github.io/
 shell-novice/data/data-shell.zip) and move the file to
@@ -39,7 +46,8 @@ key. This step will make sure you start with your home
 folder as your working directory. Later on, you will
 find out how to access the data files in this folder.
 
-### [Windows](#tab/windows)
+<a name="Windows"></a>
+### Windows
 Computers with Windows operating systems~(OS) older than
 Windows 10 do not have the Bash shell installed by default.
 If you have a Windows OS older than Windows 10, we encourage
@@ -64,7 +72,8 @@ tool, or installing and using a Unix/Linux emulator.
   * [Using a Unix/Linux emulator (Cygwin) or Secure Shell (SSH) client (Putty)](http://faculty.smu.edu/reynolds/unixtut/windows.html)      
 Please note that commands in the Windows Subsystem for Linux or Cygwin may differ slightly from those shown in the lesson or presented in the workshop.
 
-### [macOS](#tab/macOS)
+<a name="macOS"></a>
+### macOS
 For a Mac computer running macOS Mojave or earlier
 releases, the default Unix Shell is Bash. For a Mac
 computer running macOS Catalina or later releases,
@@ -82,7 +91,8 @@ If your machine uses something other than Bash, you can run it by opening a term
 
   * [How to Use Terminal on a Mac](http://www.macworld.co.uk/feature/mac-software/how-use-terminal-on-mac-3608274/)
 
-### [Linux](#tab/Linux)
+<a name="Linux"></a>
+### Linux
 The default Unix Shell for Linux operating systems is
 usually Bash. On most versions of Linux, it is accessible
 by running the [Gnome Terminal](https://help.gnome.org/users/gnome-terminal/stable/)
