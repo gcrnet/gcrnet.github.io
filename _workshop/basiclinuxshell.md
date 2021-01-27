@@ -28,10 +28,10 @@ part from the [Software Carpentry Lessons](https://software-carpentry.org/lesson
 
 To continue with the learning process, we encourage participants to follow the
 steps below for setup.
-[Setup](#TheSetup)
-[Windows](#Windows)
-[macOS](#macOS)
-[Linux](#Linux)
+* [Setup](#TheSetup)
+* [Windows](#Windows)
+* [macOS](#macOS)
+* [Linux](#Linux)
 
 <a name="TheSetup"></a>
 ## Setup
@@ -48,7 +48,7 @@ find out how to access the data files in this folder.
 
 <a name="Windows"></a>
 ### Windows
-Computers with Windows operating systems~(OS) older than
+Computers with Windows operating systems(OS) older than
 Windows 10 do not have the Bash shell installed by default.
 If you have a Windows OS older than Windows 10, we encourage
 you to use an emulator included in Git for Windows, which
