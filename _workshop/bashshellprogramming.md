@@ -177,10 +177,10 @@ Check to see what mode you are currently in. While in command mode, try moving a
 familarizing yourself with some of these shortcuts:
 <table>
 <tr>
-<td colspan = "2"> **Navigation Shortcuts**               </td><td colspan = "2">**Editing Shortcuts** </td>
+<td colspan = "2"><strong>Navigation Shortcuts<strong></td><td colspan = "2"><strong>Editing Shortcuts<strong></td>
  </tr>	      				
 <tr>	      
-<td> **key** </td><td>  **action** </td>    <td>**key**</td>    <td> **action**</td>              
+<td> <strong>key </strong> </td><td><strong>action</strong></td><td><strong>key</strong></td><td><strong>action</strong></td>              
 </tr>
 <tr>	      
 <td> `gg`    </td><td>move to top of file</td><td>`dd`       </td><td>delete line </td>
