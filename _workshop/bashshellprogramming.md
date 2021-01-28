@@ -175,6 +175,26 @@ Add line number to the document by switching to the command mode and typing `:se
 *Vim* has shortcuts (which are completely unituitive, but very useful as you get used to them over time).
 Check to see what mode you are currently in. While in command mode, try moving around the screen and
 familarizing yourself with some of these shortcuts:
+<table>
+<tr>
+<td colspan = "2"> **Navigation Shortcuts**               </td><td colspan = "2">**Editing Shortcuts** </td>
+ </tr>	      				
+<tr>	      
+<td> **key** </td><td>  **action** </td>    <td>**key**</td>    <td> **action**</td>              
+</tr>
+<tr>	      
+<td> `gg`    </td><td>move to top of file</td><td>`dd`       </td><td>delete line </td>
+</tr>	      
+<tr>	      
+<td> `G`     </td><td> move to bottom of file</td><td>`u`</td><td>undo                     </td>
+</tr>
+<tr>	      
+<td> `$`     </td><td>  move to end of line</td><td>`Ctrl + r` </td><td> redo</td>                  
+</tr>
+<tr>	      
+<td> `O`     </td> <td>move to beginning of line</td> <td>`i`,`esc`</td>   <td>insert and command modes</td>
+</tr>	      
+</table>
 
 | **Navigation Shortcuts**             |  **Editing Shortcuts**               |
 |--------------------------------------|--------------------------------------|
