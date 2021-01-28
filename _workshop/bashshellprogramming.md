@@ -179,17 +179,15 @@ familarizing yourself with some of these shortcuts:
 
 **Navigation Shortcuts**         
 
----
-|**key**| **action**               |
-|------ |------------------------- |
-|`gg`   | move to top of file      |
-|`G`    | move to bottom of file   |
-|`$`    | move to end of line      |
-|`O`    | move to beginning of line|
+| **key** |  **action**                |
+| ------  |----------------------------|
+| `gg`    |  move to top of file       |
+| `G`     |  move to bottom of file    |
+| `$`     |  move to end of line       |
+| `O`     |  move to beginning of line |
 
  **Editing Shortcuts**
 
----
 | **key**  | **action**              |
 |--------- |-------------------------|
 |`dd`      | delete line             |
@@ -198,11 +196,10 @@ familarizing yourself with some of these shortcuts:
 |`i`,      | insert mode             |
 |`esc`     | command mode            |
 
-** Saving and quitting**
+**Saving and quitting**
 
----
 | **key** 	  | **action**              |
-| --------------  | ----------------------  |
+| --------------  |-------------------------|
 |`:w`             | write to file (save)    |
 |`:wq`            | write to file and quit  |
 |`:q!`            | quit without saving     |
