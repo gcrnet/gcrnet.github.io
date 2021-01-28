@@ -176,15 +176,13 @@ Add line number to the document by switching to the command mode and typing `:se
 Check to see what mode you are currently in. While in command mode, try moving around the screen and
 familarizing yourself with some of these shortcuts:
 
-
-**Navigation Shortcuts**         
-
-| **key** |  **action**                |
-| ------  |----------------------------|
-| `gg`    |  move to top of file       |
-| `G`     |  move to bottom of file    |
-| `$`     |  move to end of line       |
-| `O`     |  move to beginning of line |
+| **Navigation Shortcuts**             |  **Editing Shortcuts**
+| **key** |  **action**                | **key**   |  **action**              |
+| ------  |----------------------------|---------  |------------------------  |
+| `gg`    |  move to top of file       |`dd`       | delete line              |
+| `G`     |  move to bottom of file    |`u`        | undo                     |
+| `$`     |  move to end of line       |`Ctrl + r` | redo                     |
+| `O`     |  move to beginning of line |`i`,`esc`  | insert and command modes |
 
  **Editing Shortcuts**
 
