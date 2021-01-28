@@ -134,6 +134,21 @@ $ cd ~/Desktop/data-shell
 $ cp notes.txt vim_notes.txt
 $ vim vim_notes.txt
 ~~~
+#### Vim Modes
+Vim has two basic modes that will allow you to create documents and edit your text:
+> * **command mode (default mode):** allows you to save and quit the program (and execute other more advanced commands).
+  * **insert (or edit) mode:** allows you to write and edit text
+
+Files open with `vim` are automatically in command mode. To change to the INSERT mode, push the `i-key` and
+notice the `--INSERT--` at the bottom left hand of the screen.
+
+Type a few lines of text:
+>While vim offers great functionality, it takes time to use, get familiar and learn the shortcuts.
+
+After you have finished typing, press `esc` to enter command mode. Notice the `--INSERT--` disappeared
+from the bottom of the screen.
+
+#### Vim Saving and Quitting
 
 <a name="Shellscriptss"></a>
 ## Shell scripts and for loops
