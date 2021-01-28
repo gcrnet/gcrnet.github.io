@@ -183,7 +183,7 @@ familarizing yourself with some of these shortcuts:
 <td> <strong>key </strong> </td><td><strong>action</strong></td><td><strong>key</strong></td><td><strong>action</strong></td><td><strong>key</strong></td><td><strong>action</strong></td>              
 </tr>
 <tr>	      
-<td><mark>gg</mark></td><td>move to top of file</td><td><mark>dd</mark></td><td>delete line </td><td><mark>:w</mark>, <marl>:wq</mark></td><td>save, save and quit</td>
+<td><mark>gg</mark></td><td>move to top of file</td><td><mark>dd</mark></td><td>delete line </td><td><mark>:w</mark>, <mark>:wq</mark></td><td>save, save and quit</td>
 </tr>	      
 <tr>	      
 <td><mark>G</mark></td><td>move to bottom of file</td><td><mark>u</mark></td><td>undo</td><td><mark>:q!</mark></td><td>quit without saving</td>
