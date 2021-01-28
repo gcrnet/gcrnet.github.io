@@ -175,6 +175,7 @@ Add line number to the document by switching to the command mode and typing `:se
 *Vim* has shortcuts (which are completely unituitive, but very useful as you get used to them over time).
 Check to see what mode you are currently in. While in command mode, try moving around the screen and
 familarizing yourself with some of these shortcuts:
+
 ---
 | **Navigation Shortcuts**         |    **Editing Shortcuts**           |
 |----------------------------------|------------------------------------|
@@ -184,6 +185,7 @@ familarizing yourself with some of these shortcuts:
 |`G`    | move to bottom of file   |`u`       | undo                    |
 |`$`    | move to end of line      |`Ctrl + r`| redo                    |
 |`O`    | move to beginning of line|`i`, `esc`| insert and command modes|
+
 
 <a name="Shellscriptss"></a>
 ## Shell scripts and for loops
