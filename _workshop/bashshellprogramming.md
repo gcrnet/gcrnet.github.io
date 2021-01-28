@@ -158,16 +158,22 @@ left-hand section of the screen.
 
 Alternatively, we can write to file (save) and quit all at once. Let’s do that by typing `:wq`. Now, you should
 have exited vim and returned to the command prompt. To edit your `vim_notes.txt` document, open up the file again
-using the same command you used to create the file:``vim vim_notes.txt`.
+using the same command you used to create the file:
+
+```
+$vim vim_notes.txt
+```
 
 Change into the insert mode and type a few more lines (you can move around the lines of text using
 the arrows on the keyboard). This time we decide to quit without saving by typing `:q!`
 
 #### Vim Editing
 Create a new document `new_vim_test.txt` in vim. Enter the text as follows:
+
 ```add image```
 
 Add line number to the document by switching to the command mode and typing `:set number`.
+
 ```add image```
 
 **Save the document**. If you choose to remove the line numbers later you can type `:set nonumber`
@@ -195,18 +201,6 @@ familarizing yourself with some of these shortcuts:
 <td><mark>O</mark></td> <td>move to beginning of line</td><td><mark>i</mark>, <mark>esc</mark></td>   <td>insert and command modes</td><td><mark>:set nonumber</mark></td><td>not display line numbers</td>
 </tr>	      
 </table>
-
-
-**Saving and quitting**
-
-| **key** 	  | **action**              |
-| --------------  |-------------------------|
-|`:w`             | write to file (save)    |
-|`:wq`            | write to file and quit  |
-|`:q!`            | quit without saving     |
-|`:set number`    | display line numbers    |
-|`:set nonumber`  | not display line numbers|
-
 
 <a name="Shellscriptss"></a>
 ## Shell scripts and for loops
