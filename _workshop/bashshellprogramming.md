@@ -183,16 +183,16 @@ familarizing yourself with some of these shortcuts:
 <td> <strong>key </strong> </td><td><strong>action</strong></td><td><strong>key</strong></td><td><strong>action</strong></td>              
 </tr>
 <tr>	      
-<td> `gg`    </td><td>move to top of file</td><td>`dd`       </td><td>delete line </td>
+<td><mark>gg</mark></td><td>move to top of file</td><td><mark>dd</mark></td><td>delete line </td>
 </tr>	      
 <tr>	      
-<td> `G`     </td><td> move to bottom of file</td><td>`u`</td><td>undo                     </td>
+<td><mark>G</mark>    </td><td> move to bottom of file</td><td><mark>u</mark></td><td>undo                     </td>
 </tr>
 <tr>	      
-<td> `$`     </td><td>  move to end of line</td><td>`Ctrl + r` </td><td> redo</td>                  
+<td><mark>$</mark>    </td><td>  move to end of line</td><td><mark>Ctrl + r</mark> </td><td> redo</td>                  
 </tr>
 <tr>	      
-<td> `O`     </td> <td>move to beginning of line</td> <td>`i`,`esc`</td>   <td>insert and command modes</td>
+<td><mark>O</mark></td> <td>move to beginning of line</td><td><mark>i</mark>,<mark>esc</mark></td>   <td>insert and command modes</td>
 </tr>	      
 </table>
 
