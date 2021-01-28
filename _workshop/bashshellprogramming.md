@@ -137,7 +137,7 @@ $ vim vim_notes.txt
 #### Vim Modes
 Vim has two basic modes that will allow you to create documents and edit your text:
 > * **command mode (default mode):** allows you to save and quit the program (and execute other more advanced commands).
-  * **insert (or edit) mode:** allows you to write and edit text
+ * **insert (or edit) mode:** allows you to write and edit text
 
 Files open with `vim` are automatically in command mode. To change to the INSERT mode, push the `i-key` and
 notice the `--INSERT--` at the bottom left hand of the screen.
