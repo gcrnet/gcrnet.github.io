@@ -176,7 +176,8 @@ Add line number to the document by switching to the command mode and typing `:se
 Check to see what mode you are currently in. While in command mode, try moving around the screen and
 familarizing yourself with some of these shortcuts:
 
-| **Navigation Shortcuts**             |  **Editing Shortcuts**
+| **Navigation Shortcuts**             |  **Editing Shortcuts**               |
+|--------------------------------------|--------------------------------------|
 | **key** |  **action**                | **key**   |  **action**              |
 | ------  |----------------------------|---------  |------------------------  |
 | `gg`    |  move to top of file       |`dd`       | delete line              |
