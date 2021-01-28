@@ -177,7 +177,7 @@ Check to see what mode you are currently in. While in command mode, try moving a
 familarizing yourself with some of these shortcuts:
 <table>
 <tr>
-<td colspan = "2"><strong>Navigation Shortcuts<strong></td><td colspan = "2"><strong>Editing Shortcuts<strong></td>
+<td colspan = "2"><strong>Navigation Shortcuts</strong></td><td colspan = "2"><strong>Editing Shortcuts</strong></td>
  </tr>	      				
 <tr>	      
 <td> <strong>key </strong> </td><td><strong>action</strong></td><td><strong>key</strong></td><td><strong>action</strong></td>              
