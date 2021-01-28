@@ -4,7 +4,7 @@ title: Intermediate Bash Shell Scripting
 feature-img: "https://i.imgur.com/4KpVtQF.png"
 date: 21 December 2020
 ---
-|**Audience**       | All                                                                           |
+|**Audience**       | All                                                                           |		
 |------------------ |-------------------------------------------------------------------------------|                 
 |**Prerequisites**  | [Basic Linux Commands](https://gcrnet.github.io/workshop/basiclinuxshell.html)|
 |**Duration**       | 2 hour workshop (~2 hours of trainer-led time)                                |
@@ -179,13 +179,12 @@ familarizing yourself with some of these shortcuts:
 ---
 | **Navigation Shortcuts**         |    **Editing Shortcuts**           |
 |----------------------------------|------------------------------------|
-|**key**| **action**               | **key**  | **action**              |                                            |
-|-------|--------------------------|----------|-------------------------|
-|`gg`   | move to top of file      |`dd`      | delete line             |
-|`G`    | move to bottom of file   |`u`       | undo                    |
-|`$`    | move to end of line      |`Ctrl + r`| redo                    |
+|**key**| **action**               | **key**  | **action**              |  
+|-------|--------------------------|----------|-------------------------|    
+|`gg`   | move to top of file      |`dd`      | delete line             |    
+|`G`    | move to bottom of file   |`u`       | undo                    |    
+|`$`    | move to end of line      |`Ctrl + r`| redo                    |   
 |`O`    | move to beginning of line|`i`, `esc`| insert and command modes|
-
 
 <a name="Shellscriptss"></a>
 ## Shell scripts and for loops
