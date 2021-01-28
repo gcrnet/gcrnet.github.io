@@ -178,9 +178,8 @@ familarizing yourself with some of these shortcuts:
 
 ---
 | **Navigation Shortcuts**         |    **Editing Shortcuts**           |
-|----------------------------------|------------------------------------|
+| -------------------------------- | ---------------------------------- |
 |**key**| **action**               | **key**  | **action**              |  
-|-------|--------------------------|----------|-------------------------|    
 |`gg`   | move to top of file      |`dd`      | delete line             |    
 |`G`    | move to bottom of file   |`u`       | undo                    |    
 |`$`    | move to end of line      |`Ctrl + r`| redo                    |   
