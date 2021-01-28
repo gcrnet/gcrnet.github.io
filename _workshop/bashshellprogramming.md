@@ -177,7 +177,7 @@ Check to see what mode you are currently in. While in command mode, try moving a
 familarizing yourself with some of these shortcuts:
 ---
 | **Navigation Shortcuts**         |    **Editing Shortcuts**           |
-|-------|--------------------------|----------|-------------------------|
+|----------------------------------|------------------------------------|
 |**key**| **action**               | **key**  | **action**              |                                            |
 |-------|--------------------------|----------|-------------------------|
 |`gg`   | move to top of file      |`dd`      | delete line             |
