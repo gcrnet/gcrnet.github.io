@@ -97,6 +97,35 @@ ctrl + e      # end of line
 <a name="IntroVim"></a>
 ## Introduction To Vim
 
+### Creating Text Files
+> **NOTE:** by "text editor," we really do mean "text". The editors can only work with plain characters,
+  not tables, images, nor any other media.
+There are two ways to create text files: using GUI text editors or command-line text editors
+
+#### GUI text editors
+[TextWrangler](http://www.barebones.com/products/textwrangler/), [Sublime](http://www.sublimetext.com/),
+and [Notepad++](http://notepad-plus-plus.org/) are examples of GUI text editors. They have a **G**raphical
+**U**ser **I**nterface that has buttons and menus that you can click on to issue commands to the
+computer and you can move about the interface just by pointing and clicking.
+
+#### Command-line text editors
+If we are working on remote computer (i.e. high-performance compute environments) we don't have
+access to a GUI and so we need to use **Command-line editors** to create, modify and save files.
+When using these types of editors, you cannot 'point-and-click', you must navigate the interface
+using only the keyboard.
+
+Popular command-line editors include [nano](https://www.nano-editor.org/), [Emacs](http://www.gnu.org/software/emacs/)
+or [Vim](https://www.vim.org/). These editors are available by default
+on any shell environment, including on high-performance compute environments (local or cloud).
+
+### Vim Text Editor
+It is a powerful text editor with extensive text editing options; however, in this introduction
+we are going to focus on exploring some of the more basic functions. To help you remember some of
+the keyboard shortcuts introduced and to allow you to explore additional functionality on your own,
+the research team at the Children Hospital of Philadelphia has compiled a [cheatsheet](https://hbctraining.github.io/In-depth-NGS-Data-Analysis-Course/resources/VI_CommandReference.pdf)
+
+#### Vim Interface
+
 <a name="Shellscriptss"></a>
 ## Shell scripts and for loops
 
