@@ -198,6 +198,18 @@ familarizing yourself with some of these shortcuts:
 |`i`,      | insert mode             |
 |`esc`     | command mode            |
 
+** Saving and quitting**
+
+---
+| **key** 	  | **action**              |
+| --------------  | ----------------------  |
+|`:w`             | write to file (save)    |
+|`:wq`            | write to file and quit  |
+|`:q!`            | quit without saving     |
+|`:set number`    | display line numbers    |
+|`:set nonumber`  | not display line numbers|
+
+
 <a name="Shellscriptss"></a>
 ## Shell scripts and for loops
 
