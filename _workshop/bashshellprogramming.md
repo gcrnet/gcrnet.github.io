@@ -123,7 +123,8 @@ on any shell environment, including on high-performance compute environments (lo
 It is a powerful text editor with extensive text editing options; however, in this introduction
 we are going to focus on exploring some of the more basic functions. To help you remember some of
 the keyboard shortcuts introduced and to allow you to explore additional functionality on your own,
-the research team at the Children Hospital of Philadelphia has compiled a [cheatsheet](https://hbctraining.github.io/In-depth-NGS-Data-Analysis-Course/resources/VI_CommandReference.pdf)
+the research team at the [Harvard Chan Bioinformatics Core](https://bioinformatics.sph.harvard.edu/)
+has compiled a [cheatsheet](https://hbctraining.github.io/In-depth-NGS-Data-Analysis-Course/resources/VI_CommandReference.pdf)
 
 #### Vim Interface
 Get into your work environment with `cd` and make a copy of the file `notes.txt` into a new document entitled
@@ -149,6 +150,40 @@ After you have finished typing, press `esc` to enter command mode. Notice the `-
 from the bottom of the screen.
 
 #### Vim Saving and Quitting
+
+To write to file (save), type `:w`. You can see the commands you type in the bottom left-hand corner of the screen.
+
+After you have saved the file, the total number of lines and characters in the file will print out at the bottom
+left-hand section of the screen.
+
+Alternatively, we can write to file (save) and quit all at once. Let’s do that by typing `:wq`. Now, you should
+have exited vim and returned to the command prompt. To edit your `vim_notes.txt` document, open up the file again
+using the same command you used to create the file:``vim vim_notes.txt`.
+
+Change into the insert mode and type a few more lines (you can move around the lines of text using
+the arrows on the keyboard). This time we decide to quit without saving by typing `:q!`
+
+#### Vim Editing
+Create a new document `new_vim_test.txt` in vim. Enter the text as follows:
+<add image>
+
+Add line number to the document by switching to the command mode and typing `:set number`.
+<add image>
+
+**Save the document**. If you choose to remove the line numbers later you can type `:set nonumber`
+
+*Vim* has shortcuts (which are completely unituitive, but very useful as you get used to them over time).
+Check to see what mode you are currently in. While in command mode, try moving around the screen and
+familarizing yourself with some of these shortcuts:
+---
+| **Navigation Shortcuts**         |    **Editing Shortcuts**           |
+|-------|--------------------------|----------|-------------------------|
+|**key**| **action**               | **key**  | **action**              |                                            |
+|-------|--------------------------|----------|-------------------------|
+|`gg`   | move to top of file      |`dd`      | delete line             |
+|`G`    | move to bottom of file   |`u`       | undo                    |
+|`$`    | move to end of line      |`Ctrl + r`| redo                    |
+|`O`    | move to beginning of line|`i`, `esc`| insert and command modes|
 
 <a name="Shellscriptss"></a>
 ## Shell scripts and for loops
