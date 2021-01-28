@@ -165,10 +165,10 @@ the arrows on the keyboard). This time we decide to quit without saving by typin
 
 #### Vim Editing
 Create a new document `new_vim_test.txt` in vim. Enter the text as follows:
-<add image>
+```add image```
 
 Add line number to the document by switching to the command mode and typing `:set number`.
-<add image>
+```add image```
 
 **Save the document**. If you choose to remove the line numbers later you can type `:set nonumber`
 
