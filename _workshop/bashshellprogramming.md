@@ -177,43 +177,25 @@ Check to see what mode you are currently in. While in command mode, try moving a
 familarizing yourself with some of these shortcuts:
 <table>
 <tr>
-<td colspan = "2"><strong>Navigation Shortcuts</strong></td><td colspan = "2"><strong>Editing Shortcuts</strong></td>
- </tr>	      				
+<td colspan = "2"><strong>Navigation</strong></td><td colspan = "2"><strong>Editing</strong></td>
+<td colspan = "2"><strong>Saving and quiting</strong></td> </tr>	      				
 <tr>	      
-<td> <strong>key </strong> </td><td><strong>action</strong></td><td><strong>key</strong></td><td><strong>action</strong></td>              
+<td> <strong>key </strong> </td><td><strong>action</strong></td><td><strong>key</strong></td><td><strong>action</strong></td><td><strong>key</strong></td><td><strong>action</strong></td>              
 </tr>
 <tr>	      
-<td><mark>gg</mark></td><td>move to top of file</td><td><mark>dd</mark></td><td>delete line </td>
+<td><mark>gg</mark></td><td>move to top of file</td><td><mark>dd</mark></td><td>delete line </td><td><mark>:w</mark>, <marl>:wq</mark></td><td>save, save and quit</td>
 </tr>	      
 <tr>	      
-<td><mark>G</mark>    </td><td> move to bottom of file</td><td><mark>u</mark></td><td>undo                     </td>
+<td><mark>G</mark></td><td>move to bottom of file</td><td><mark>u</mark></td><td>undo</td><td><mark>:q!</mark></td><td>quit without saving</td>
 </tr>
 <tr>	      
-<td><mark>$</mark>    </td><td>  move to end of line</td><td><mark>Ctrl + r</mark> </td><td> redo</td>                  
+<td><mark>$</mark></td><td>move to end of line</td><td><mark>Ctrl + r</mark></td><td>redo</td><td><mark>:set number</mark></td><td>display line numbers</td>                  
 </tr>
 <tr>	      
-<td><mark>O</mark></td> <td>move to beginning of line</td><td><mark>i</mark>,<mark>esc</mark></td>   <td>insert and command modes</td>
+<td><mark>O</mark></td> <td>move to beginning of line</td><td><mark>i</mark>, <mark>esc</mark></td>   <td>insert and command modes</td><td><mark>:set nonumber</mark></td><td>not display line numbers</td>
 </tr>	      
 </table>
 
-| **Navigation Shortcuts**             |  **Editing Shortcuts**               |
-|--------------------------------------|--------------------------------------|
-| **key** |  **action**                | **key**   |  **action**              |
-| ------  |----------------------------|---------  |------------------------  |
-| `gg`    |  move to top of file       |`dd`       | delete line              |
-| `G`     |  move to bottom of file    |`u`        | undo                     |
-| `$`     |  move to end of line       |`Ctrl + r` | redo                     |
-| `O`     |  move to beginning of line |`i`,`esc`  | insert and command modes |
-
- **Editing Shortcuts**
-
-| **key**  | **action**              |
-|--------- |-------------------------|
-|`dd`      | delete line             |
-|`u`       | undo                    |
-|`Ctrl + r`| redo                    |
-|`i`,      | insert mode             |
-|`esc`     | command mode            |
 
 **Saving and quitting**
 
