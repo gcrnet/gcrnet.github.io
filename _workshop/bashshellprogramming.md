@@ -81,15 +81,15 @@ ctrl + a      # start of line
 ctrl + e      # end of line
 
 ```
-** Visit the sites below to see how bash commands are used **.
-[http://explainshell.com](http://explainshell.com)
-[http://www.commandlinefu.com](http://www.commandlinefu.com)
+**Visit the sites below to see how bash commands are used**
+* [http://explainshell.com](http://explainshell.com)
+* [http://www.commandlinefu.com](http://www.commandlinefu.com)
 
-**Shell Cheat Sheets **
+**Shell Cheat Sheets**
 * [Unix/Linux Command Cheat Sheet]( http://fosswire.com/post/2007/08/unixlinux-command-cheat-sheet/)
 * [Software Carpentry Shell Cheatsheet](https://github.com/swcarpentry/boot-camps/blob/master/shell/shell_cheatsheet.md)
 
-** General Help **
+**General Help**
 * man bash - run this at your command line to learn more about bash
 * Google - Googling things you don't know. Other people have probably had the same question.
 * Learn by doing. There is no better way to learn other than  by trying.
