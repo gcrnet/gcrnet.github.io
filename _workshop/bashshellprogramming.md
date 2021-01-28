@@ -42,76 +42,61 @@ key. This step will make sure you start with your home
 folder as your working directory. Later on, you will
 find out how to access the data files in this folder.
 
-### [Windows](#tab/windows)
-Computers with Windows operating systems~(OS) older than
-Windows 10 do not have the Bash shell installed by default.
-If you have a Windows OS older than Windows 10, we encourage
-you to use an emulator included in Git for Windows, which
-gives you access to both Bash shell commands and Git. Once
-installed, you can open a terminal by running the program Git
-Bash from the Windows start menu.
+[Follow the instructions here to set up your operating system](https://gcrnet.github.io/workshop/basiclinuxshell.html#Windows)
+## Contents
+1. [Basic Shell Commands](#TheBasics)
+2. [Introduction to Vim](#IntroVim)
+3. [Shell scripts and for loops](#Shellscripts)
 
-Additionally, you can run Bash commands from a remote
-computer or server that already has a Unix Shell. This
-can usually be done through a Secure Shell (SSH) client.
-One such client available for free for Windows computers
-is PuTTY. See the **reference** below for information on
-installing and using PuTTY, using the Windows 10 command-line
-tool, or installing and using a Unix/Linux emulator.
 
-**Reference**
-  * [Git for Windows](https://gitforwindows.org/) - Recommended           
+<a name="TheBasic"></a>
+## Basic Shell Commands    
 
-**For advanced users, you may choose one of the following alternatives**:                 
-  * [Install the Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
-  * [Using a Unix/Linux emulator (Cygwin) or Secure Shell (SSH) client (Putty)](http://faculty.smu.edu/reynolds/unixtut/windows.html)      
-Please note that commands in the Windows Subsystem for Linux or Cygwin may differ slightly from those shown in the lesson or presented in the workshop.
+Below is a key of the basic commands you should be familiar with in order to be able to follow this module.
+```
+## Commands
 
-### [macOS](#tab/macOS)
-For a Mac computer running macOS Mojave or earlier
-releases, the default Unix Shell is Bash. For a Mac
-computer running macOS Catalina or later releases,
-the default Unix Shell is `Zsh`. Your default shell is
-available via the Terminal program within your Utilities
-folder. To open Terminal, try one or both of the following:
-  * In Finder, select the Go menu, then select Utilities. Locate Terminal in the Utilities folder and open it.
-  * Use the Mac `Spotlight` computer search function. Search for: `Terminal` and press `Return`.
+cd            # change directory to "~" or to specified directory
+ls            # list contents of current or specified directory
+man <command> # display manual for specified command
+pwd           # specify present working directory
+echo "..."    # display content in quotes on the standard output
+history       # display previous "historical" commands
+cat <file>    # display all contents of a file on the standard output
+less <file>   # open a buffer with the contents of a file
+head <file>   # display the first 10 lines of a file
+tail <file>   # display the last 10 lines of a file
+cp <..> <..>  # copy files or directories
+mdkir         # make a new directory/folder
+mv <..> <..>  # move or rename files or directories
+rm <file>     # remove a file or a folder (-r)
 
-To check if your machine is set up to use something other than Bash, type `echo $SHELL` in your terminal
-window.
-           
-If your machine uses something other than Bash, you can run it by opening a terminal and typing
-`bash`.
+## Other
+~             # home directory
+.             # current directory
+..            # parent directory
+*             # wildcard
+ctrl + c      # cancel current command
+ctrl + a      # start of line
+ctrl + e      # end of line
 
-  * [How to Use Terminal on a Mac](http://www.macworld.co.uk/feature/mac-software/how-use-terminal-on-mac-3608274/)
+```
+** Visit the sites below to see how bash commands are used **.
+[http://explainshell.com](http://explainshell.com)
+[http://www.commandlinefu.com](http://www.commandlinefu.com)
 
-### [Linux](#tab/Linux)
-The default Unix Shell for Linux operating systems is
-usually Bash. On most versions of Linux, it is accessible
-by running the [Gnome Terminal](https://help.gnome.org/users/gnome-terminal/stable/)
-or [KDE Konsole](https://konsole.kde.org/) or [xterm](https://en.wikipedia.org/wiki/Xterm),
-which can be found via the applications menu or the
-search bar. If your machine is set up to use something
-other than Bash, you can run it by opening a terminal
-and typing bash.        
+**Shell Cheat Sheets **
+* [Unix/Linux Command Cheat Sheet]( http://fosswire.com/post/2007/08/unixlinux-command-cheat-sheet/)
+* [Software Carpentry Shell Cheatsheet](https://github.com/swcarpentry/boot-camps/blob/master/shell/shell_cheatsheet.md)
 
-This workshop will not make you an expert but will provide you with a good
-enough foundation for a personal exploration of the Bash shell programing. 
-The workshop is structured as follows:
+** General Help **
+* man bash - run this at your command line to learn more about bash
+* Google - Googling things you don't know. Other people have probably had the same question.
+* Learn by doing. There is no better way to learn other than  by trying.
 
-1. [Introducing the Shell](#TheShell)
-2. [Navigating Files and Directories](#FilesDirectories)
-3. [Pipes and Filters](#PipesFilters)
-4. [Finding Things](#FindThings)
+<a name="IntroVim"></a>
+## Introduction To Vim
 
-<a name="TheShell"></a>
-## Introducing the Shell    
+<a name="Shellscriptss"></a>
+## Shell scripts and for loops
 
-<a name="FilesDirectories"></a>
-## Navigating Files and Directories
-
-<a name="PipesFilters"></a>
-## Pipes and Filters
-
-<a name="FindThings"></a>
-## Finding Things
