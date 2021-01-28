@@ -98,9 +98,10 @@ ctrl + e      # end of line
 ## Introduction To Vim
 
 ### Creating Text Files
+There are two ways to create text files: using GUI text editors or command-line text editors.
 > **NOTE:** by "text editor," we really do mean "text". The editors can only work with plain characters,
   not tables, images, nor any other media.
-There are two ways to create text files: using GUI text editors or command-line text editors
+
 
 #### GUI text editors
 [TextWrangler](http://www.barebones.com/products/textwrangler/), [Sublime](http://www.sublimetext.com/),
@@ -125,6 +126,14 @@ the keyboard shortcuts introduced and to allow you to explore additional functio
 the research team at the Children Hospital of Philadelphia has compiled a [cheatsheet](https://hbctraining.github.io/In-depth-NGS-Data-Analysis-Course/resources/VI_CommandReference.pdf)
 
 #### Vim Interface
+Get into your work environment with `cd` and make a copy of the file `notes.txt` into a new document entitled
+`vim_notes.txt`. Use vim to open the new document
+
+~~~
+$ cd ~/Desktop/data-shell
+$ cp notes.txt vim_notes.txt
+$ vim vim_notes.txt
+~~~
 
 <a name="Shellscriptss"></a>
 ## Shell scripts and for loops
