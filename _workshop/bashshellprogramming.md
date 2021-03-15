@@ -46,7 +46,7 @@ find out how to access the data files in this folder.
 ## Contents
 1. [Basic Shell Commands](#TheBasics)
 2. [Introduction to Vim](#IntroVim)
-3. [Shell scripts and for loops](#Shellscripts)
+3. [Shell Scripts](#Shellscripts)
 
 
 <a name="TheBasic"></a>
@@ -202,6 +202,55 @@ familarizing yourself with some of these shortcuts:
 </tr>	      
 </table>
 
-<a name="Shellscriptss"></a>
-## Shell scripts and for loops
+**Exercise**
 
+We have covered some basic commands in vim, but practice is key for getting comfortable
+with the program. Let’s practice what we just learned in a brief challenge.
+
+1. Open notes.txt, and delete line #2.
+2. Quit without saving.
+3. Open notes.txt again, go to the last line and delete it.
+4. Undo your previous deletion.
+5. Redo your previous deletion.
+6. Save the file and see whether your results match your neighbors.
+
+<a name="Shellscripts"></a>
+## Shell Scripts
+Since we now know how to create text files in the command-line interface, we are going to
+use that knowledge to create a shell script and see what makes the shell such a powerful
+programming environment.
+
+#### Simple Scripts
+Let’s write a shell script that will do two things:
+1. Tell us our current working directory
+2. List the contents of the directory
+
+First open a new file using vim:
+
+```
+$ vim first_script.sh
+```
+Then type the following command into `first_script.sh` file:
+
+```
+echo "Your current working directory is: "
+pwd
+echo "This is the content of your working directory: "
+ls -lFG
+```
+Save and exit the file (`:wq`)
+Use `bash` or `sh` to execute `first_script.sh`
+
+```
+bash first_script.sh
+```
+Execute the script in a diferent directory `other`
+```
+$ mkdir other
+$ mv first_script.sh other
+$ sh other/first_script.sh
+```
+> Did it work as you expected?
+  Was the echo command helpful in letting you know what came next?
+
+#### Bash Variables
