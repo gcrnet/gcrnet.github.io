@@ -301,4 +301,29 @@ $ wc -l $file
   This is why you can reference it from any directory. However, it is only available for your current session.
   If you exit or close your Terminal, the variables you have created will no longer exist.
 
+**Exercise**
+* Reuse the $file variable to store a different file name, and rerun the previous commands.
 
+**Variables can store more than just a single value**
+The command below list all the files ending in `.pdb` in molecules directory.
+```
+$ ls *.pdb
+```
+*Assign* the output to a single variable
+```
+$ files='ls *.pdb'
+```
+> Note the syntax for assigning output of commands to variables.
+
+Check the output
+```
+$ echo $files
+```
+Let’s try the `wc -l` command again, but this time using the new variable `files` as the argument:
+
+```
+$ wc -l $files
+```
+**Exercise**
+
+* Use some of the other commands you are familiar with (*i.e.* `head`, `tail`) on the `files` variable.
