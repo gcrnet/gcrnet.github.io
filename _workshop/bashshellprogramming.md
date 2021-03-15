@@ -251,7 +251,7 @@ $ mv first_script.sh other
 $ sh other/first_script.sh
 ```
 **More elegant way to execute the script**
-1. open the file `$ $ vim first_script.sh'
+1. open the file `$ first_script.sh`
 2. On the first line of the file write ` #! /bin/bash`
 3. Step **2.** indicates to the script where the bash executable is.
 4. Make the script executable with `chmod +x first_script.sh`.
@@ -262,3 +262,43 @@ $ sh other/first_script.sh
   Was the echo command helpful in letting you know what came next?
 
 #### Bash Variables
+A variable is a common concept shared by many programming languages. Variables are
+essentially a symbolic/temporary name for, or a reference to, some information. Variables
+are analogous to “buckets”, where information can be stored, maintained and modified without
+too much hassle.
+
+**Simple variable**    
+Lets assigne 25 to num
+```
+$ num=25
+```
+Retrieve the value of `num`
+```
+$ echo num
+```
+> What do you see at the command line?
+  When retrieving the value stored in the variable, explicitly use a $ in front of it:
+
+```
+$ echo $num
+```
+Variables can also store a string of character values.
+
+```
+$ file=pentane.pdb  
+```
+Change to the molecules dirctory
+
+```
+$ cd molecules
+$ echo $file
+```
+Let's try using the variable in a command
+```
+$ wc -l $file
+```       
+> NOTE: Variables created are system-wide, and independent of where you are in the filesystem.
+  This is why you can reference it from any directory. However, it is only available for your current session.
+  If you exit or close your Terminal, the variables you have created will no longer exist.
+
+
