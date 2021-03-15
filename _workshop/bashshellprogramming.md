@@ -250,7 +250,15 @@ $ mkdir other
 $ mv first_script.sh other
 $ sh other/first_script.sh
 ```
-> Did it work as you expected?
+**More elegant way to execute the script**
+1. open the file `$ $ vim first_script.sh'
+2. On the first line of the file write ` #! /bin/bash`
+3. Step **2.** indicates to the script where the bash executable is.
+4. Make the script executable with `chmod +x first_script.sh`.
+5. Execute in the curent directory with `$ ./first_script.sh`, and hit return .
+6. Execute in the parent directory with `$ /other/first_script.sh`, and hit return .
+
+> Did it work as you expected?   
   Was the echo command helpful in letting you know what came next?
 
 #### Bash Variables
