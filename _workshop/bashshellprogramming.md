@@ -251,8 +251,8 @@ $ mv first_script.sh other
 $ sh other/first_script.sh
 ```
 **More elegant way to execute the script**
-1. open the file `$ first_script.sh`
-2. On the first line of the file write ` #! /bin/bash`
+1. open the file `$ vim first_script.sh`
+2. On the first line of the file write `#! /bin/bash`
 3. Step **2.** indicates to the script where the bash executable is.
 4. Make the script executable with `chmod +x first_script.sh`.
 5. Execute in the curent directory with `$ ./first_script.sh`, and hit return .
@@ -287,6 +287,13 @@ Variables can also store a string of character values.
 ```
 $ file=pentane.pdb  
 ```
+**Passing Argument(s) to a script**
+* Argument(s) are passed to the script at the time of execution.
+* Inside the script,
+  * `$1` variable references the first argument
+  * `$2` variable references the second argument 
+  * `$n` variable references the nth argument
+  * `$0` is reserved and references the current script 
 Change to the molecules dirctory
 
 ```
@@ -301,6 +308,21 @@ $ wc -l $file
   This is why you can reference it from any directory. However, it is only available for your current session.
   If you exit or close your Terminal, the variables you have created will no longer exist.
 
+**Example of Argurment passing to script**
+ * Open the file
+ ```
+ $ vim first_script.sh 
+ ```
+ * Write the following line of code in the file
+ ```
+ #! /bin/bash                                                                    
+ echo "The script name   is: $0 "
+ for filename in $1 $2   $3
+ do
+   echo "Argument passed is $filename"
+   echo "$(wc -l $filename) lines"
+ done
+ ```
 **Exercise**
 * Reuse the $file variable to store a different file name, and rerun the previous commands.
 
@@ -327,3 +349,41 @@ $ wc -l $files
 **Exercise**
 
 * Use some of the other commands you are familiar with (*i.e.* `head`, `tail`) on the `files` variable.
+
+#### Repetitive Tasks
+In the previous example all the files were saved into a single variable `files`. We could access `files`
+content one at a time. This is called **looping**.
+
+**Looping** is a concept shared by several programming languages, and its implementation in *bash* is
+very similar to other languages.
+
+The syntax of (for) loops in bash is as follows:
+```
+for (variable_name) in (list)
+do
+(command1 $variable_name)
+.
+.
+done  
+```
+* **variable_name** defines (or initializes) a variable that takes the value
+of every member of the specified **list** one at a time.
+* At each iteration, the loop retrieves the value stored in the variable.
+* The commands indicated between the *do* and *done* are executed one at a time.
+
+**Example**    
+```
+for File in files
+ do
+   echo $File
+   wc -l $File
+ done
+
+```
+* The script writes to the terminal `(echo)` the name of the file,
+* then the number of lines `(wc -l)` for each file.
+* the number of items in the list (variable name) == number of times the code will loop through.
+* Variable name does matter in the loop.
+* Make the variable name intuitive, indicate functionality.
+
+#### Creating a Script
