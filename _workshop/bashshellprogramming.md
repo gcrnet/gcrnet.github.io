@@ -317,10 +317,10 @@ $ wc -l $file
  ```
  #! /bin/bash                                                                    
  echo "The script name   is: $0 "
- for filename in $1 $2   $3
- do
-   echo "Argument passed is $filename"
-   echo "$(wc -l $filename) lines"
+ for filename in $1 $2 $3
+ do  
+     echo "Argument passed is $filename"
+     echo "$(wc -l $filename) lines"       
  done
  ```
 **Exercise**
