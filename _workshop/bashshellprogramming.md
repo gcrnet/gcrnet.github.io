@@ -316,11 +316,11 @@ $ wc -l $file
  * Write the following line of code in the file
  ```
  #! /bin/bash                                                                    
- echo "The script name   is: $0 "
+ echo "This script was executed as: $0 "
  for filename in $1 $2 $3
  do  
-     echo "Argument passed is $filename"
-     echo "$(wc -l $filename) lines"       
+      echo "Argument passed is $filename"
+      echo "$(wc -l $filename) lines"       
  done
  ```
 **Exercise**
@@ -386,4 +386,3 @@ for File in files
 * Variable name does matter in the loop.
 * Make the variable name intuitive, indicate functionality.
 
-#### Creating a Script
