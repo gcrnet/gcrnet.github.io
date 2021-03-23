@@ -168,13 +168,12 @@ Change into the insert mode and type a few more lines (you can move around the l
 the arrows on the keyboard). This time we decide to quit without saving by typing `:q!`
 
 #### Vim Editing
-Create a new document `new_vim_test.txt` in vim. Enter the text as follows:
+Create a new document `new_vim_test.txt` in vim. Enter the text as follows: `vim new_vim_test.txt`
 
 ![vim new_test.txt](https://i.imgur.com/tYx5su8.png)
 
-Add line number to the document by switching to the command mode and typing `:set number`.
-
-```add image```
+Add line number to the document by switching to the command mode and typing `:set number`.   
+![Imgur](https://i.imgur.com/TNphA6g.png)
 
 **Save the document**. If you choose to remove the line numbers later you can type `:set nonumber`
 
