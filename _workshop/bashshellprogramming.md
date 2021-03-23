@@ -47,7 +47,7 @@ find out how to access the data files in this folder.
 1. [Basic Shell Commands](#TheBasics)
 2. [Introduction to Vim](#IntroVim)
 3. [Shell Scripts](#Shellscripts)
-
+4. [Optional Resourcess](#OptionalResources)
 
 <a name="TheBasic"></a>
 ## Basic Shell Commands    
@@ -361,7 +361,7 @@ The syntax of (for) loops in bash is as follows:
 ```
 for (variable_name) in (list)
 do
-(command1 $variable_name)
+(command $variable_name)
 .
 .
 done  
@@ -385,4 +385,19 @@ for File in files
 * the number of items in the list (variable name) == number of times the code will loop through.
 * Variable name does matter in the loop.
 * Make the variable name intuitive, indicate functionality.
+
+<a name="OptionalRewsources"></a>
+## Optional Resources
+Optional Resources
+
+The following are additional resources that you may find useful:     
+
++ Shell Scripting
+    + [Ryan's tutorial](https://ryanstutorials.net/bash-scripting-tutorial/bash-script.php)       
+    + [The Linux Command Line](http://linuxcommand.org/tlcl.php) (Part 4: Writing Shell Scripts)     
+    + [Bash Guide](http://mywiki.wooledge.org/BashGuide)     
+    + [Shell programming with bash: by example, by counter-example](http://matt.might.net/articles/bash-by-example/)    
++ Networking     
+    + [Introduction to Linux - Chapter 10. Networking](https://tldp.org/LDP/intro-linux/html/chap_10.html)     
+    + [Slackware Linux Essentials - Chapter 13 Basic Network Commands](http://www.slackbook.org/html/basic-network-commands.html)     
 
