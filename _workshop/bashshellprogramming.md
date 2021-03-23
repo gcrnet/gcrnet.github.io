@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Intermediate Bash Shell Scripting
-feature-img: "https://i.imgur.com/4KpVtQF.png"
+#feature-img: "https://i.imgur.com/4KpVtQF.png"
 feature-img: [imgur](https://i.imgur.com/4KpVtQF.png)
 date: 21 December 2020
 ---
