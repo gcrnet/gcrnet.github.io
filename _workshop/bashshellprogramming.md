@@ -170,7 +170,7 @@ the arrows on the keyboard). This time we decide to quit without saving by typin
 #### Vim Editing
 Create a new document `new_vim_test.txt` in vim. Enter the text as follows:
 
-![Vim New File, when opened](https://imgur.com/tYx5su8)
+![Vim New File, when opened](https://i.imgur.com/tYx5su8b.png)
 
 Add line number to the document by switching to the command mode and typing `:set number`.
 
