@@ -388,10 +388,7 @@ for File in files
 
 <a name="OptionalRewsources"></a>
 ## Optional Resources
-Optional Resources
-
 The following are additional resources that you may find useful:     
-
 + Shell Scripting
     + [Ryan's tutorial](https://ryanstutorials.net/bash-scripting-tutorial/bash-script.php)       
     + [The Linux Command Line](http://linuxcommand.org/tlcl.php) (Part 4: Writing Shell Scripts)     
