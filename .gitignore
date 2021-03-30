@@ -1,5 +1,5 @@
 # Idea files
-.idea/*
+#.idea/*
 OFiles/
 
 # Mac files
@@ -8,6 +8,14 @@ OFiles/
 # Byte-compiled / optimized / DLL files
 *.manifest
 *.spec
+
+# ommit images
+*.png
+*.PNG
+*.zip
+*.ipynb
+*.csv
+*.txt
 
 # Jekyll dev or build files
 _site/*
@@ -29,3 +37,4 @@ jekyll-theme-type-on-strap.gemspec
 *copy.md
 .jekyll-cache/*
 test/*
+jupyter_notebooks/*

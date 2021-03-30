@@ -12,7 +12,7 @@ The HTTP error 404, or more commonly called "404 error", means that the page you
 A Gemfile describes the gem dependencies required to execute associated Ruby code. Place the Gemfile in the root of the directory containing the associated code.
 
 * Gemfile.lock - <br>
-The Gemfile. lock file is where Bundler records the exact versions that were installed. This way, when the same library/project is loaded on another machine, running bundle install will look at the Gemfile. ... Running different versions on different machines could lead to broken tests, etc.
+The Gemfile.lock file is where Bundler records the exact versions that were installed. This way, when the same library/project is loaded on another machine, running bundle install will look at the Gemfile. ... Running different versions on different machines could lead to broken tests, etc.
 
 * _config.yml - <br>
 The main configuration file for the IQ Server installation is a YAML formatted file called config. yml found in the installation directory. The config. yml file typically contains only those configuration options which are rarely changed.            
