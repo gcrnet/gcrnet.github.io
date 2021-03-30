@@ -197,7 +197,7 @@ familarizing yourself with some of these shortcuts:
 <td><mark>$</mark></td><td>move to end of line</td><td><mark>Ctrl + r</mark></td><td>redo</td><td><mark>:set number</mark></td><td>display line numbers</td>                  
 </tr>
 <tr>	      
-<td><mark>O</mark></td> <td>move to beginning of line</td><td><mark>i</mark>, <mark>esc</mark></td>   <td>insert and command modes</td><td><mark>:set nonumber</mark></td><td>not display line numbers</td>
+<td><mark>0</mark></td> <td>move to beginning of line</td><td><mark>i</mark>, <mark>esc</mark></td>   <td>insert and command modes</td><td><mark>:set nonumber</mark></td><td>not display line numbers</td>
 </tr>	      
 </table>
 
