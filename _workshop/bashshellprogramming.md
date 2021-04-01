@@ -12,7 +12,7 @@ date: 21 December 2020
 ## Description
 
 This workshop is planned to last for 2 hours. It is a live coding
-workshop and participants are expected to practise along
+workshop and participants are expected to practice along
 with the instructor. Lessons will focus on using the command-line
 text editor, Vim, to create and edit files, utilizing for-loops for
 automation, using variables to store information, and writing scripts
@@ -47,7 +47,7 @@ find out how to access the data files in this folder.
 1. [Basic Shell Commands](#TheBasics)
 2. [Introduction to Vim](#IntroVim)
 3. [Shell Scripts](#Shellscripts)
-4. [Optional Resourcess](#OptionalResources)
+4. [Optional Resources](#OptionalResources)
 
 <a name="TheBasic"></a>
 ## Basic Shell Commands    
@@ -243,7 +243,7 @@ Use `bash` or `sh` to execute `first_script.sh`
 ```
 bash first_script.sh
 ```
-Execute the script in a diferent directory `other`
+Execute the script in a different directory `other`
 ```
 $ mkdir other
 $ mv first_script.sh other
@@ -254,7 +254,7 @@ $ sh other/first_script.sh
 2. On the first line of the file write `#! /bin/bash`
 3. Step **2.** indicates to the script where the bash executable is.
 4. Make the script executable with `chmod +x first_script.sh`.
-5. Execute in the curent directory with `$ ./first_script.sh`, and hit return .
+5. Execute in the current directory with `$ ./first_script.sh`, and hit return .
 6. Execute in the parent directory with `$ /other/first_script.sh`, and hit return .
 
 > Did it work as you expected?   
@@ -267,7 +267,7 @@ are analogous to “buckets”, where information can be stored, maintained and 
 too much hassle.
 
 **Simple variable**    
-Lets assigne 25 to num
+Lets assign 25 to num
 ```
 $ num=25
 ```
@@ -293,7 +293,7 @@ $ file=pentane.pdb
   * `$2` variable references the second argument 
   * `$n` variable references the nth argument
   * `$0` is reserved and references the current script 
-Change to the molecules dirctory
+Change to the molecules directory
 
 ```
 $ cd molecules
