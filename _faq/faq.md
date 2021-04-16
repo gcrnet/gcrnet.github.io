@@ -1,0 +1,11 @@
+---
+layout: post
+title: FAQs
+feature-img: "https://i.imgur.com/4KpVtQF.png"
+date: 16 April 2021
+---
+* [Globus FAQs](#GlobusFAQs)
+
+
+<a name="GlobusFAQs"></a>
+* [Globus FAQs](https://docs.globus.org/faq/transfer-sharing/)    
