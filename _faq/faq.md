@@ -8,4 +8,4 @@ date: 16 April 2021
 
 
 <a name="GlobusFAQs"></a>
-* [Globus FAQs](https://docs.globus.org/faq/transfer-sharing/)    
+* [https://docs.globus.org/faq/transfer-sharing/](Globus FAQs)    
