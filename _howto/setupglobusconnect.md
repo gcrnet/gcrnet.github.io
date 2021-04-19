@@ -11,7 +11,7 @@ date: 19 April 2021
 * Use Globus Connect Personal to enable file transfer to and from your personal machine (laptop or desktop).     
 * A Globus Connect Personal endpoint is intended to be used only by a single user.    
 
-### How to Install Globus Personal Connect     
+### Setting Up Globus Connect Personal     
 
 * [Follow instructions to install Globus Connect Personal on your OS](https://gcrnet.github.io/howto/globusconnectpersonal)            
 * [Login to Globus App](https://go.uncg.edu/globus-login) using the university (iSPARTAN ID) credentials.         
