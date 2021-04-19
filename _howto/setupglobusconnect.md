@@ -38,6 +38,7 @@ If you are a Windows user, click `Download Globus for Windows` otherwise click o
 * **Description** : Say how and for what the collection would be used .       
 * **High Assurance** : Do not select this option as UNCG does not support this feature.      
 * After all the fields are filled, click on save.       
+![Imgur](https://i.imgur.com/DsdSypD.png)
 ![Imgur](https://i.imgur.com/YvJcBGp.png)                 
 * You may click on any of the links below or both.
 * This takes the user to the website.      
