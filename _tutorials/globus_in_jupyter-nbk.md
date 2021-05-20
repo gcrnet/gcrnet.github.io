@@ -2,8 +2,10 @@
 layout: post    
 title Access Globus from a Jupyter Notebook   
 feature-img: "https://i.imgur.com/4KpVtQF.png"   
-date: 20 May 2021
---- 
+date: 20 May 2021    
+---
+
+
 ## Introduction
 ### Globus SDK
 
