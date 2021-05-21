@@ -38,7 +38,7 @@ allows you to access and control [Globus services using Python code](https://www
 Follow screen directions, to create a project. <br>
 Fill in the details that are required for the project. <br>
 After successfully creating a project, click on ‘add app’.
-You can follow this [tutorial](https://globus-sdk-python.readthedocs.io/en/stable/clients/transfer.html) .
+Use this example [tutorial](https://globus-sdk-python.readthedocs.io/en/stable/clients/transfer.html) .
 
 ### Application registration
 <!-- #Image 4 -->
