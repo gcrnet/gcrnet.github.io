@@ -17,7 +17,7 @@ We will present enough information to get you started with your first jekyll web
 7. [Layouts](#layouts)
 8. [Includes](#includes)
 9. [Hosting on Github pages](#hosting)
-10. [Wikki](#wikki)
+10. [Wiki](#wikki)
 
 
 <a name="research"></a>
@@ -266,7 +266,7 @@ You can go to settings tab and scroll down you will see "your site is published.
 You can use that link to visit your static website.
 
 <a name="wikki"></a>
-## Wikki
+## Wiki
 
 [Here](https://www.youtube.com/watch?v=T1itpPvFWHI&list=PLLAZ4kZ9dFpOPV5C5Ay0pHaa0RJFhcmcB) is a link to a vedio tutorial by Giraffe academy.
 This tutorial is very helpful for more detailed information. 
