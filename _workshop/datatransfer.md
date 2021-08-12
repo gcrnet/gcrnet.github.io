@@ -36,7 +36,8 @@ Globus provides scalable, secure solutions to the research community:
   data with external users.   
 * Use open RESTful APIs, with fine grained authorization.         
 * Leverage the growing number of Globus endpoints at hundreds of
-  institutions worldwide.   
+  institutions worldwide.
+
 The Globus platform is built on widely adopted industry standards such as
 OAuth and OpenID Connect for authentication/authorization, and uses trusted
 protocols such as GridFTP and HTTPS. We are going to explore the use of Globus
@@ -57,6 +58,6 @@ for data transfer as follow:
 
 ### Extra Material
 * [Automating Data Transfer with Globus](https://github.com/globus/automation-examples)
-* [Globus Flows](https://www.globus.org/platform/services/flows)
 * [Subscribe to the Globus Mailing List](https://www.globus.org/mailing-lists)
 * [Globus Office Hours](https://www.globus.org/events/globus-office-hours-4)
+* [Globus Platform Services](https://www.globus.org/platform/services)
