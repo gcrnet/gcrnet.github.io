@@ -48,8 +48,8 @@ Since ACLs are implemented in the forwarding plane of a router, they do not comp
 the end-to-end throughput. Additional ofﬂine appliances include payload-based and ﬂow-based
 intrusion detection systems (IDSs).
 
-![image](https://i.imgur.com/ta2jAwM.png)
-
+<!--[image](https://i.imgur.com/ta2jAwM.png)--->
+![Imgur](https://i.imgur.com/4H7pwxd.png)
 
 
 ## Get Started
