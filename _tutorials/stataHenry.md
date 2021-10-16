@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Stata on Henry2 HPC
-feature-img: "https://i.imgur.com/4KpVtQF.png"
+feature-img: "assets/img/pexels/computer.jpeg"
 date: 10 November 2020
 ---
 ##  Stata  
