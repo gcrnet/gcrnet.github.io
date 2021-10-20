@@ -1,7 +1,7 @@
 ---
 layout: post
 title: The gcrNet
-feature-img: "https://i.imgur.com/4KpVtQF.png"
+feature-img: "assets/img/pexels/computer.jpeg"
 date: August, 31 2021
 ---
 
@@ -48,8 +48,7 @@ Since ACLs are implemented in the forwarding plane of a router, they do not comp
 the end-to-end throughput. Additional ofﬂine appliances include payload-based and ﬂow-based
 intrusion detection systems (IDSs).
 
-<!--[image](https://i.imgur.com/ta2jAwM.png)--->
-![Imgur](https://i.imgur.com/4H7pwxd.png)
+<img src="/assets/img/projects/1.png" >
 
 
 ## Get Started

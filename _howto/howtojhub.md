@@ -1,7 +1,7 @@
 ---
 layout: post
 title: JupyterHub HowTos
-feature-img: "https://i.imgur.com/4KpVtQF.png"
+feature-img: "assets/img/pexels/computer.jpeg"
 date: 5 April 2021
 ---
 

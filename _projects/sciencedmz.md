@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Science DMZ
-feature-img: "https://i.imgur.com/4KpVtQF.png"
+feature-img: "assets/img/pexels/computer.jpeg"
 date: June, 19 2020
 ---
 
@@ -36,7 +36,7 @@ point in the network during a certain time interval.*
 
 <h2>Security-Related Differences Between Enterprise Networks and Science DMZs</h2>
 
-![img_1](https://i.imgur.com/HdDr5xS.png)
+<img src="/assets/img/projects/scienceDMZ/1.png" >
 
 <h2>Inventory of the Science DMZ features</h2>
 
@@ -79,7 +79,7 @@ ACLs are implemented in the forwarding plane of a router and do not compromise
 the end-to-end throughput. Additional ofﬂine appliances include payload-based
 and ﬂow-based intrusion detection systems (IDSs).  
 
-![imgages and features](https://i.imgur.com/CWx2xu2.png)
+<img src="/assets/img/projects/scienceDMZ/2.png" >
 
 <h2>Characteristics of the Data Link Layer</h2>
 <ul>
@@ -140,7 +140,7 @@ Best practices used in regular enterprise networks are applicable to Science DMZ
 
 <h3>Switching</h3>
 
-![switching](https://i.imgur.com/PLN6mai.png)
+<img src="/assets/img/projects/scienceDMZ/3.png" >
 
 The above image is a generic router architecture. Modern routers may have a
 network processor (NP) and a table derived from the routing table in each port,
@@ -180,7 +180,7 @@ the achievable throughput can approach the full network capacity.
 **Maximum Transmission Unit** :
 The MTU has a prominent impact on TCP throughput. 
 
-![throughput](https://i.imgur.com/I5q5jre.png)
+<img src="/assets/img/projects/scienceDMZ/4.png" >
 
 The throughput is directly proportional to the MSS. Congestion control algorithms
 perform multiple probes to see how much the network can handle. With high speed
@@ -210,7 +210,7 @@ avoiding the over-allocation of buffers.
 
 **Routers and switches in a hierarchical network**: 
 
-![switch-contd](https://i.imgur.com/MisAIzv.png)
+<img src="/assets/img/projects/scienceDMZ/5.png" >
 
 Above is a hierarchical network, The access layer represents the network edge, where
 trafﬁc enters or exits the network. In Science DMZs, usually DTNs, supercomputer, and
@@ -238,7 +238,7 @@ during the transfer of large ﬂows.
 
 <h2>Comparison of Transport-Layer Features in Enterprise Networks and Science DMZS</h2>
 
-![comparision](https://i.imgur.com/D9Fc2tD.png)
+<img src="/assets/img/projects/scienceDMZ/6.png" >
 
 <h3>Network layer issues</h3>
 
@@ -294,7 +294,7 @@ have not been widely adopted despite encouraging performance results .
 The idea behind a virtual machine is to abstract the hardware of a computer into several execution
 environments. As a physical resource, access to a NIC is also shared. 
 
-![VM](https://i.imgur.com/Trsxi0p.png)
+<img src="/assets/img/projects/scienceDMZ/7.png" >
 
 While virtual technologies have been widely adopted in enterprise networks, their use in Science DMZs
 has been discouraged for several reasons.
@@ -317,7 +317,7 @@ DMZs operating at speeds above 10 Gbps.
 	<li> On the other hand, the monitoring process in enterprise networks focuses on single-domain performance metrics.</li>
 </ul>
 
-![monitoring](https://i.imgur.com/f9e1qk2.png)
+<img src="/assets/img/projects/scienceDMZ/8.png" >
 
 <h3>perfSONAR application</h3>
 
@@ -327,9 +327,9 @@ DMZs operating at speeds above 10 Gbps.
 
 Based on the below figure, campus network 1 can measure metrics from itself to campus network 2. Campus network 1 can also measure metrics to the service providers.
 
-![perfsonar](https://i.imgur.com/JKJCFTt.png)
+<img src="/assets/img/projects/scienceDMZ/9.png" >
 
 Comparisons can be drawn between SNMP and perfSONAR
 
-![comp-perfsonar](https://i.imgur.com/cqwIomL.png)
+<img src="/assets/img/projects/scienceDMZ/10.png" >
 

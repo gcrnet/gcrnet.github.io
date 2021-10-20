@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Intermediate Bash Shell Scripting
-feature-img: "https://i.imgur.com/4KpVtQF.png"     
+feature-img: "assets/img/pexels/computer.jpeg"
 date: 21 December 2020
 ---
-|**Audience**       | All                                                                           |		
-|------------------ |-------------------------------------------------------------------------------|                 
+|**Audience**       | All                                                                           |
+|------------------ |-------------------------------------------------------------------------------| 
 |**Prerequisites**  | [Basic Linux Commands](https://gcrnet.github.io/workshop/basiclinuxshell.html)|
 |**Duration**       | 2 hour workshop (~2 hours of trainer-led time)                                |
 
@@ -170,10 +170,11 @@ the arrows on the keyboard). This time we decide to quit without saving by typin
 #### Vim Editing
 Create a new document `new_vim_test.txt` in vim. Enter the text as follows: `vim new_vim_test.txt`
 
-![vim new_test.txt](https://i.imgur.com/tYx5su8.png)
+<img src="/assets/img/website/bashshell/1.png">
 
-Add line number to the document by switching to the command mode and typing `:set number`.   
-![Imgur](https://i.imgur.com/TNphA6g.png)
+Add line number to the document by switching to the command mode and typing `:set number`. 
+
+<img src="/assets/img/website/bashshell/2.png">
 
 **Save the document**. If you choose to remove the line numbers later you can type `:set nonumber`
 
@@ -183,22 +184,22 @@ familarizing yourself with some of these shortcuts:
 <table>
 <tr>
 <td colspan = "2"><strong>Navigation</strong></td><td colspan = "2"><strong>Editing</strong></td>
-<td colspan = "2"><strong>Saving and quiting</strong></td> </tr>	      				
-<tr>	      
-<td> <strong>key </strong> </td><td><strong>action</strong></td><td><strong>key</strong></td><td><strong>action</strong></td><td><strong>key</strong></td><td><strong>action</strong></td>              
+<td colspan = "2"><strong>Saving and quiting</strong></td> </tr>
+<tr>
+<td> <strong>key </strong> </td><td><strong>action</strong></td><td><strong>key</strong></td><td><strong>action</strong></td><td><strong>key</strong></td><td><strong>action</strong></td> 
 </tr>
-<tr>	      
+<tr>
 <td><mark>gg</mark></td><td>move to top of file</td><td><mark>dd</mark></td><td>delete line </td><td><mark>:w</mark>, <mark>:wq</mark></td><td>save, save and quit</td>
-</tr>	      
-<tr>	      
+</tr>
+<tr>
 <td><mark>G</mark></td><td>move to bottom of file</td><td><mark>u</mark></td><td>undo</td><td><mark>:q!</mark></td><td>quit without saving</td>
 </tr>
-<tr>	      
-<td><mark>$</mark></td><td>move to end of line</td><td><mark>Ctrl + r</mark></td><td>redo</td><td><mark>:set number</mark></td><td>display line numbers</td>                  
+<tr>
+<td><mark>$</mark></td><td>move to end of line</td><td><mark>Ctrl + r</mark></td><td>redo</td><td><mark>:set number</mark></td><td>display line numbers</td>
 </tr>
-<tr>	      
+<tr>
 <td><mark>0</mark></td> <td>move to beginning of line</td><td><mark>i</mark>, <mark>esc</mark></td>   <td>insert and command modes</td><td><mark>:set nonumber</mark></td><td>not display line numbers</td>
-</tr>	      
+</tr>
 </table>
 
 **Exercise**
@@ -257,7 +258,7 @@ $ sh other/first_script.sh
 5. Execute in the current directory with `$ ./first_script.sh`, and hit return .
 6. Execute in the parent directory with `$ /other/first_script.sh`, and hit return .
 
-> Did it work as you expected?   
+> Did it work as you expected?
   Was the echo command helpful in letting you know what came next?
 
 #### Bash Variables
@@ -266,7 +267,7 @@ essentially a symbolic/temporary name for, or a reference to, some information. 
 are analogous to “buckets”, where information can be stored, maintained and modified without
 too much hassle.
 
-**Simple variable**    
+**Simple variable**
 Lets assign 25 to num
 ```
 $ num=25
@@ -363,7 +364,7 @@ do
 (command $variable_name)
 .
 .
-done  
+done
 ```
 * **variable_name** defines (or initializes) a variable that takes the value
 of every member of the specified **list** one at a time.

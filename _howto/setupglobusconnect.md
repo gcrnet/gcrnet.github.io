@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to Set up Globus Connect Personal
-feature-img: "https://i.imgur.com/4KpVtQF.png"
+feature-img: "assets/img/pexels/computer.jpeg"
 date: 19 April 2021
 ---
 
