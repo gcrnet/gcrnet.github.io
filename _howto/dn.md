@@ -9,11 +9,11 @@ In order for Globus to know who you are when you move data between any pair of s
 
  To retrieve your DN, go to [cilogon.org](https://cilogon.org) in your browser. Select an Identity Provider from the drop-down list, and click "Log On" which will take you to the login screen for the Identity Provider you selected. If your university or employer is not in the list, we recommend registering for an [XSEDE account](https://portal.xsede.org/#/guest) as XSEDE is a CILogon Identity Provider.
 
- ![img_1](https://i.imgur.com/7eVUQaI.png)
+<img src="/assets/img/howtoimages/dn/1.png" >
 
  After login you will see the page below
 
- ![img_2](https://i.imgur.com/Oa05lre.png)
+<img src="/assets/img/howtoimages/dn/2.png" >
 
 Click on certificate information and similar line below will be your DN. <br>
 
