@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<!--
+    Type on Strap jekyll theme v2.2.1
+    Copyright 2016-2019 Sylhare
+    Theme free for personal and commercial use under the MIT license
+    https://github.com/sylhare/Type-on-Strap/blob/master/LICENSE
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Main JS (navbar.js, katex_init.js and masonry_init.js)-->
+    <script defer=true src="/assets/js/main.min.js"></script>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/main.css">
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="http://localhost:4000/tutorials/stataHenry.html">
+
+    <!-- RSS -->
+    <link rel="alternate" type="application/atom+xml" title="gcrNet" href="http://localhost:4000/feed.xml"/>
+    
+    
+
+    <!-- KaTeX 0.8.3 -->
+    <!-- if you have any issue check https://github.com/KaTeX/KaTeX -->
+    
+    <script src="/assets/js/vendor/katex.min.js"></script>
+    
+
+    <!-- Google Analytics -->
+    
+    <!-- End Google Analytics -->
+
+    <!-- seo tags -->
+    <!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Stata on Henry2 HPC | gcrNet</title>
+<meta name="generator" content="Jekyll v4.2.1" />
+<meta property="og:title" content="Stata on Henry2 HPC" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Stata Stata is fully featured data analysis and statistical software" />
+<meta property="og:description" content="Stata Stata is fully featured data analysis and statistical software" />
+<link rel="canonical" href="http://localhost:4000/tutorials/stataHenry.html" />
+<meta property="og:url" content="http://localhost:4000/tutorials/stataHenry.html" />
+<meta property="og:site_name" content="gcrNet" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-11-10T00:00:00-05:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Stata on Henry2 HPC" />
+<script type="application/ld+json">
+{"headline":"Stata on Henry2 HPC","dateModified":"2020-11-10T00:00:00-05:00","datePublished":"2020-11-10T00:00:00-05:00","url":"http://localhost:4000/tutorials/stataHenry.html","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/tutorials/stataHenry.html"},"@type":"BlogPosting","description":"Stata Stata is fully featured data analysis and statistical software","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <meta property="og:image" content="http://localhost:4000/assets/img/pexels/computer.jpeg " />
+</head>
+
+  <body>
+    <header class="site-header">
+
+    <!-- Logo and title -->
+	<div class="branding">
+        
+		<a href="/">
+			<img alt="logo img" class="avatar" src="/assets/img/mainlogo.png" />
+		</a>
+        
+
+		<h1 class="site-title">
+			<a aria-label="gcrNet" href="/">
+        gcrNet
+      </a>
+		</h1>
+	</div>
+
+    <!-- Toggle menu -->
+    <nav class="clear">
+    <a aria-label="pull" id="pull" class="toggle" href="#">
+    <i class="fa fa-bars fa-lg"></i>
+    </a>
+
+    <!-- Menu -->
+    <ul class="hide">
+        
+
+        
+            
+            
+        
+            
+            
+        
+            
+            <li class="separator"> | </li>
+            <li>
+                <a class="clear" aria-label="Downloads" title="Downloads" href="/downloads/">
+                     Downloads 
+                </a>
+            </li>
+            
+            
+        
+            
+            <li class="separator"> | </li>
+            <li>
+                <a class="clear" aria-label="FAQ" title="FAQ" href="/faq/">
+                     FAQ 
+                </a>
+            </li>
+            
+            
+        
+            
+            <li class="separator"> | </li>
+            <li>
+                <a class="clear" aria-label="HowTo" title="HowTo" href="/HowTo/">
+                     HowTo 
+                </a>
+            </li>
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            <li class="separator"> | </li>
+            <li>
+                <a class="clear" aria-label="Projects" title="Projects" href="/Projects/">
+                     Projects 
+                </a>
+            </li>
+            
+            
+        
+            
+            
+        
+            
+            <li class="separator"> | </li>
+            <li>
+                <a class="clear" aria-label="Tutorials" title="Tutorials" href="/tutorials/">
+                     Tutorials 
+                </a>
+            </li>
+            
+            
+        
+            
+            <li class="separator"> | </li>
+            <li>
+                <a class="clear" aria-label="Workshops" title="Workshops" href="/workshops/">
+                     Workshops 
+                </a>
+            </li>
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+    </ul>
+
+	</nav>
+</header>
+
+    <div class="content">
+      <article class="feature-image">
+  <header id="main" style="">
+    
+    <h1 id="Stata+on+Henry2+HPC" class="title">Stata on Henry2 HPC</h1>
+    
+
+
+<div class="post-info">
+    <p class="meta">
+      November 10, 2020
+    </p></div>
+
+    
+  </header>
+
+  <section class="post-content">
+  
+      <h2 id="stata">Stata</h2>
+<p><a href="https://www.stata.com/products/which-stata-is-right-for-me/">Stata</a> is fully featured data analysis and statistical software</p>
+
+<h3 id="using-stata-on-henry-2">Using Stata on Henry 2</h3>
+<p>Versions 13 and 16 of stata are installed on Henry2. To use Stata, you must first load the module:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>module load stata
+</code></pre></div></div>
+<p>The Stata binaries are:</p>
+<ul>
+  <li><span style="color:red">stata</span> - Stata for mid-sized datasets (default Stata/IC)</li>
+  <li><span style="color:red">stata-mp</span> - The fastest edition of Stata (for multiprocessor computers) that can analyze the most data (Stata/MP)</li>
+  <li><span style="color:red">stata-se</span> - Stata for large datasets (Stata/SE)</li>
+</ul>
+
+<h3 id="running-stata">Running Stata</h3>
+<p>You can run Stata in three different ways:</p>
+<ol>
+  <li>Interactive on the HPC Compute Nodes</li>
+  <li>Batch jobs on the HPC Compute Nodes</li>
+  <li>Interactive on the HPC Compute Nodes using GUI</li>
+</ol>
+
+<h4 id="interactive-on-the-hpc-compute-nodes">Interactive on the HPC Compute Nodes</h4>
+<p>To request an interactive session on the compute nodes directly, you will <a href="https://projects.ncsu.edu/hpc/Documents/Login.php">login to Henry 2</a>.</p>
+
+<p>For interactive use of STATA, use the commands below on an HPC login node:
+Run an interactive (-Is) job with 12 tasks (-n 12) on 1 node (span[hosts=1])
+with 12 cores per node (select[hc]) for 20 minutes (-W 20).</p>
+
+<p>This is a good way for troubleshooting and testing script before a long run.
+However, you must stay logged in while your jobs are running. For long running jobs, we recommend using batch mode (see below).</p>
+
+<p>With the help of <a href="https://bryan.uncg.edu/faculty-and-staff/li-yin/">Prof. Jay Li</a>, we have a script that you can use to generate a sample Stata <code class="language-plaintext highlighter-rouge">.do</code> file.
+<a href="https://raw.githubusercontent.com/jtande/jhub-file-download/master/Stata/make_script.sh">Dowload</a> the bash script and generate the <code class="language-plaintext highlighter-rouge">.do</code> file. Login to
+Henry2 and in your home directory download the <code class="language-plaintext highlighter-rouge">make_script.sh</code> with the following:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ wget https://raw.githubusercontent.com/jtande/jhub-file-download/master/Stata/make_script.sh
+</code></pre></div></div>
+<p>Generate the <code class="language-plaintext highlighter-rouge">.do</code> file by hitting the return key after each command.  Note the <code class="language-plaintext highlighter-rouge">./</code> on the second command.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ chmod +x make_script.sh
+$ ./make_script.sh &gt; stata_do_script.do
+</code></pre></div></div>
+<p>Before the interactive session follow instructions below to
+<a href="#CommunityTools">install community tools</a> needed by Stata.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ bsub -Is -n 12 -W 20 -R "select[hc] span[hosts=1]" tcsh
+$ stata-mp -b do stata_do_script
+</code></pre></div></div>
+
+<h4 id="batch-jobs-on-the-hpc-compute-nodes">Batch jobs on the HPC Compute Nodes</h4>
+<p>In batch mode, you submit your job to the system and it will run independently, like other HPC jobs. This is the preferred way of submitting large Stata jobs. 
+The following is an example of a batch job submission script (stata_job.csh)
+that will run a <code class="language-plaintext highlighter-rouge">Stata job</code> via <a href="https://projects.ncsu.edu/hpc/Documents/LSF.php#jump">LSF</a> with a do-file called <em>stata_sample.do</em>.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#!/bin/tcsh
+#BSUB -n 12                            ## number of cpus
+#BSUB -W 2:30                          ## Wall clock (HH:MM)
+##BSUB -q queue_name                   ## Henry2 will make a guess
+#BSUB -R span[hosts=1]                 ## Number of nodes
+#BSUB -R select[hc]                    ## Nodes with 12 cores
+#BSUB -R rusage[mem=24GB]              ## Request 24 GB memory, 2GB/core
+#BSUB -J stata_uncg_test               ## Name job on LSF queu
+#BSUB -o stata_test.out                ## Name output file
+#BSUB -e stata_test.err                ## Name error file
+#BSUB -x                               ## Request exclusive run on node
+module load stata                      ## Load stata binaries
+stata-mp -b do stata_sample            ## execute Stata/MP to run script
+</code></pre></div></div>
+<p>Then use the command below to submit the job to the compute node:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ bsub &lt; stata_job.csh
+</code></pre></div></div>
+<p><a name="CommunityTools"></a></p>
+<h3 id="installing-community-tools">Installing Community Tools</h3>
+<p>The community-contributed (e.g <code class="language-plaintext highlighter-rouge">ftools</code> and <code class="language-plaintext highlighter-rouge">ivreg2</code> suites) can be added to
+Stata. These packages are available from the <a href="https://econpapers.repec.org/software/bocbocode/s458213.htm">Statistical Software Components (SSC) archive</a>.</p>
+
+<p>Login on Henry2 and follow the commands below to install tools from the SSC
+archive. The pound sign (#) precedes comments. These commands need to be
+exercised when you are at your home directory. Don’t try to include these
+commands in your Stata .do file because a .do file runs on the HPC compute
+nodes that does not communicate with the SSC.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1. module load stata          # load Stata from module
+2. stata-mp                   # type and hit return key to start Stata
+3. ssc install ftools         # install ftools
+4. ssc install ivreg2         # install ivreg2
+5. ssc inst ranktest          # inst ranktest
+6. ssc inst outreg2           # inst outreg2
+7. exit                       # type and hit return to exit Stata
+</code></pre></div></div>
+<h3 id="hpc-compute-resource-management">HPC Compute Resource Management</h3>
+<p>Compute resource management is important for a smooth execution.</p>
+
+<h3 id="memory-management">Memory Management</h3>
+<p><a href="https://www.stata.com/manuals13/u6.pdf">Memory management in Linux</a> is
+different from Windows. It is <a href="https://www.stata.com/manuals13/dmemory.pdf#dmemoryRemarksandexamplesSeriousbuginLinuxOS">strongly recommended</a> that the
+parameter <span style="color:red">max_memory</span> be defined when running in a Linux environment.</p>
+
+<p>The value of <span style="color:red">max_memory</span> should match the memory
+requested in the batch script <span style="color:red">#BSUB -R rusage[mem=24GB]</span>. The following should then be defined in the .do file. <span style="color:red">set max_memory 24gb, permanently</span>. The option <code class="language-plaintext highlighter-rouge">permanently</code> ensures maximum memory is set once for the job.</p>
+
+<h3 id="using-multiprocessors">Using Multiprocessors</h3>
+<p>We recommend requesting resources such as the number of CPUs prudently. Using too many CPUs may generate temporary data files that exceed your shared storage, causing crashes. The number of processors should be set to ensure there is at
+least <code class="language-plaintext highlighter-rouge">2GB of memory/processor</code>. Processors and cores are used interchangeably. In the batch script above, we requested 12 processors (-n 12) and 24GB of memory.</p>
+
+    
+  </section>
+
+  
+
+</article>
+
+<script src="/assets/scripts/copyCode.js"></script>
+
+<!-- Disqus -->
+
+
+<!-- Post navigation -->
+
+  <div id="post-nav">
+    
+    <div id="previous-post">
+        <a alt="Access Globus from a Jupyter Notebook" href="/tutorials/globus_in_jupyter-nbk.html">
+            <p>Previous post</p>
+            Access Globus from a Jupyter Notebook
+        </a>
+    </div>
+    
+
+    
+    <div id="next-post">
+        <a alt="Jekyll static site generator" href="/tutorials/websitetutorial.html">
+            <p>Next post</p>
+            Jekyll static site generator
+        </a>
+    </div>
+    
+</div>
+
+
+
+<!-- To change color of links in the page -->
+<style>
+  
+
+  header#main {
+    background-repeat:no-repeat;
+   background-image: url('/assets/img/pexels/computer.jpeg');
+  
+  }
+</style>
+
+    </div>
+    
+<footer class="site-footer">
+    <p class="text">
+        </p>
+        <style>
+        *{box-sizing: border-box;}
+        .col{float:left; width:33.33%; padding 5px;}
+        .row::after{content:"";clear:both;display:table;}
+        </style>
+    	
+<table> <tr>
+<td style="vertical-align: middle; text-align: center; border: none;">
+<a href="http://www.uncg.edu" >
+<img src="/assets/img/uncg.png" width=450 alt="UNC Greensboro">
+</a>
+</td>
+
+ 
+<td style="vertical-align: middle; text-align: center; border: none;"><a href="https://www.nsf.gov"><img src="/assets/img/nsf.png" alt="NSF" width=450></a></td>
+
+<td style="vertical-align: middle; text-align: center; border: none;"><a href="https://www.ncat.edu"><img src="/assets/img/ncat.png" alt="NC A&amp;T" width=480></a></td>
+</tr>
+</table>
+            <div class="footer-icons">
+                <ul>
+                <!-- Social icons from Font Awesome, if enabled -->
+                
+
+
+<li>
+    <a href="mailto:j_fossot@uncg.edu" title="Email">
+		<span class="fa-stack fa-lg">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+        </span>
+    </a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </ul>
+            </div>
+</footer>
+
+
+  </body>
+</html>
