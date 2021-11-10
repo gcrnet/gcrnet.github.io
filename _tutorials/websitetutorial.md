@@ -8,20 +8,17 @@ Jekyll is really useful for building static websites. You can use a Jekyll theme
 
 We will present enough information to get you started with your first Jekyll website, from creating content to serving them on Github pages.
 
-1. [Research](#research)
-2. [Installation](#install)
-3. [Creating a site](#create)
-4. [Front matter](#front)
-5. [Config.yaml](#config)
-6. [Installing themes](#themes)
-7. [Layouts](#layouts)
-8. [Includes](#includes)
-9. [Hosting on Github pages](#hosting)
-10. [Wiki](#wikki)
 
+1. [Installation](#install)
+2. [Creating a site](#create)
+3. [Front matter](#front)
+4. [Config.yaml](#config)
+5. [Installing themes](#themes)
+6. [Layouts](#layouts)
+7. [Includes](#includes)
+8. [Hosting on Github pages](#hosting)
+9. [Wiki](#wiki)
 
-<a name="research"></a>
-## Research
 
 
 <a name="install"></a>
@@ -45,6 +42,7 @@ Change directory into the `test_blog` directory
 cd test_blog
 ```
 Run the command below at the terminal and Jekyll will take all the pieces of our website and serve them in our browser. Browse the displayed server address `http://127.0.0.1:400/` to see the content of the website. You can also stop the display with the command `ctrl-c`
+
 ```yml
 bundle exec jekyll serve
 ```
@@ -54,11 +52,12 @@ The local host server now displays the new website from the browser.
 
 <img src="/assets/img/tutorialsimages/jekyll/4.png" >
                                        
-`test_blog`: the root directory                      
-`_posts`: folder with all the blog posts.  
-`_site`:  folder with the final output of the website.  
-`_config.yaml`: file with the settings and basic attributes of the site.    
-`Gemfile`: holds all the dependencies for the website.    
+`test_blog`: the root directory
+`_posts`: folder with all the blog posts.
+`_site`:  folder with the final output of the website.
+`_config.yaml`: file with the settings and basic attributes of the site.
+`Gemfile`: holds all the dependencies for the website.
+`pages`: Folder for adding new pages to website.
 The rest of the files just default basic parts of our website.
 
 <a name="front"></a>
@@ -76,7 +75,6 @@ date: 14 August 2020
 author: Joe Doe
 ---
 ```
-
 We see some special information at the top of our post which is different from the content, That is called front matter.
 
 <a name="config"></a>
@@ -224,6 +222,53 @@ The code snippet below is an example of an include html file which creates a nav
 
 The include file can be included in any part of your website.
 
+<a name="Posts"></a>
+## Creating blog posts
+The _posts folder is where your blog posts live. Posts can be written in both Markdown and HTML. 
+1. In the root directory, open the _posts folder.
+2. Add all the similar blog posts to that particular folder. 
+
+* BLog posts should start with a front matter.
+
+You may include pictures/ images in the blog posts. To do that, use
+
+```
+![My helpful screenshot](/assets/screenshot.jpg)
+```
+
+This helps in icluding images in the post.
+
+<a name="Assets"></a>
+## Assets and how to use them
+
+Using CSS, JS, images and other assets is straightforward with Jekyll. Place them in your site folder and they’ll copy across to the built site.
+Jekyll sites often use this structure to keep assets organized:
+
+```
+├── assets
+│   ├── css
+│   ├── images
+│   └── js
+```
+
+So, from your assets folder, create folders called css, images and js. Additionally, directly under the root create another folder called ‘_sass’. You could use a standard CSS file for styling, we’re going to take it a step further by using Sass. 
+Assets folder can also be used to store images and call these images in the posts. Simply add images in the assets folder and use the image path in the blog posts. 
+here are two ways to call the images in the blog posts.
+
+**Use HTML tags**
+
+```
+<img src="/assets/img.jpg" >
+```
+
+**Use simple syntax**
+
+```
+/assets/screenshot.jpg
+```
+
+After all the formating is done and when the website is ready to publish, we use git hub to host the website.
+
 <a name="hosting"></a>
 ## Hosting on Github pages
 Github pages (gh-pages) is a service that Github offers and allows you to build and host a static website completely for free. Jekyll integrates with gh-pages very well.
@@ -267,6 +312,8 @@ You can use that link to visit your static website.
 
 <a name="wiki"></a>
 ## Wiki
+
+[This link](https://jekyllrb.com/docs/step-by-step/01-setup/) will give a more detailed step by step guidance to build the website.
 
 [Here](https://www.youtube.com/watch?v=T1itpPvFWHI&list=PLLAZ4kZ9dFpOPV5C5Ay0pHaa0RJFhcmcB) is a link to a video tutorial by Giraffe academy.
 This tutorial is very helpful for more detailed information.
