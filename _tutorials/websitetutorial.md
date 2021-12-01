@@ -77,9 +77,11 @@ author: Joe Doe
 ```
 We see some special information at the top of our post which is different from the content, That is called front matter.
 
+config.yaml file has the settings and basic attributes of the site. 
 <a name="config"></a>
 ## Config.yaml
-config.yaml file has the settings and basic attributes of the site.
+It is the very important file in creating the website as this file has the settings and the attributes related to the site.
+The format of the config.yaml file looks like this:
 
 ```yml
 title: Your awesome title
@@ -144,6 +146,18 @@ plugins:
 ```
 Above is an example config.yaml file of `jekyll-minimal` theme. As said earlier this has all the basic configurations and settings of the website.
 
+The detailed information of each attribute is as follows:
+
+**Title**: The title of the page. <br>
+**Author**: <br>
+  **name**: THe name of the website author. <br>
+  **email**: The email of the author <br>
+**description**: This contains the information about website. <br>
+**Minima date format**: This contains the date format to be used in the website. <br>
+**social_links**: You may add the links to your social accounts here. This generates a hyperlink directly to your mentioned social account. <br>
+**Build settings**: This section have the information related to the theme. <br>
+
+For a detailed information on how to setup the config file, click [here](https://jekyllrb.com/docs/step-by-step/09-collections/)
 
 <a name="themes"></a>
 ## Installing themes
@@ -252,20 +266,41 @@ Jekyll sites often use this structure to keep assets organized:
 ```
 
 So, from your assets folder, create folders called css, images and js. Additionally, directly under the root create another folder called ‘_sass’. You could use a standard CSS file for styling, we’re going to take it a step further by using Sass. 
+
+**CSS file**
+In CSS folder, save the styling files and the bootstrap files.
+
+**JS file**
+In this folder, we have all other UI related files.
+
+**Assets folder**
 Assets folder can also be used to store images and call these images in the posts. Simply add images in the assets folder and use the image path in the blog posts. 
 here are two ways to call the images in the blog posts.
 
 **Use HTML tags**
 
 ```
-<img src="/assets/img.jpg" >
+<img src="/assets/images/img.jpg" >
 ```
+by using src, we are giving the source for the image where the image is located. This is the path to read the image. This path is counted from the root directory. In the above example, assests is the root folder, in assets there is another folder as images and inside images folder the image, img.jpg is stored. However, we can create many folders inside image folder and sort the images respectively. The image path should be used in order to display the images on the webpage.
 
 **Use simple syntax**
 
 ```
 /assets/screenshot.jpg
 ```
+Similar to the html tags, we can use image path to display images on the webpage. Instead of giving html tag, simple use the path enclosed quotations. eg: "path". 
+
+For example, Let us see how we have displayed the below image in this page.
+
+<img src="/assets/img/tutorialsimages/jekyll/image(1).png" >
+
+Steps involved:
+1. Save the image in the Assets folder.
+2. Copy the path of the image. The path looks like this: "/assets/img.jpg"
+3. Use the path in the file where the image needs to be published.
+
+<strong> Note: </strong> When displaying images, always use the correct extension of the image. If the image used is JPEG, use imagename.JPEG. follow same for png and jpg.
 
 After all the formating is done and when the website is ready to publish, we use git hub to host the website.
 
