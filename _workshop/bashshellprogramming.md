@@ -86,9 +86,9 @@ ctrl + e      # end of line
 * [http://www.commandlinefu.com](http://www.commandlinefu.com)
 
 **Shell Cheat Sheets**
-http://fosswire.com/post/2007/08/unixlinux-command-cheat-sheet/
-* <a href="assets/pdf/1.pdf" >Unix/Linux Command Cheat Sheet</a>
-* <a href = "https://www.gcrnet.github.io/howto/basicshell">Software Carpentry Shell Cheatsheet </a>
+
+* [Unix/Linux Command Cheat Sheet](http://fosswire.com/post/2007/08/unixlinux-command-cheat-sheet/)
+* [Software Carpentry Shell Cheatsheet](https://gcrnet.github.io/howto/basicshell)
 
 
 **General Help**
