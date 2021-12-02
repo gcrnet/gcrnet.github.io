@@ -86,8 +86,10 @@ ctrl + e      # end of line
 * [http://www.commandlinefu.com](http://www.commandlinefu.com)
 
 **Shell Cheat Sheets**
-* [Unix/Linux Command Cheat Sheet]( http://fosswire.com/post/2007/08/unixlinux-command-cheat-sheet/)
-* [Software Carpentry Shell Cheatsheet](https://github.com/swcarpentry/boot-camps/blob/master/shell/shell_cheatsheet.md)
+http://fosswire.com/post/2007/08/unixlinux-command-cheat-sheet/
+* <a href="assets/pdf/1.pdf" >Unix/Linux Command Cheat Sheet</a>
+* <a href = "https://www.gcrnet.github.io/howto/basicshell">Software Carpentry Shell Cheatsheet </a>
+
 
 **General Help**
 * man bash - run this at your command line to learn more about bash
