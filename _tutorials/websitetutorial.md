@@ -283,6 +283,8 @@ here are two ways to call the images in the blog posts.
 <img src="/assets/images/img.jpg" >
 ```
 _**img**_ is a HTML tag to display image. src is the path for the image where the image is located. This path is counted from the root directory. In the above example, assests is the root folder, in assets there is another folder as images and inside images folder the image, img.jpg is stored. However, we can create many folders inside image folder and sort the images respectively. The image path should be used in order to display the images on the webpage.
+=======
+by using src, we are giving the source for the image where the image is located. This is the path to read the image. This path is counted from the root directory. In the above example, assests is the root folder, in assets there is another folder as images and inside images folder the image, img.jpg is stored. However, we can create many folders inside image folder and sort the images respectively. The image path should be used in order to display the images on the webpage.
 
 **Use simple syntax**
 
@@ -294,6 +296,14 @@ Instead of using html tags, we can use image path to display images on the webpa
 For example, Let us see how we have displayed the below image in this page.
 
 ![](/assets/img/tutorialsimages/jekyll/image(1).png)
+
+/assets/screenshot.jpg
+```
+Similar to the html tags, we can use image path to display images on the webpage. Instead of giving html tag, simple use the path enclosed quotations. eg: "path". 
+
+For example, Let us see how we have displayed the below image in this page.
+
+<img src="/assets/img/tutorialsimages/jekyll/image(1).png" >
 
 Steps involved:
 1. Save the image in the Assets folder.
@@ -324,6 +334,10 @@ The answer is YES! we can display pdf, create a link to open pdf as a new webpag
 <a href = "https://gcrnet.github.io/assets/pdf/1.pdf">
 ```
 This is basically creating a hyperlink to display the pdf an a new webpage. In href, use the path as, "page url/pdf path". In the above code snippet, we want to display the pdf for the same website. Hence we are using **"https://gcrnet.github.io"** as the page url and **"/assets/pdf/1.pdf"** as page path.
+=======
+3. Use the path in the file where the image needs to be published.
+
+<strong> Note: </strong> When displaying images, always use the correct extension of the image. If the image used is JPEG, use imagename.JPEG. follow same for png and jpg.
 
 After all the formating is done and when the website is ready to publish, we use git hub to host the website.
 

@@ -175,6 +175,8 @@ Create a new document `new_vim_test.txt` in vim. Enter the text as follows: `vim
 
 Add line number to the document by switching to the command mode and typing `:set number`. 
 
+Add line number to the document by switching to the command mode and typing `:set number`. 
+
 <img src="/assets/img/website/bashshell/2.png">
 
 **Save the document**. If you choose to remove the line numbers later you can type `:set nonumber`
