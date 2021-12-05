@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Persistent Data Transfer over the Science DMZ
-feature-img: "https://i.imgur.com/4KpVtQF.png"
+feature-img: "assets/img/pexels/computer.jpeg"
 date: 12 August 2021
 ---
 ## Introduction

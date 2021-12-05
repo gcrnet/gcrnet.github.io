@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Retrieve a Distinguished Name (DN)
-feature-img: "https://i.imgur.com/4KpVtQF.png"
+feature-img: "assets/img/pexels/computer.jpeg"
 date: 24 July 2020
 ---
 

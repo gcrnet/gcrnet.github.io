@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Basic Linux Commands
-feature-img: "https://i.imgur.com/4KpVtQF.png"
+feature-img: "assets/img/pexels/computer.jpeg"
 date: 31 August 2020
 ---
 ## Introduction
@@ -65,11 +65,11 @@ installing and using PuTTY, using the Windows 10 command-line
 tool, or installing and using a Unix/Linux emulator.
 
 **Reference**
-  * [Git for Windows](https://gitforwindows.org/) - Recommended           
+  * [Git for Windows](https://gitforwindows.org/) - Recommended
 
-**For advanced users, you may choose one of the following alternatives**:                 
+**For advanced users, you may choose one of the following alternatives**:
   * [Install the Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
-  * [Using a Unix/Linux emulator (Cygwin) or Secure Shell (SSH) client (Putty)](http://faculty.smu.edu/reynolds/unixtut/windows.html)      
+  * [Using a Unix/Linux emulator (Cygwin) or Secure Shell (SSH) client (Putty)](http://faculty.smu.edu/reynolds/unixtut/windows.html)
 Please note that commands in the Windows Subsystem for Linux or Cygwin may differ slightly from those shown in the lesson or presented in the workshop.
 
 <a name="macOS"></a>
@@ -100,7 +100,7 @@ or [KDE Konsole](https://konsole.kde.org/) or [xterm](https://en.wikipedia.org/w
 which can be found via the applications menu or the
 search bar. If your machine is set up to use something
 other than Bash, you can run it by opening a terminal
-and typing bash.        
+and typing bash.
 
 This workshop will not make you an expert but will provide you with a good
 enough foundation for a personal exploration the Unix shell. The shell has
@@ -158,7 +158,7 @@ $ ks: command not found
 ```
 This might happen if the command was mis-typed or if the program corresponding to that command is not installed.
 
-**A Typical Problem**        
+**A Typical Problem**
 A marine biologist, has just returned from a six-month survey of the [North Pacific Gyre](https://en.wikipedia.org/wiki/North_Pacific_Gyre), where she has been sampling gelatinous marine life in the [Great Pacific Garbage Patch](https://en.wikipedia.org/wiki/Great_Pacific_garbage_patch). She has *1520* samples that she’s run through an assay machine to
 measure the relative abundance of *300* proteins. She needs to run these 1520 files through an imaginary program called
 `goostats` she inherited. On top of this huge task, she has to write up results by the end of the month so her paper
@@ -183,7 +183,8 @@ The part of the operating system responsible for managing files and directories 
 It is organized in multiple layers. The top most layer is the root directory. When you remotely login to a
 computer for the first time, you get on the home directory. Every user account on a server (High Performance Computer)
 has a home directory.
-![Examples of a file system](https://i.imgur.com/rumMGhTl.jpg)
+
+<img src="/assets/img/tutorialsimages/GoogleDrive/img1.png", Alt = "Examples of a file system" >
 
 The forward slash character `/` does two things:
   * When it appears at the front of a file or directory name, it refers to the root directory.
@@ -226,13 +227,13 @@ $ creatures          molecules          notes.txt           solar.pdf
 ```
 `ls` prints the names of the files and directories in the current directory. We can make its output more
 comprehensible by using the *-F* option (also known as a switch or a flag) , which tells `ls` to classify
-the output by adding a marker to file and directory names to indicate what they are:    
+the output by adding a marker to file and directory names to indicate what they are:
   * a trailing / indicates that this is a directory
   * @ indicates a link
-  * \* indicates an executable        
+  * \* indicates an executable
 
 Depending on your default options, the shell might also use colors to indicate whether each entry is a file
-or directory.     
+or directory. 
 ```
 Bash
 $ ls -F 

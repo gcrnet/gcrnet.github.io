@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to Use Globus Command Line Interface (CLI)
-feature-img: "https://i.imgur.com/4KpVtQF.png"
+feature-img: "assets/img/pexels/computer.jpeg"
 date: 28 October 2020
 ---
 The Globus CLI, is a standalone application that can be installed on the user’s machine and used to access the Globus service.

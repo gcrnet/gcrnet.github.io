@@ -1,7 +1,7 @@
 ---
 layout: post
 title: GitHub HowTos
-feature-img: "https://i.imgur.com/4KpVtQF.png"
+feature-img: "assets/img/pexels/computer.jpeg"
 date: 6 January 2021
 ---
 
