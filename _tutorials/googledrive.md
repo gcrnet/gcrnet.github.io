@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Google Drive
+title: How to access Google Drive end point in Globus
 feature-img: "assets/img/pexels/computer.jpeg"
 date: 28 July 2021
 ---
