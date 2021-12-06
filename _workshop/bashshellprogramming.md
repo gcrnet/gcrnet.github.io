@@ -89,6 +89,9 @@ ctrl + e      # end of line
 
 * <a href = "https://gcrnet.github.io/assets/pdf/linuxcheatsheet.pdf">Unix/Linux Command Cheat Sheet </a>
 * <a href = "https://gcrnet.github.io/howto/basicshell">Software Carpentry Shell Cheatsheet </a>
+* [Unix/Linux Command Cheat Sheet](http://fosswire.com/post/2007/08/unixlinux-command-cheat-sheet/)
+* [Software Carpentry Shell Cheatsheet](https://gcrnet.github.io/howto/basicshell)
+
 
 **General Help**
 * man bash - run this at your command line to learn more about bash

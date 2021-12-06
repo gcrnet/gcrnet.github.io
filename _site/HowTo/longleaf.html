@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<!--
+    Type on Strap jekyll theme v2.2.1
+    Copyright 2016-2019 Sylhare
+    Theme free for personal and commercial use under the MIT license
+    https://github.com/sylhare/Type-on-Strap/blob/master/LICENSE
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Main JS (navbar.js, katex_init.js and masonry_init.js)-->
+    <script defer=true src="/assets/js/main.min.js"></script>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/main.css">
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="http://localhost:4000/howto/longleaf">
+
+    <!-- RSS -->
+    <link rel="alternate" type="application/atom+xml" title="gcrNet" href="http://localhost:4000/feed.xml"/>
+    
+    
+
+    <!-- KaTeX 0.8.3 -->
+    <!-- if you have any issue check https://github.com/KaTeX/KaTeX -->
+    
+    <script src="/assets/js/vendor/katex.min.js"></script>
+    
+
+    <!-- Google Analytics -->
+    
+    <!-- End Google Analytics -->
+
+    <!-- seo tags -->
+    <!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Access Longleaf HPC cluster through VPN | gcrNet</title>
+<meta name="generator" content="Jekyll v4.2.1" />
+<meta property="og:title" content="Access Longleaf HPC cluster through VPN" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Longleaf cluster The Longleaf HPC cluster is available to UNC Greensboro faculty, staff and students at no charge, You need ONYEN - Only Name You’ll Ever Need - credentials to login on the Longleaf HPC cluster. Virtual Private Network (VPN) and 2-Step Authentication Login to the UNC ITS with your ONYEN + password to download the “Cisco AnyConnect” VPN client: Download the Cisco AnyConnect application, after the search for “VPN” Follow your, Windows, Mac or Linux, operating system’s intruction to install Cisco AnyConnect Application. Type the ‘vpn.unc.edu’ in the VPN section. Type vpn.unc.edu in the VPN section. Group Name: UNCCampus Enter Username, Password, Second Password (Choose one option as shown on the second image) and complete the next step to establish VPN access. Duo is required for 2-step authentication (i.e., the “Second Password”). This is the same product UNC Greensboro uses for 2-factor authentication. Login to the UNC ITS and search “DUO” then follow the 2-Step Verification for Duo: Add a device After successfully establishing the vpn connection, use the information provided to you to login." />
+<meta property="og:description" content="Longleaf cluster The Longleaf HPC cluster is available to UNC Greensboro faculty, staff and students at no charge, You need ONYEN - Only Name You’ll Ever Need - credentials to login on the Longleaf HPC cluster. Virtual Private Network (VPN) and 2-Step Authentication Login to the UNC ITS with your ONYEN + password to download the “Cisco AnyConnect” VPN client: Download the Cisco AnyConnect application, after the search for “VPN” Follow your, Windows, Mac or Linux, operating system’s intruction to install Cisco AnyConnect Application. Type the ‘vpn.unc.edu’ in the VPN section. Type vpn.unc.edu in the VPN section. Group Name: UNCCampus Enter Username, Password, Second Password (Choose one option as shown on the second image) and complete the next step to establish VPN access. Duo is required for 2-step authentication (i.e., the “Second Password”). This is the same product UNC Greensboro uses for 2-factor authentication. Login to the UNC ITS and search “DUO” then follow the 2-Step Verification for Duo: Add a device After successfully establishing the vpn connection, use the information provided to you to login." />
+<link rel="canonical" href="http://localhost:4000/howto/longleaf" />
+<meta property="og:url" content="http://localhost:4000/howto/longleaf" />
+<meta property="og:site_name" content="gcrNet" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-08-14T00:00:00-04:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Access Longleaf HPC cluster through VPN" />
+<script type="application/ld+json">
+{"headline":"Access Longleaf HPC cluster through VPN","dateModified":"2020-08-14T00:00:00-04:00","datePublished":"2020-08-14T00:00:00-04:00","url":"http://localhost:4000/howto/longleaf","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/howto/longleaf"},"@type":"BlogPosting","description":"Longleaf cluster The Longleaf HPC cluster is available to UNC Greensboro faculty, staff and students at no charge, You need ONYEN - Only Name You’ll Ever Need - credentials to login on the Longleaf HPC cluster. Virtual Private Network (VPN) and 2-Step Authentication Login to the UNC ITS with your ONYEN + password to download the “Cisco AnyConnect” VPN client: Download the Cisco AnyConnect application, after the search for “VPN” Follow your, Windows, Mac or Linux, operating system’s intruction to install Cisco AnyConnect Application. Type the ‘vpn.unc.edu’ in the VPN section. Type vpn.unc.edu in the VPN section. Group Name: UNCCampus Enter Username, Password, Second Password (Choose one option as shown on the second image) and complete the next step to establish VPN access. Duo is required for 2-step authentication (i.e., the “Second Password”). This is the same product UNC Greensboro uses for 2-factor authentication. Login to the UNC ITS and search “DUO” then follow the 2-Step Verification for Duo: Add a device After successfully establishing the vpn connection, use the information provided to you to login.","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <meta property="og:image" content="http://localhost:4000/assets/img/pexels/computer.jpeg " />
+</head>
+
+  <body>
+    <header class="site-header">
+
+    <!-- Logo and title -->
+	<div class="branding">
+        
+		<a href="/">
+			<img alt="logo img" class="avatar" src="/assets/img/mainlogo.png" />
+		</a>
+        
+
+		<h1 class="site-title">
+			<a aria-label="gcrNet" href="/">
+        gcrNet
+      </a>
+		</h1>
+	</div>
+
+    <!-- Toggle menu -->
+    <nav class="clear">
+    <a aria-label="pull" id="pull" class="toggle" href="#">
+    <i class="fa fa-bars fa-lg"></i>
+    </a>
+
+    <!-- Menu -->
+    <ul class="hide">
+        
+
+        
+            
+            
+        
+            
+            
+        
+            
+            <li class="separator"> | </li>
+            <li>
+                <a class="clear" aria-label="Downloads" title="Downloads" href="/downloads/">
+                     Downloads 
+                </a>
+            </li>
+            
+            
+        
+            
+            <li class="separator"> | </li>
+            <li>
+                <a class="clear" aria-label="FAQ" title="FAQ" href="/faq/">
+                     FAQ 
+                </a>
+            </li>
+            
+            
+        
+            
+            <li class="separator"> | </li>
+            <li>
+                <a class="clear" aria-label="HowTo" title="HowTo" href="/HowTo/">
+                     HowTo 
+                </a>
+            </li>
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            <li class="separator"> | </li>
+            <li>
+                <a class="clear" aria-label="Projects" title="Projects" href="/Projects/">
+                     Projects 
+                </a>
+            </li>
+            
+            
+        
+            
+            
+        
+            
+            <li class="separator"> | </li>
+            <li>
+                <a class="clear" aria-label="Tutorials" title="Tutorials" href="/tutorials/">
+                     Tutorials 
+                </a>
+            </li>
+            
+            
+        
+            
+            <li class="separator"> | </li>
+            <li>
+                <a class="clear" aria-label="Workshops" title="Workshops" href="/workshops/">
+                     Workshops 
+                </a>
+            </li>
+            
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+    </ul>
+
+	</nav>
+</header>
+
+    <div class="content">
+      <article class="feature-image">
+  <header id="main" style="">
+    
+    <h1 id="Access+Longleaf+HPC+cluster+through+VPN" class="title">Access Longleaf HPC cluster through VPN</h1>
+    
+
+
+<div class="post-info">
+    <p class="meta">
+      August 14, 2020
+    </p></div>
+
+    
+  </header>
+
+  <section class="post-content">
+  
+      <h2 id="longleaf-cluster">Longleaf cluster</h2>
+<ul>
+  <li>The Longleaf HPC cluster is available to UNC Greensboro faculty, staff and students at no charge,</li>
+  <li>You need ONYEN - Only Name You’ll Ever Need - credentials to login on the Longleaf HPC cluster.</li>
+</ul>
+
+<h2 id="virtual-private-network-vpn-and-2-step-authentication">Virtual Private Network (VPN) and 2-Step Authentication</h2>
+<ul>
+  <li><a href="https://help.unc.edu/sp">Login to the UNC ITS</a> with your ONYEN + password to download the “Cisco AnyConnect” VPN client:</li>
+  <li>Download the Cisco AnyConnect application, after the search for “VPN”</li>
+  <li>Follow your, Windows, Mac or Linux, operating system’s intruction to install Cisco AnyConnect Application.</li>
+  <li>Type the ‘vpn.unc.edu’ in the VPN section.</li>
+  <li>Type <code class="language-plaintext highlighter-rouge">vpn.unc.edu</code> in the VPN section.</li>
+  <li>
+    <p>Group Name: UNCCampus
+<img src="/assets/img/howtoimages/longleaf/1.png" /></p>
+  </li>
+  <li>Enter Username, Password, Second Password (Choose one option as shown on the second image) and complete the next step  to establish VPN access.</li>
+  <li>Duo is required for 2-step authentication (i.e., the “Second Password”). This is the same product UNC Greensboro uses for 2-factor authentication.
+    <ul>
+      <li><a href="https://help.unc.edu/sp">Login to the UNC ITS</a> and search “DUO” then follow the <code class="language-plaintext highlighter-rouge">2-Step Verification for Duo: Add a device</code></li>
+    </ul>
+  </li>
+  <li>After successfully establishing the vpn connection, use the information provided to you to login.</li>
+</ul>
+
+
+    
+  </section>
+
+  
+
+</article>
+
+<script src="/assets/scripts/copyCode.js"></script>
+
+<!-- Disqus -->
+
+
+<!-- Post navigation -->
+
+  <div id="post-nav">
+    
+    <div id="previous-post">
+        <a alt="How to Install Globus Connect Personal" href="/howto/globusconnectpersonal">
+            <p>Previous post</p>
+            How to Install Globus Connect Personal
+        </a>
+    </div>
+    
+
+    
+    <div id="next-post">
+        <a alt="Retrieve a Distinguished Name (DN)" href="/howto/dn">
+            <p>Next post</p>
+            Retrieve a Distinguished Name (DN)
+        </a>
+    </div>
+    
+</div>
+
+
+
+<!-- To change color of links in the page -->
+<style>
+  
+
+  header#main {
+    background-repeat:no-repeat;
+   background-image: url('/assets/img/pexels/computer.jpeg');
+  
+  }
+</style>
+
+    </div>
+    
+<footer class="site-footer">
+    <p class="text">
+        </p>
+        <style>
+        *{box-sizing: border-box;}
+        .col{float:left; width:33.33%; padding 5px;}
+        .row::after{content:"";clear:both;display:table;}
+        </style>
+    	
+<table> <tr>
+<td style="vertical-align: middle; text-align: center; border: none;">
+<a href="http://www.uncg.edu" >
+<img src="/assets/img/uncg.png" width=450 alt="UNC Greensboro">
+</a>
+</td>
+
+ 
+<td style="vertical-align: middle; text-align: center; border: none;"><a href="https://www.nsf.gov"><img src="/assets/img/nsf.png" alt="NSF" width=450></a></td>
+
+<td style="vertical-align: middle; text-align: center; border: none;"><a href="https://www.ncat.edu"><img src="/assets/img/ncat.png" alt="NC A&amp;T" width=480></a></td>
+</tr>
+</table>
+            <div class="footer-icons">
+                <ul>
+                <!-- Social icons from Font Awesome, if enabled -->
+                
+
+
+<li>
+    <a href="mailto:j_fossot@uncg.edu" title="Email">
+		<span class="fa-stack fa-lg">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+        </span>
+    </a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </ul>
+            </div>
+</footer>
+
+
+  </body>
+</html>

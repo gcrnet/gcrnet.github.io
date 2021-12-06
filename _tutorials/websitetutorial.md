@@ -274,6 +274,7 @@ In CSS folder, save the styling files and the bootstrap files.
 In this folder, we have all other UI related files.
 
 **Assets folder**
+
 Assets folder can also be used to store images and call these images in the posts. Simply add images in the assets folder and use the image path in the blog posts. 
 here are two ways to call the images in the blog posts.
 
@@ -283,6 +284,9 @@ here are two ways to call the images in the blog posts.
 <img src="/assets/images/img.jpg" >
 ```
 _**img**_ is a HTML tag to display image. src is the path for the image where the image is located. This path is counted from the root directory. In the above example, assests is the root folder, in assets there is another folder as images and inside images folder the image, img.jpg is stored. However, we can create many folders inside image folder and sort the images respectively. The image path should be used in order to display the images on the webpage.
+
+<img src="/assets/img.jpg" >
+```
 
 **Use simple syntax**
 
@@ -324,6 +328,9 @@ The answer is YES! we can display pdf, create a link to open pdf as a new webpag
 <a href = "https://gcrnet.github.io/assets/pdf/1.pdf">
 ```
 This is basically creating a hyperlink to display the pdf an a new webpage. In href, use the path as, "page url/pdf path". In the above code snippet, we want to display the pdf for the same website. Hence we are using **"https://gcrnet.github.io"** as the page url and **"/assets/pdf/1.pdf"** as page path.
+
+/assets/screenshot.jpg
+```
 
 After all the formating is done and when the website is ready to publish, we use git hub to host the website.
 
