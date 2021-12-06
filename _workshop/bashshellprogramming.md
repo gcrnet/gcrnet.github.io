@@ -87,7 +87,7 @@ ctrl + e      # end of line
 
 **Shell Cheat Sheets**
 
-* <a href = "https://gcrnet.github.io/assets/pdf/1.pdf">Unix/Linux Command Cheat Sheet </a>
+* <a href = "https://gcrnet.github.io/assets/pdf/linuxcheatsheet.pdf">Unix/Linux Command Cheat Sheet </a>
 * <a href = "https://gcrnet.github.io/howto/basicshell">Software Carpentry Shell Cheatsheet </a>
 
 **General Help**
