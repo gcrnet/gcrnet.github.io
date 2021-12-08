@@ -86,8 +86,9 @@ ctrl + e      # end of line
 * [http://www.commandlinefu.com](http://www.commandlinefu.com)
 
 **Shell Cheat Sheets**
-* [Unix/Linux Command Cheat Sheet]( http://fosswire.com/post/2007/08/unixlinux-command-cheat-sheet/)
-* [Software Carpentry Shell Cheatsheet](https://github.com/swcarpentry/boot-camps/blob/master/shell/shell_cheatsheet.md)
+
+* <a href = "https://gcrnet.github.io/assets/pdf/1.pdf">Unix/Linux Command Cheat Sheet </a>
+* <a href = "https://gcrnet.github.io/howto/basicshell">Software Carpentry Shell Cheatsheet </a>
 
 **General Help**
 * man bash - run this at your command line to learn more about bash
@@ -171,6 +172,8 @@ the arrows on the keyboard). This time we decide to quit without saving by typin
 Create a new document `new_vim_test.txt` in vim. Enter the text as follows: `vim new_vim_test.txt`
 
 <img src="/assets/img/website/bashshell/1.png">
+
+Add line number to the document by switching to the command mode and typing `:set number`. 
 
 Add line number to the document by switching to the command mode and typing `:set number`. 
 

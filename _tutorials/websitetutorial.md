@@ -282,11 +282,21 @@ here are two ways to call the images in the blog posts.
 ```
 <img src="/assets/images/img.jpg" >
 ```
+_**img**_ is a HTML tag to display image. src is the path for the image where the image is located. This path is counted from the root directory. In the above example, assests is the root folder, in assets there is another folder as images and inside images folder the image, img.jpg is stored. However, we can create many folders inside image folder and sort the images respectively. The image path should be used in order to display the images on the webpage.
+=======
 by using src, we are giving the source for the image where the image is located. This is the path to read the image. This path is counted from the root directory. In the above example, assests is the root folder, in assets there is another folder as images and inside images folder the image, img.jpg is stored. However, we can create many folders inside image folder and sort the images respectively. The image path should be used in order to display the images on the webpage.
 
 **Use simple syntax**
 
 ```
+![](/assets/screenshot.jpg)
+```
+Instead of using html tags, we can use image path to display images on the webpage. Instead of giving html tag, simple use the image path in the parentheses. 
+
+For example, Let us see how we have displayed the below image in this page.
+
+![](/assets/img/tutorialsimages/jekyll/image(1).png)
+
 /assets/screenshot.jpg
 ```
 Similar to the html tags, we can use image path to display images on the webpage. Instead of giving html tag, simple use the path enclosed quotations. eg: "path". 
@@ -298,6 +308,33 @@ For example, Let us see how we have displayed the below image in this page.
 Steps involved:
 1. Save the image in the Assets folder.
 2. Copy the path of the image. The path looks like this: "/assets/img.jpg"
+3. Use the path in the file where the image needs to be displayed by using one of paths above.
+
+**Note:** When displaying images, always use the correct extension of the image. If the image used is JPEG, use imagename.JPEG. follow same for png and jpg.
+
+OK! But can we display a pdf on the webpage?
+
+The answer is YES! we can display pdf, create a link to open pdf as a new webpage using Jekyll. This can be acheived by using HTML tags.
+
+1. Display the pdf in the same webpage.
+
+```
+<embed src="/assets/pdf/1.pdf" width="100%" height="1200px" />
+```
+**embed:** It the HTML tag that allows to display the pdf on the webpage.
+
+**src:** The path where the pdf is saved. We have saved the pdf in the pdf folder that is in the assets folder. You may save the pdf whereever you want. Simply copy the path and use it in the above code snippet to display the pdf on the webpage.
+
+**width:** Defining the width of the pdf to be displayed on the webpage. 
+
+**height:** Defining the height of the pdf to be displayed on the webpage.
+
+2. Create a link to display the pdf in a seperate webpage.
+```
+<a href = "https://gcrnet.github.io/assets/pdf/1.pdf">
+```
+This is basically creating a hyperlink to display the pdf an a new webpage. In href, use the path as, "page url/pdf path". In the above code snippet, we want to display the pdf for the same website. Hence we are using **"https://gcrnet.github.io"** as the page url and **"/assets/pdf/1.pdf"** as page path.
+=======
 3. Use the path in the file where the image needs to be published.
 
 <strong> Note: </strong> When displaying images, always use the correct extension of the image. If the image used is JPEG, use imagename.JPEG. follow same for png and jpg.

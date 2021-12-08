@@ -23,7 +23,7 @@ gulp.task('js', function minijs() {
 });
 
 gulp.task("img", function imging() {
-  return gulp.src('img/**/*.{png,svg,jpg,webp,jpeg,gif}')
+  return gulp.src('img/**/*.{png,svg,jpg,webp,jpeg,gif,pdf}')
     .pipe(imagemin())
     .on('error', (err) => {
       console.log(err.toString());
@@ -32,7 +32,7 @@ gulp.task("img", function imging() {
 });
 
 gulp.task('webp', () =>
-  gulp.src('img/**/*.{png,svg,jpg,jpeg,gif}')
+  gulp.src('img/**/*.{png,svg,jpg,jpeg,gif,pdf}')
     .pipe(webp({
       quality: 60,
       preset: 'photo',
