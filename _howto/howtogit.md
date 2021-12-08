@@ -10,6 +10,7 @@ date: 6 January 2021
 1. [Resolving Issues after Two-Factor Authentication](#Two-FactorIssues)
 2. [Return to a Previous State in Git](#PreviousState)
 3. [How to Uncommit](#Uncommit)
+4. [How to Delete a Git Branch](#DeleteBranch)
 
 
 <a name="Two-FactorIssues"></a>
@@ -50,3 +51,7 @@ Creating a GitHub personal access token.
 <a name="Uncommit"></a>
 ### How to Uncommit
 [How to Uncommit Sensitive Files from Git](https://www.freecodecamp.org/news/how-to-uncommit-sensitive-files-from-git/)
+
+<a name="DeleteBranch"></a>
+### How to Delete a Git Branch
+[How to Delete a Git Branch both Locally and Remotely](https://www.freecodecamp.org/news/how-to-delete-a-git-branch-both-locally-and-remotely/)
