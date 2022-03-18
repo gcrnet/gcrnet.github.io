@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to setup a Google Drive Guest Collection in Globus
+title: How to Setup a Google Drive Guest Collection on Globus
 feature-img: "assets/img/pexels/computer.jpeg"
 date: 18 March 2022
 ---
@@ -10,18 +10,18 @@ date: 18 March 2022
  
 **By the end of this tutorial you will know:**
 
-* How to setup Google Drive endpoint in Globus
-* How to troubleshoot the problems occurred while settingup the Google Drive.
-* Types of authentications for settingup Google Drive endpoint. 
+* How to setup Google Drive Guest Collection on Globus
+* How to troubleshoot the problems occurred while setting up the Guest Collection.
+* Types of authentications for setting up a Guest Collection. 
 
-To setup a Google Drive Guest collection, we need to follow the below steps.
+To setup a Google Drive Guest collection, we need to follow these steps.
 Login to your [globus account](#https://tinyurl.com/wvfyws) in order to setup the google drive end point. <br>
 Navigate to *endpoints* and search for _**"gcrNet DTN-Google-Drive"**_ and click on search icon. <br>
 <img  src = "/assets/img/tutorialsimages/Google_Drive_Globus_Connect/img_1.png" >
 Verify the _**"gcrNet DTN-Google-Drive"**_ endpoint and click on the left arrow <br>
 <img src="/assets/img/tutorialsimages/Google_Drive_Globus_Connect/img_2.png" >
 Since this is the first time you are trying to access the _**"gcrNet DTN-Google-Drive"**_
-end point, globus requests for an authentication/Consent from the user.  <br>
+endpoint, globus requests for an authentication/Consent from the user.  <br>
 In order to continue with the authentication, click on _**“continue.”**_
 <img src = "/assets/img/tutorialsimages/Google_Drive_Globus_Connect/img_3.png" >
 Choose the type of identity you prefer to authenticate with the Globus to access the end point.<br>
