@@ -1,8 +1,8 @@
 ---
 layout: post
-title: How to setup Google Drive end point in Globus
+title: How to setup a Google Drive Guest Collection in Globus
 feature-img: "assets/img/pexels/computer.jpeg"
-date: 03-17-2022
+date: 18 March 2022
 ---
 
 # A Step-by-step process to setup the Google Drive end point
