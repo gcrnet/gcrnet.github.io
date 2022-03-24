@@ -23,8 +23,8 @@ and click on search icon.
 Verify the _**"gcrNet DTN-Google-Drive"**_ endpoint and click on the left arrow   
 <img src="/assets/img/tutorialsimages/GoogleGlobusConnect/img_2.png" >   
 Since this is the first time you are trying to access the _**"gcrNet DTN-Google-Drive"**_
-endpoint, globus requests for an authentication/Consent from the user.   
-In order to continue with the authentication, click on _**“continue.”**_     
+endpoint, globus requires an authentication/Consent. In order to continue with
+the authentication, click on _**“continue.”**_     
 <img src = "/assets/img/tutorialsimages/GoogleGlobusConnect/img_3.png" >    
 Choose the identity to authenticate with and access the end point.      
 <img src = "/assets/img/tutorialsimages/GoogleGlobusConnect/img_4.png" >   
@@ -47,9 +47,9 @@ For adding your Google Drive to collections, Click on _**Add a Guest Collection*
 <img src = "/assets/img/tutorialsimages/GoogleGlobusConnect/img_12.png" >        
 Now Click on _**Browse**_      
 <img src = "/assets/img/tutorialsimages/GoogleGlobusConnect/img_13.png" >    
-Since this is the first time you are trying to access the end point, globus requests
-for an authentication/Consent from the user.       
-In order to continue with the authentication, click on _**“continue.”**_     
+Since this is the first time you are trying to access the end point, globus requires
+an authentication/Consent. In order to continue with the authentication,
+click on _**“continue.”**_     
 <img src = "/assets/img/tutorialsimages/GoogleGlobusConnect/img_14.png" >  
 Choose the identity to authenticate and access the Globus end point, Click on
 your "UNCG Email id"   
