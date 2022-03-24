@@ -25,12 +25,12 @@ endpoint, globus requests for an authentication/Consent from the user.  <br>
 In order to continue with the authentication, click on _**“continue.”**_
 <img src = "/assets/img/tutorialsimages/Google_Drive_Globus_Connect/img_3.png" >
 Choose the type of identity you prefer to authenticate with the Globus to access the end point.<br>
-<img src = "/assets/img/tutorialsimages/Google_Drive_Globus_Connect/img_4.png" >
-After reading the terms and services, click on _**Allow**_ to continue. <br>
-<img src = "/assets/img/tutorialsimages/Google_Drive_Globus_Connect/img_5.png" >
+<img src = "/assets/img/tutorialsimages/Google_Drive_Globus_Connect/img_4.png" >  
+After reading the terms and services, click on _**Allow**_ to continue. <br> 
+<img src = "/assets/img/tutorialsimages/Google_Drive_Globus_Connect/img_5.png" >  
 Since you don't have any collection with _**"gcrNet DTN-Google-Drive"**_ endpoint, 
 You need to add guest collection by clicking on _**Add a Guest Collection**_. <br>
-<img src = "/assets/img/tutorialsimages/Google_Drive_Globus_Connect/img_6.png" >
+<img src = "/assets/img/tutorialsimages/Google_Drive_Globus_Connect/img_6.png" >  
 You need to connect Google Drive account with Globus, by clicking on _**Register one now**_. <br>
 <img src = "/assets/img/tutorialsimages/Google_Drive_Globus_Connect/img_7.png" >
 Verify your credential and click on _**Continue**_ <br>
@@ -38,9 +38,9 @@ Verify your credential and click on _**Continue**_ <br>
 You will redirected to the add the google account, verify your UNCG email id and click on it. <br>
 <img src = "/assets/img/tutorialsimages/Google_Drive_Globus_Connect/img_9.png" >
 Read all the conditions and click on allow <br>
-<img src = "/assets/img/tutorialsimages/Google_Drive_Globus_Connect/img_10.png" >
+<img src = "/assets/img/tutorialsimages/Google_Drive_Globus_Connect/img_10.png" >  
 Your Google Drive account is connected to globus, Now click on _**Collections**_ <br>
-<img src = "/assets/img/tutorialsimages/Google_Drive_Globus_Connect/img_11.png" >
+<img src = "/assets/img/tutorialsimages/Google_Drive_Globus_Connect/img_11.png" >  
 For adding your Google Drive to collections, Click on _**Add a Guest Collection**_. <br>
 <img src = "/assets/img/tutorialsimages/Google_Drive_Globus_Connect/img_12.png" >
 Now Click on _**Browse**_<br>
