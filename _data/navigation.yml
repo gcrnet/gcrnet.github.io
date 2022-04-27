@@ -1,0 +1,28 @@
+- title: Downloads
+  url: /downloads/
+  sublinks: 
+    - title: Bash Scripts
+      url: /downloads/bashscriptdownload.html
+
+- title: FAQ
+  url: /faq
+  sublinks :
+   - title : Faq
+     url : /faq/faq.html
+
+- title: HowTo
+  url: /howto
+
+- title: Projects
+  url: /projects
+  sublinks :
+  - title : Science DMZ
+    url : /projects/sciencedmz.html
+  - title : GcrNet
+    url : /projects/gcrNet-doc.html
+
+- title: Tutorials
+  url: /tutorials
+
+- title: Workshops
+  url: /workshops
