@@ -46,7 +46,7 @@ All the projects info is written in the .md format and saved in this folder.
 If you need to create any new project info you need to create new .md file for a new project info and edit it. 
                    
 * _site/ <br>
-All the site information is stored in this folder.
+All the site information is stored in this folder. This directory is updated automatically.
 
 * assets/ <br>
 Images, CSS files that are required for the site are stored in this folder.

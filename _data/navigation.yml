@@ -1,18 +1,38 @@
 - title: Downloads
   url: /downloads/
-  sublinks: 
+  sublinks : 
     - title: Bash Scripts
       url: /downloads/bashscriptdownload.html
 
 - title: FAQ
   url: /faq
-  sublinks :
-   - title : Faq
-     url : /faq/faq.html
+  sublinks:
+    - title : FAQ
+      url : /faq/faq.html
 
 - title: HowTo
-  url: /howto
+  url: /howto/
+  sublinks : 
+    - title : Retrieve a DN
+      url : /howto/dn.html
+    - title: Access Longleaf
+      url : /howto/longleaf.html
+    - title : Install Globus Connect
+      url : /howto/globusconnectpersonal.html
+    - title: Use Globus CLI
+      url : /howto/globuscommandline.html
+    - title: Use Globus Connect
+      url : /howto/usingglobusconnectpersonal.html
+    - title: Github Howtos
+      url: /howto/howtogit.html
+    - title: Jupyter Howtos
+      url : /howto/howtojhub.html
+    - title: Setup Globus Connect
+      url : /howto/setupglobusconnect.html
+    - title : Basic Shell Commands
+      url : /howto/basicshell.html
 
+  
 - title: Projects
   url: /projects
   sublinks :
@@ -23,6 +43,29 @@
 
 - title: Tutorials
   url: /tutorials
+  sublinks :
+  - title : File Transfer
+    url : /tutorials/filetransfer.html
+  - title : Globus CLI
+    url : /tutorials/globus_cli.html
+  - title : Jekyll tutorial
+    url : /tutorials/websitetutorial.html
+  - title : Stata Henry
+    url : /tutorials/stataHenry.html
+  - title: Access Globus via Jupyter
+    url :  /tutorials/globus_in_jupyter-nbk.html
+  - title : Access Google Drive endoint
+    url : /tutorials/googledrive.html
+  - title : Google Drive Setup
+    url : /tutorials/Setup_Google_Drive.html
+
 
 - title: Workshops
   url: /workshops
+  sublinks :
+  - title : Basic Linux Commands
+    url : /workshop/basiclinuxshell.html
+  - title : Bash Shell Programming
+    url : /workshop/bashshellprogramming.html
+  - title : Data Transfer
+    url : /workshop/datatransfer.html

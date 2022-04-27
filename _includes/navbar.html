@@ -24,20 +24,40 @@
     <!-- Menu -->
     <ul class="hide">
         {% assign name_page = "" %}
-
-        {% for page in site.pages %}
-            {% unless page.title == null or page.hide or name_page contains page.title %}
+        {% for links in site.data.navigation %}
+            {% unless links.title == null or page.hide or name_page contains page.title %}
             <li class="separator"> | </li>
+            {% if links.sublinks %}
             <li>
-                <a class="clear" aria-label="{{ page.title }}" title="{{ page.title }}" href="{{ page.url | relative_url }}">
-                    {% if page.icon %} <i class="fa {{ page.icon }}" aria-hidden="true"></i>
-                    {% else %} {{ page.title }} {% endif%}
-                </a>
+              <div class = "dropdown">
+                <button class ="dropbtn">
+                  <a class ="clear" aria-label="{{ links.title }}" title="{{ links.title }}" href="{{ links.url | relative_url }}">
+                    {% if links.icon %} <i class="fa {{ links.icon }}" aria-hidden="true"></i>
+                    {% else %}{{links.title}} <span class ="symbol">&#x25BC;</span>{% endif%}
+                  </a>
+                </button> 
+                <div class ="dropdown-content" >
+                  {% for link in links.sublinks %}
+                    <a class ="clear" aria-label="{{ link.title }}" title="{{ link.title }}" href="{{ link.url | relative_url }}">
+                      {% if link.icon %} <i class="fa {{ link.icon }}" aria-hidden="true"></i>
+                      {% else %}{{link.title}}{% endif%}
+                    </a>  
+                  {%endfor%}
+                </div>
+              </div>
             </li>
+            {%else%}
+              <li>
+                  <a class ="clear" aria-label="{{ links.title }}" title="{{ links.title }}" href="{{ links.url | relative_url }}">
+                      {% if links.icon %} <i class="fa {{ links.icon }}" aria-hidden="true"></i>
+                      {% else %} {{ links.title }} {% endif%}
+                  </a>
+              </li>
+            {%endif%}
             {% endunless %}
-            {% assign name_page = page.title | append: name_page %}
         {% endfor %}
-    </ul>
+        {% assign name_page = page.title | append: name_page %}
+      </ul>
 
 	</nav>
 </header>
