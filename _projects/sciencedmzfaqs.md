@@ -38,7 +38,7 @@ How can I verify the gcrNet speeds?
 > * [perfSONAR-PS](http://psps.perfsonar.net/toolkit/) The pS-Performance Toolkit is a downloadable, pre-configured collection of network performance tools, including NDT, BWCTL, OWAMP and perfSONAR tools and services.
 > * [Bandwidth Test Controller (BWCTL)](http://software.internet2.edu/bwctl/) BWCTL is a command-line client application and a scheduling and policy daemon that wraps Iperf and Thrulay.
 > * [Network Diagnostic Tool (NDT)](http://software.internet2.edu/ndt/) NDT is a user-friendly client/server program that provides network configuration and performance testing to a user’s desktop or laptop computer.
-> * [One-Way Ping (OWAMP)](http://software.internet2.edu/owamp/) OWAMP is a command-line client application and a policy daemon used to determine one-way latencies between hosts.
+> * [One-Way Ping (OWAMP)](http://software.internet2.edu/owamp/) OWAMP is a command-line client application and a policy daemon used to determine one-way latencies between hosts.         
 > For additional information regarding the use of these tools, you may contact us using Phone 336-256-8324 and email 6tech@uncg.edu
 
 Can I connect to the gcrNet with an Apple computer?
