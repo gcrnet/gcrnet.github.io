@@ -30,7 +30,7 @@ What software is necessary to leverage the gcrNet?
 > Traditional file transfer protocols do not support the increased bandwidth available to users on the gcrNet.
 > There are two programs commonly used to move large datasets over high-bandwidth networks:
 > * [Globus](https://docs.globus.org/)
-> * [bbcp](https://www.slac.stanford.edu/~abh/bbcp/) 
+> * [bbcp](https://www.slac.stanford.edu/~abh/bbcp/)         
 > Both your local workstation and the remote data source will need matching software.
 
 How can I verify the gcrNet speeds?
@@ -42,7 +42,7 @@ How can I verify the gcrNet speeds?
 > For additional information regarding the use of these tools, you may contact us using Phone 336-256-8324 and email 6tech@uncg.edu
 
 Can I connect to the gcrNet with an Apple computer?
-> Yes. Apple computers can connect to the HSSN provided they have a Thunderbolt port and an [external network card](https://store.apple.com/us/product/HC294LL/A/atto-thunderlink-nt1102-thunderbolt-to-10-gbits-ethernet-desklink-device)
+> Yes. Apple computers can connect to the gcrNet provided they have a Thunderbolt port and an [external network card](https://store.apple.com/us/product/HC294LL/A/atto-thunderlink-nt1102-thunderbolt-to-10-gbits-ethernet-desklink-device)
 > Please review the minimum workstation system requirements to determine if a hardware upgrade will be required.
 
 ## Security
