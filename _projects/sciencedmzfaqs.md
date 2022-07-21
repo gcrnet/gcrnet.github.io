@@ -35,7 +35,7 @@ What software is necessary to leverage the gcrNet?
 
 How can I verify the gcrNet speeds?
 > Several network performance diagnostics tools will be available to test connectivity speeds.
-> * [perfSONAR Dashboad](http://uncg-mcnuttperf01.gcrnet.org/maddash-webui/) perfSONAR is the *perf*ormance *S*ervice-*O*riented *N*etwork monitoring *AR*chitecture, a network measurement toolkit designed to provide federated coverage of paths and help to establish end-to-end usage expectations. 
+> * [perfSONAR Dashboad](http://uncg-mcnuttperf01.gcrnet.org/maddash-webui/) perfSONAR is the **perf**ormance **S**ervice-*O*riented **N**etwork monitoring **AR**chitecture, a network measurement toolkit designed to provide federated coverage of paths and help to establish end-to-end usage expectations. 
 > * [iPerf/iPerf3](https://iperf.fr) iPerf3 is a tool for active measurements of the maximum achievable bandwidth on IP networks. It supports tuning of various parameters related to timing, buffers and protocols (TCP, UDP, SCTP with IPv4 and IPv6). For each test, it reports the bandwidth, loss, and other parameters.
 > * [One-Way Ping (OWAMP)](http://software.internet2.edu/owamp/) OWAMP is a command-line client application and a policy daemon used to determine one-way latencies between hosts.
 > For additional information regarding the use of these tools, you may contact us using Phone 336-256-8324 and email 6tech@uncg.edu
