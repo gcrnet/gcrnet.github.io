@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Science DMZ FAQs
+title: gcrNet FAQs
 feature-img: "assets/img/pexels/computer.jpeg"
 date: July, 20 2022
 ---
@@ -51,7 +51,7 @@ Can my gcrNet workstation be physically connected to the GCN Enterprise Network 
 > No. Your gcrNet workstation may only connect to the gcrNet.
 
 
-Can I access resources on the Science DMZ from outside the network?
+Can I access resources on the gcrNet from outside the network?
 
-> Yes, services within the Science DMZ will be available outside the network.
+> Yes, services within the gcrNet will be available outside the network.
 
